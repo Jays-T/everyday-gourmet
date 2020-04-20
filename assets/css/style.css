@@ -1,0 +1,66 @@
+/* ------------------------------ Sidebar / Social Media Links */
+
+
+.sidebar {
+  z-index: 1;
+  margin-top: 5%;
+  padding: 90;
+  width: 65px;
+  background-color: transparent;
+  position: fixed;
+  min-height: 30%;
+  overflow: auto;
+  text-align: center;
+  font-size: 35px;
+  
+}
+
+.sidebar a {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3px 3px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+ 
+.sidebar a.active {
+  background-color: #E98074;
+  color: white;
+}
+
+.sidebar a:hover {
+  background-color: #E85A4F;
+  color: #fff;
+}
+
+.sidebar-icons {
+    opacity: 0.65;
+  color: #E85A4F;
+  padding: 10px 10px;
+}
+
+.sidebar i:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+/* ------------------------------ Main Landing Page Styling */
+
+.main-landing {
+    background-color: #000;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    color: #999;
+}
+
+.main-landing {
+    background-image: url("../images/glass-of-red-wine-bg-5169x3648.jpg");
+    background-size: contain;
+    height: auto;
+    min-height: 800px;
+    top: 0;
+    left: 0;
+}
