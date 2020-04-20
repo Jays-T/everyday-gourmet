@@ -1,17 +1,12 @@
 header,
-section {
+section-one {
   position: relative;
-  z-index: 1;
-}
-
-section {
-  background: white;
-  box-shadow: 2rem 2rem 4rem #000;
-  min-height: 100vh;   Min-height to ensure everyone gets the scroll reveal */
+  z-index: 2;
+   
 }
 
 footer {
-  position: sticky;
+
   padding-top: 7rem;
   bottom: 0;
   min-height: 100vh;
@@ -80,14 +75,16 @@ footer {
     left: 0;
 }*/  
 
+
 /* Background Image Overlay Solution created by Dan Wilson and sourced from https://codepen.io/danwilson/pen/dqZvmx */
-.main-content {
+.main-bg {
   background: 
     radial-gradient(circle, transparent 40%, var(--color-v) 75%),
     linear-gradient(to right, var(--color), var(--color)),
     var(--image);
     background-color: #000;
     position: relative;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     color: #999;
@@ -105,12 +102,41 @@ footer {
   --image2: url(../images/person-trying-to-get-a-bottle-of-wine-5022x3456.jpg);
   
   --color-v: black;
-  --color: grey; //hsla(343,100%,50%,.5);
+  --color: transparent; //hsla(343,100%,50%,.5);
  
+    box-shadow: 2rem 2rem 3rem #000;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+.main-content {
+    background: transparent;
+}
+
+.main-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.fade-in-headlines {
+    max-width: 80%;
+    clear: both;
+    border-radius: 2px;
+    margin: 10vh 0;
+    padding: 10px;
+}
+
+.headlines {
+    border: 12px solid rgb(58, 7, 7);
+    background-color: #fafafa;
+    color: #000;
+    font-weight: 400;
+    font-size: 1.3em;
+    /*box-shadow: 0.3rem 0.3rem 2.5rem rgba(243, 228, 228, 0.3);*/
 }
 /* ------------------------------ Menu submit form */
 
