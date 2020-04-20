@@ -1,88 +1,38 @@
-header,
-section {
-  position: relative;
-  z-index: 1;
-}
-
-section {
-  background: white;
-  box-shadow: 2rem 2rem 4rem #000;
-  min-height: 100vh;   Min-height to ensure everyone gets the scroll reveal */
-}
-
-footer {
-  position: sticky;
-  padding-top: 7rem;
-  bottom: 0;
-  min-height: 100vh;
-}
-
-/* ------------------------------ Sidebar / Social Media Links */
-
-
-.sidebar {
-  z-index: 1;
-  margin-top: 5%;
-  padding: 90;
-  width: 65px;
-  background-color: transparent;
-
-  min-height: 30%;
-  overflow: auto;
-  text-align: center;
-  font-size: 35px;
-  
-}
-
-.sidebar a {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 3px 3px;
-  text-decoration: none;
-  border-radius: 50%;
-}
- 
-.sidebar a.active {
-  background-color: #E98074;
-  color: white;
-}
-
-.sidebar a:hover {
-  background-color: #E85A4F;
-  color: #fff;
-}
-
-.sidebar-icons {
-    opacity: 0.65;
-  color: #E85A4F;
-  padding: 10px 10px;
-}
-
-.sidebar i:hover {
-    opacity: 1;
-    color: #fff;
-}
-
-/* ------------------------------ Main content Styling */
-
-
 .main-content {
-    background-color: #000;
-    position: relative;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #999;
-    background-image: url("../images/glass-of-red-wine-bg-5169x3648.jpg");
-    background-size: contain;
-    height: auto;
-    min-height: 800px;
-    top: 0;
-    left: 0;
+  background: 
+    radial-gradient(circle, transparent 40%, var(--color-v) 75%),
+    linear-gradient(to right, var(--color), var(--color)),
+    var(--image);
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: 
+    var(--blend-top, normal),
+    var(--blend-bottom, saturation),
+    normal;
+  
+  --image: url(../images/glass-of-red-wine-bg-5169x3648.jpg);
+  --image2: url(../images/person-trying-to-get-a-bottle-of-wine-5022x3456.jpg);
+  
+  --color-v: black;
+  --color: transparent; //hsla(343,100%,50%,.5);
+  
+  flex: 1;
+  width: 100vw;
 }
 
-/* ------------------------------ Menu submit form */
 
-.center {
-    text-align: center;
+
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: black;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
 }

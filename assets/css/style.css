@@ -65,7 +65,7 @@ footer {
 
 /* ------------------------------ Main content Styling */
 
-
+/*  Commented out for now while testing overlay styling
 .main-content {
     background-color: #000;
     position: relative;
@@ -75,11 +75,43 @@ footer {
     background-image: url("../images/glass-of-red-wine-bg-5169x3648.jpg");
     background-size: contain;
     height: auto;
-    min-height: 800px;
+    min-height: 100vh;
     top: 0;
     left: 0;
+}*/  
+
+/* Background Image Overlay Solution created by Dan Wilson and sourced from https://codepen.io/danwilson/pen/dqZvmx */
+.main-content {
+  background: 
+    radial-gradient(circle, transparent 40%, var(--color-v) 75%),
+    linear-gradient(to right, var(--color), var(--color)),
+    var(--image);
+    background-color: #000;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #999;
+    background-size: contain;
+    height: auto;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+  background-blend-mode: 
+    var(--blend-top, normal),
+    var(--blend-bottom, saturation),
+    normal;
+  
+  --image: url(../images/glass-of-red-wine-bg-5169x3648.jpg);
+  --image2: url(../images/person-trying-to-get-a-bottle-of-wine-5022x3456.jpg);
+  
+  --color-v: black;
+  --color: grey; //hsla(343,100%,50%,.5);
+ 
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 /* ------------------------------ Menu submit form */
 
 .center {
