@@ -49,11 +49,11 @@
 .main-landing {
     background-color: #000;
     position: relative;
-    background-attachment: fixed;
+
     background-position: center;
     background-repeat: no-repeat;
-    
     color: #999;
+    padding-top: 12rem;
 }
 
 .main-landing {

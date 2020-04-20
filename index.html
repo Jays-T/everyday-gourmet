@@ -15,7 +15,7 @@
 
 
 	<div class="container-fluid main-landing">
-    <!-- Sidebar *** sourced from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp 
+		<!-- Sidebar *** sourced from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp 
                     and adapted/edited accordingly *************************** -->
 
 		<div class="sidebar">
@@ -42,13 +42,24 @@
 		<!-- End of Sidebar -->
 		<div class="row">
 			<div class="col-sm">
-				One of three columns
+
 			</div>
 			<div class="col-sm">
-				One of three columns
+				Don't know which wine to choose? <br>
+                Let us suggest a fantastic pairing.<br>
+                All you have to do is let us know,
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">what's on the menu?</label>
+						<input type="meal" class="form-control" id="exampleInputMeal" aria-describedby="menuHelp">
+						<small id="menuHelp" class="form-text text-muted">Tell us what you're planning to eat, the food to get a pairing for. 
+                        This can be a dish ("steak"), an ingredient ("salmon"), or a cuisine ("italian").</small>
+					</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
 			</div>
 			<div class="col-sm">
-				One of three columns
+				Results output area
 			</div>
 		</div>
 	</div>
