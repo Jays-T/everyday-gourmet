@@ -1,4 +1,4 @@
-header,
+
 section-one {
   position: relative;
   z-index: 2;
@@ -17,11 +17,11 @@ footer {
 
 .sidebar {
   z-index: 1;
-  margin-top: 5%;
+  margin-top: 25%;
   padding: 90;
   width: 65px;
   background-color: transparent;
-
+  position: fixed;
   min-height: 30%;
   overflow: auto;
   text-align: center;
@@ -60,21 +60,22 @@ footer {
 
 /* ------------------------------ Main content Styling */
 
-/*  Commented out for now while testing overlay styling
-.main-content {
+
+.landing-page {
+    display: flex;
+    flex-direction: row;
     background-color: #000;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     color: #999;
-    background-image: url("../images/glass-of-red-wine-bg-5169x3648.jpg");
+    background-image: url("../images/wine-pouring.gif");
     background-size: contain;
     height: auto;
     min-height: 100vh;
     top: 0;
     left: 0;
-}*/  
-
+}
 
 /* Background Image Overlay Solution created by Dan Wilson and sourced from https://codepen.io/danwilson/pen/dqZvmx */
 .main-bg {
@@ -104,7 +105,7 @@ footer {
   --color-v: black;
   --color: transparent; 
  
-    box-shadow: 0rem 2rem 3rem #000;
+    box-shadow: 0 2rem 3rem #000;
 }
 
 *, *::before, *::after {
@@ -126,7 +127,7 @@ footer {
     max-width: 80%;
     clear: both;
     border-radius: 2px;
-    padding: 40vh 10vw;
+    padding: 32vh 10vw;
 }
 
 .headlines {
@@ -174,6 +175,6 @@ footer {
   --color-v: black;
   --color: transparent; 
  
-    box-shadow: 0rem 2rem 3rem #000;
+    box-shadow: 0 2rem 3rem #000;
     }
 }
