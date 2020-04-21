@@ -37,3 +37,10 @@ We continually tweak and adjust this template to help give you the best experien
 --------
 
 Happy coding!
+
+Testing during development
+
+** The site was found to run slowly on a Huawei P20 lite
+** The site was found to run without issue on a  Xiaomi mi 9
+
+
