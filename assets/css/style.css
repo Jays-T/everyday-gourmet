@@ -136,7 +136,7 @@ footer {
     color: #000;
     font-weight: 400;
     font-size: 1.3em;
-    /*box-shadow: 0.3rem 0.3rem 2.5rem rgba(243, 228, 228, 0.3);*/
+    box-shadow: .3rem .3rem .5rem rgba(243, 228, 228, 0.3);
 }
 /* ------------------------------ Menu submit form */
 
