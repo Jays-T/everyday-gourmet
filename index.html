@@ -12,38 +12,43 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Everday Gourmet</title>
   </head>
 
   <body>
-    <header>
+    <header id="home">
       <div class="container-fluid" role="navigation">
-        <div class="row">
-          <div class="col" id="nav-left">
-            <nav
-              class="navbar navbar-expand-lg navbar-transparent navbar-fixed-transparent"
-            >
-              <a class="navbar-brand" href="#">
-                <i
-                  class="fas fa-home sidebar-icons"
-                  aria-hidden="true"
-                  alt="Find the perfect wine pairing"
-                ></i>
-              </a>
-              <a class="navbar-brand" href="#">
-                <i
-                  class="fas fa-wine-glass sidebar-icons"
-                  aria-hidden="true"
-                  alt="Find the perfect wine pairing"
-                ></i>
-              </a>
-            </nav>
-          </div>
-          <div class="col" id="nav-right">
-            
-          </div>
+        <div class="navbar navbar-fixed-transparent">
+          <a class="navbar-brand hvr-icon-bob" href="#home">
+            <i
+              class="fas fa-home sidebar-icons"
+              aria-hidden="true"
+              alt="Find the perfect wine pairing"
+            ></i>
+            <span class="sr-only">home</span>
+          </a>
+          <a class="navbar-brand hvr-icon-bob" href="#footer-details">
+            <i
+              class="fas fa-wine-glass sidebar-icons"
+              aria-hidden="true"
+              alt="Find the perfect wine pairing"
+            ></i>
+            <span class="sr-only">wine pairing</span>
+          </a>
+          <a class="navbar-brand hvr-icon-bob" href="#">
+            <i
+              class="fas fa-wine-bottle sidebar-icons"
+              aria-hidden="true"
+              alt="Shop for wine locally"
+            ></i>
+            <span class="sr-only">top wines list</span>
+          </a>
         </div>
       </div>
     </header>
@@ -150,8 +155,7 @@
       </div>
       <div class="row">
         <div class="col-sm-4"></div>
-        <div class="col-sm-4 center">
-          <h5 class="uppercase general-sub">Social</h5>
+        <div class="col-sm-4 center social-media-links">
           <ul class="list-inline social-links">
             <li class="list-inline-item">
               <a target="_blank" href="#">

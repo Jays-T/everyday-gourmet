@@ -1,4 +1,36 @@
+/* ------------------------------ global input/textarea styling */
 
+input,textarea {
+     width:100%;
+     display:block 
+}
+
+/* ------------------------------ Navbar styling */
+
+.navbar-fixed-transparent {
+    display: flex;
+  justify-content: space-evenly;
+  padding: 3px 3px;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    z-index: 3;
+    overflow: hidden;
+    position: fixed;
+  bottom: 0;
+  min-width: 90vw;
+}
+
+.navbar i {
+    color: white;
+}
+
+.navbar i:hover {
+  color: rgba(224, 18, 28, 0.3);
+  font-weight: bold;
+}
+
+/* ------------------------------ section-one */
 section-one {
   position: relative;
   z-index: 2;
@@ -12,80 +44,19 @@ footer {
   min-height: 100vh;
 }
 
-/* ------------------------------ Sidebar / Social Media Links */
+/* ------------------------------ Social Media Links */
 
 
-.sidebar {
-  z-index: 1;
-  margin-top: 25%;
-  padding: 90;
-  width: 65px;
-  background-color: transparent;
-  position: fixed;
-  min-height: 30%;
-  overflow: auto;
-  text-align: center;
-  font-size: 35px;
-  
-}
 
-.sidebar a {
+.social-media-links {
   display: flex;
   justify-content: space-evenly;
   padding: 3px 3px;
   text-decoration: none;
   border-radius: 50%;
 }
- 
-.sidebar a.active {
-  background-color: #E98074;
-  color: white;
-}
 
-.sidebar a:hover {
-  background-color: #E85A4F;
-  color: #fff;
-}
-
-.sidebar-icons {
-    opacity: 0.65;
-  color: #E85A4F;
-  padding: 10px 10px;
-}
-
-.sidebar i:hover {
-    opacity: 1;
-    color: #fff;
-}
-
-/* ------------------------------ Main content Styling */
-
-
-.landing-page {
-    display: flex;
-    flex-direction: row;
-    background-color: #000;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #999;
-    background-image: url("../images/wine-pouring.gif");
-    background-size: contain;
-    height: auto;
-    min-height: 100vh;
-    top: 0;
-    left: 0;
-}
-
-.navbar-fixed-transparent {
-    background-color: transparent;
-    position: fixed;
-    z-index: 3;
-}
-
-.navbar-right {
-    position: fixed top right;
-}
+                /* ------------------------------ Main content Styling */
 
 /* Background Image Overlay Solution created by Dan Wilson and sourced from https://codepen.io/danwilson/pen/dqZvmx */
 .main-bg {
@@ -148,7 +119,7 @@ footer {
     font-size: 1.3em;
     box-shadow: .3rem .3rem .5rem rgba(243, 228, 228, 0.3);
 }
-/* ------------------------------ Menu submit form */
+/* ------------------------------ Footer and Wine Pairing submit form */
 
 .center {
     text-align: center;
@@ -196,3 +167,18 @@ footer {
     box-shadow: 0 2rem 3rem #000;
     }
 }
+
+@media screen and (max-width: 576px) {
+
+
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: transparent;
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
