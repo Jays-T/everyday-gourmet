@@ -8,16 +8,15 @@ input,textarea {
 /* ------------------------------ Navbar styling */
 
 .navbar-fixed-transparent {
-    display: flex;
-  justify-content: space-evenly;
+    display: inline-block;
   padding: 3px 3px;
     background-color: transparent;
     border: none;
     position: fixed;
     z-index: 3;
     overflow: hidden;
-    position: fixed;
-  bottom: 0;
+  top:0;
+  left: 0;
   min-width: 90vw;
 }
 
@@ -121,7 +120,7 @@ footer {
 }
 /* ------------------------------ Footer and Wine Pairing submit form */
 
-.center {
+.center-text {
     text-align: center;
 }
 
