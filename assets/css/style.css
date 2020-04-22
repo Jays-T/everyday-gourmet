@@ -77,6 +77,12 @@ footer {
     left: 0;
 }
 
+.navbar-fixed-transparent {
+    background-color: transparent;
+    position: fixed;
+    z-index: 3;
+}
+
 /* Background Image Overlay Solution created by Dan Wilson and sourced from https://codepen.io/danwilson/pen/dqZvmx */
 .main-bg {
   background: 
@@ -131,7 +137,7 @@ footer {
 }
 
 .headlines {
-    border: 12px solid rgb(63, 7, 7);
+    border: 12px solid rgb(70, 8, 8);
     background-color: #fafafa;
     color: #000;
     font-weight: 400;
@@ -142,6 +148,14 @@ footer {
 
 .center {
     text-align: center;
+}
+
+.footer-sticky {
+    background-color: rgba(224, 18, 28, 0.3);
+    background-image: url("../images/red-wine-pouring-into-glass-1000x1320.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 
 

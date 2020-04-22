@@ -19,117 +19,95 @@
 
   <body>
     <header>
-      <div class="container-fluid landing-page">
-        <!-- Sidebar *** sourced from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp 
-                    and adapted/edited accordingly *************************** -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-transparent">
+  <a class="navbar-brand" href="#">
+    <img src="assets/images/wine-pouring.gif" width="30" height="30" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-          <div class="sidebar">
-            <div class="social-media-sm">
-              <a target="_blank" href="#footer-details">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active social-media-sm">
+        <a target="_blank" href="#headline-one">
                 <i
                   class="fas fa-wine-glass sidebar-icons"
                   aria-hidden="true"
                   alt="Find the perfect wine pairing"
                 ></i>
-                <span class="sr-only">wine pairing</span>
+                <span class="sr-only">(current)</span>
               </a>
-            </div>
-            <div class="social-media-sm">
-              <a target="_blank" href="#">
-                <i
-                  class="fas fa-wine-bottle sidebar-icons"
-                  aria-hidden="true"
-                  alt="Shop for wine locally"
-                ></i>
-                <span class="sr-only">top wines list</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- End of Sidebar -->
-        <h1 class="">Everyday Gourmet</h1>
-        <h1 class="">Wine Pairings</h1>
-      </div>
-       
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
     </header>
 
     <section-one>
       <div class="container-fluid main-bg">
-      
-        <div class="row">
+       <div class="row">
           <div class="col main-left"></div>
           <div class="col main-right">
+            <h1 class="fade-in-headlines">Everyday Gourmet Wine Pairings</h1>
             
+            <div class="fade-in-headlines aos-init" data-aos="zoom-out-left" data-aos-duration="1000">
+            <button class="btn btn-primary headlines">Hello and welcome to<br>
+            <br>
+            EveryDay Gourmet<br>
+            <br>
+            A premier wine pairing site.</button>
+            </div>
+           
+            <div class="fade-in-headlines aos-init" data-aos="zoom-out-left" data-aos-duration="1000">
+            <button class="btn btn-primary headlines">When you've worked hard to prepare the perfect meal<br>
+            <br>
+             the last thing you want to do is pick the wrong wine.</button>
+            </div>
             
-
-            <div
-              class="fade-in-headlines"
-              data-aos="zoom-out-left"
-              data-aos-duration="1000"
-            >
-              <button class="btn btn-primary headlines">
-                Hello and welcome to<br />
-                <br />
-                EveryDay Gourmet<br />
-                <br />
-                A premier wine pairing site.
-              </button>
+            <div class="fade-in-headlines aos-init" data-aos="zoom-out-left" data-aos-duration="1000">
+            <button class="btn btn-primary headlines">Simply tell us what's on the menu.<br>
+            <br>
+             We'll suggest the best wine to pair with your meal. </button>
             </div>
-
-            <div
-              class="fade-in-headlines"
-              data-aos="zoom-out-left"
-              data-aos-duration="1000"
-            >
-              <button class="btn btn-primary headlines">
-                When you've worked hard to prepare the perfect meal<br />
-                <br />
-                the last thing you want to do is pick the wrong wine.
-              </button>
+            
+            <div class="fade-in-headlines aos-init" data-aos="zoom-out-left" data-aos-duration="1000">
+            <button class="btn btn-primary headlines">We'll also show you where you can shop wines
+                locally.</button>
             </div>
-
-            <div
-              class="fade-in-headlines"
-              data-aos="zoom-out-left"
-              data-aos-duration="1000"
-            >
-              <button class="btn btn-primary headlines">
-                Simply tell us what's on the menu.<br />
-                <br />
-                We'll suggest the best wine to pair with your meal.
-              </button>
-            </div>
-
-            <div
-              class="fade-in-headlines"
-              data-aos="zoom-out-left"
-              data-aos-duration="1000"
-            >
-              <button class="btn btn-primary headlines">
-                We'll also show you where you can shop wines locally.
-              </button>
-            </div>
-
-            <div
-              class="fade-in-headlines"
-              data-aos="zoom-out-left"
-              data-aos-duration="1000"
-            >
-              <button class="btn btn-primary headlines">
-                Turn every meal into something special and make each day,<br />
-                <br />
+            
+            <div class="fade-in-headlines aos-init" data-aos="zoom-out-left" data-aos-duration="1000">
+            <button class="btn btn-primary headlines">
+            Turn every meal into something special and make each day,<br>
+            <br>
                 EveryDay Gourmet.
               </button>
             </div>
+            
           </div>
         </div>
       </div>
     </section-one>
 
     <footer class="container-fluid footer-sticky">
+    <span><h1>Don't know which wine to choose?</h1></span>
       <div id="footer-details" class="row">
         <div class="col center">
-          Don't know which wine to choose? <br />
           Let us suggest a fantastic pairing.<br />
           All you have to do is let us know,
           <form>
@@ -203,8 +181,10 @@
       <div class="col-sm-4"></div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/aos-global.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <script></script>
   </body>

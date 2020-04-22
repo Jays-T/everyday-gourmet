@@ -1,38 +1,183 @@
-.main-content {
+html {
+  scroll-behavior: smooth;
+}
+
+section-one {
+  position: relative;
+  z-index: 2;
+   
+}
+
+footer {
+
+  padding-top: 7rem;
+  bottom: 0;
+  min-height: 100vh;
+}
+
+/* ------------------------------ Sidebar / Social Media Links */
+
+
+.sidebar {
+  z-index: 1;
+  margin-top: 25%;
+  padding: 90;
+  width: 65px;
+  background-color: transparent;
+  position: fixed;
+  min-height: 30%;
+  overflow: auto;
+  text-align: center;
+  font-size: 35px;
+  
+}
+
+.sidebar a {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3px 3px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+ 
+.sidebar a.active {
+  background-color: #E98074;
+  color: white;
+}
+
+.sidebar a:hover {
+  background-color: #E85A4F;
+  color: #fff;
+}
+
+.sidebar-icons {
+    opacity: 0.65;
+  color: #E85A4F;
+  padding: 10px 10px;
+}
+
+.sidebar i:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+/* ------------------------------ Main content Styling */
+
+
+.landing-page {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #999;
+    background-image: url("../images/wine-pouring.gif");
+    background-size: contain;
+    height: auto;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+/* Background Image Overlay Solution created by Dan Wilson and sourced from https://codepen.io/danwilson/pen/dqZvmx */
+.main-bg {
   background: 
     radial-gradient(circle, transparent 40%, var(--color-v) 75%),
     linear-gradient(to right, var(--color), var(--color)),
     var(--image);
-  background-position: center center;
-  background-size: cover;
+    background-color: #000;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #999;
+    background-size: contain;
+    height: auto;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
   background-blend-mode: 
     var(--blend-top, normal),
     var(--blend-bottom, saturation),
     normal;
   
   --image: url(../images/glass-of-red-wine-bg-5169x3648.jpg);
-  --image2: url(../images/person-trying-to-get-a-bottle-of-wine-5022x3456.jpg);
+  --image2: url(../images/glass-of-red-wine-bg-900x1320.jpg);
   
   --color-v: black;
-  --color: transparent; //hsla(343,100%,50%,.5);
-  
-  flex: 1;
-  width: 100vw;
+  --color: transparent; 
+ 
+    box-shadow: 0 2rem 3rem #000;
 }
 
-
-
-
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background: black;
-}
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+.main-content {
+    background: transparent;
+}
+
+.main-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.fade-in-headlines {
+    max-width: 80%;
+    clear: both;
+    border-radius: 2px;
+    padding: 32vh 10vw;
+}
+
+.headlines {
+    border: 12px solid rgb(63, 7, 7);
+    background-color: #fafafa;
+    color: #000;
+    font-weight: 400;
+    font-size: 1.3em;
+    box-shadow: .3rem .3rem .5rem rgba(243, 228, 228, 0.3);
+}
+/* ------------------------------ Menu submit form */
+
+.center {
+    text-align: center;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+    .main-bg {
+        background: 
+    radial-gradient(circle, transparent 40%, var(--color-v) 75%),
+    linear-gradient(to right, var(--color), var(--color)),
+    var(--image2);
+    background-color: #000;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #999;
+    background-size: contain;
+    height: auto;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+  background-blend-mode: 
+    var(--blend-top, normal),
+    var(--blend-bottom, saturation),
+    normal;
+  
+  --image: url(../images/glass-of-red-wine-bg-5169x3648.jpg);
+  --image2: url(../images/glass-of-red-wine-bg-900x1320.jpg);
+  
+  --color-v: black;
+  --color: transparent; 
+ 
+    box-shadow: 0 2rem 3rem #000;
+    }
 }
