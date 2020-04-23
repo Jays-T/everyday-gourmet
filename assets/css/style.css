@@ -114,11 +114,19 @@ footer {
     align-items: flex-end;
 }
 
+.hero-text {
+    text-align: center;
+    max-width: 50%;
+    clear: both;
+    margin: 40vh 0;
+    padding: 10px;
+}
+
 .fade-in-headlines {
     max-width: 40%;
     clear: both;
     border-radius: 2px;
-    margin: 12vh 0;
+    margin: 12vh 16vw;
     padding: 10px;
 }
 
@@ -177,6 +185,10 @@ footer {
  
     box-shadow: 0 2rem 3rem #000;
     }
+
+    .fade-in-headlines {
+    margin: 10vh 12vw;
+}
 }
 
 @media screen and (max-width: 576px) {
@@ -192,4 +204,11 @@ footer {
     height: auto;
     text-align: center;
   }
+
+  .fade-in-headlines {
+    max-width: 65%;
+    margin: 10vh 12vw;
+}
+
+}
 
