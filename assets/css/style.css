@@ -40,35 +40,8 @@ section-one {
   z-index: 3;
    
 }
-.scroll-circle-wrapper {
-    
-    border-top: 1px solid rgba(71, 33, 33, 0.6);
-    border-bottom: 1px solid rgba(71, 33, 33, 0.6);
-    
-}
 
-
-footer {
-  position: sticky;
-  padding-top: 7rem;
-  bottom: 0;
-  min-height: 100vh;
-  z-index: 1;
-}
-
-/* ------------------------------ Social Media Links */
-
-
-
-.social-media-links {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 3px 3px;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-                /* ------------------------------ Main content Styling */
+/* ------------------------------ Main content Styling */
 
 /* Background Image Overlay Solution created by Dan Wilson and sourced from https://codepen.io/danwilson/pen/dqZvmx */
 .main-bg {
@@ -118,8 +91,58 @@ footer {
     text-align: center;
     max-width: 50%;
     clear: both;
-    margin: 40vh 0;
+    margin: 30vh 0;
     padding: 10px;
+    border-top: solid .5px rgba(236, 64, 73, 0.3);
+    border-bottom: solid .5px rgba(236, 64, 73, 0.3);
+}
+
+.circle {
+  height: 70px;
+  width: 70px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%; /* may require vendor prefixes */
+  border: solid 1px rgba(51, 47, 47, 0.3);;
+  background: transparent;
+}
+
+/* Arrow by Rafael Amorim sourced from https://codepen.io/raf187/pen/BvgGRQ */
+.arrow{
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid rgba(241, 75, 83, 0.8);
+    border-right: 5px solid rgba(241, 75, 83, 0.8);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
 }
 
 .fade-in-headlines {
@@ -138,6 +161,7 @@ footer {
     font-size: 1.3em;
     box-shadow: .3rem .3rem .5rem rgba(243, 228, 228, 0.3);
 }
+
 /* ------------------------------ Footer and Wine Pairing submit form */
 
 .center-text {
@@ -151,6 +175,28 @@ footer {
     background-repeat: no-repeat;
     background-position: top right;
 }
+footer {
+  position: sticky;
+  padding-top: 7rem;
+  bottom: 0;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+/* ------------------------------ Social Media Links */
+
+
+
+.social-media-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3px 3px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+                
+
 
 
 /* Media Queries */
