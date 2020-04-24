@@ -171,7 +171,7 @@ section-one {
     max-width: 40%;
     clear: both;
     border-radius: 2px;
-    margin: 12vh 16vw;
+    margin: 0 16vw;
     padding: 10px;
 }
 
@@ -271,7 +271,7 @@ footer {
     }
 
     .fade-in-headlines {
-    margin: 14vh 4vw;
+    margin: 4vh 4vw;
 }
     .hero-text {
 
@@ -295,7 +295,7 @@ footer {
 
   .fade-in-headlines {
     max-width: 95%;
-    margin: 14vh 2vw;
+    margin: 4vh 2vw;
 }
 
 }
