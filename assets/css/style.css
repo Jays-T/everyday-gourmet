@@ -211,6 +211,13 @@ footer {
   z-index: 1;
 }
 
+.contact-us-page {
+  position: relative;
+  padding-top: 7rem;
+  bottom: 0;
+  min-height: 100vh;
+}
+
 /* ------------------------------ Social Media Links */
 
 

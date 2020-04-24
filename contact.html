@@ -18,6 +18,9 @@
   </head>
 
   <body>
+
+  <!-- Navigation -->  
+
     <header id="home">
       <div class="container-fluid" role="navigation">
         <div class="navbar navbar-fixed-transparent">
@@ -37,10 +40,12 @@
       </div>
     </header>
 
-    <footer class="container-fluid footer-sticky">
+    <!-- Main content / Contact Us Email Form -->
+
+    <div class="container-fluid footer-sticky contact-us-page">
       <span><h1>Contact Us</h1></span>
       <div id="footer-details" class="row">
-        <div class="col">
+        <div class="col center-text">
           Let us suggest a fantastic pairing.<br />
           All you have to do is let us know,
           <form>
@@ -62,11 +67,17 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
+        <div class="col center-text">
+          Results output area
+        </div>
       </div>
+
+      <!-- Social Media Links -->
+
+      <div class="container-fluid social-media-anchor">
       <div class="row">
         <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-          <h5 class="uppercase general-sub">Social</h5>
+        <div class="col-sm-4 center-text social-media-links card-footer">
           <ul class="list-inline social-links">
             <li class="list-inline-item">
               <a target="_blank" href="#">
@@ -107,7 +118,9 @@
           </ul>
         </div>
       </div>
-    </footer>
+      <div class="col-sm-4"></div>
+      </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
