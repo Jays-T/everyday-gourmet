@@ -8,6 +8,23 @@ $(".arrow").click(function() {
     });
 })
 
+/*$(".arrow, .arrow2").click(function() {
+
+    var target = $(this.target);
+
+    if (target.hasClass("arrow")) {
+        $("#headline-one")[0].scrollIntoView({
+        behavior: "smooth", 
+        block: "center" 
+    });
+    } else if (target.hasClass("arrow2")) {
+         $("#footer-details")[0].scrollIntoView({
+        behavior: "smooth", 
+        block: "center" 
+    });
+ };
+})*/
+
 
 // Spoonacular API xml request
 

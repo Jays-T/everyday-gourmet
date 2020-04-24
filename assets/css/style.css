@@ -6,6 +6,9 @@
 .font-montserrat {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+}
+
+.uppercase {
     text-transform: uppercase;
 }
 
@@ -300,18 +303,6 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-
-
-.sidebar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: transparent;
-    margin-top: 0;
-    width: 100%;
-    height: auto;
-    text-align: center;
-  }
 
 .fade-in-headlines {
     max-width: 95%;

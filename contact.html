@@ -24,16 +24,20 @@
     <header id="home">
       <div class="container-fluid" role="navigation">
         <div class="navbar navbar-fixed-transparent">
-          <a class="navbar-brand hvr-icon-bob" href="index.html">
+          <a class="navbar-brand" href="index.html">
             <i
-              class="fas fa-home sidebar-icons"
+              class="fas fa-home"
               aria-hidden="true"
               alt="Find the perfect wine pairing"
             ></i>
             <span class="sr-only">home</span>
           </a>
-          <a class="navbar-brand hvr-icon-bob" href="contact.html">
+          <a class="navbar-brand font-montserrat uppercase" href="contact.html">
             Contact
+            <span class="sr-only">Contact Page</span>
+          </a>
+          <a class="navbar-brand font-montserrat uppercase" href="contact.html">
+            Top Wines
             <span class="sr-only">Contact Page</span>
           </a>
         </div>
@@ -43,32 +47,22 @@
     <!-- Main content / Contact Us Email Form -->
 
     <div class="container-fluid footer-sticky contact-us-page">
-      <span><h1>Contact Us</h1></span>
+      <span><h1 class="font-montserrat">Contact Us</h1></span>
       <div id="footer-details" class="row">
-        <div class="col center-text">
-          Let us suggest a fantastic pairing.<br />
-          All you have to do is let us know,
+        <div class="col font-lora">
           <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">what's on the menu?</label>
+            <div class="form-group font-lora">
+              <label for="inputEmail1">send us an email</label>
               <input
                 type="meal"
-                class="form-control"
+                class="form-control font-montserrat"
                 id="exampleInputMeal"
                 aria-describedby="menuHelp"
                 placeholder="for example: Italian"
               />
-              <small id="menuHelp" class="form-text text-muted"
-                >Tell us what you're planning to eat, the food to get a pairing
-                for. This can be a dish ("steak"), an ingredient ("salmon"), or
-                a cuisine ("italian").</small
-              >
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
-        </div>
-        <div class="col center-text">
-          Results output area
         </div>
       </div>
 
