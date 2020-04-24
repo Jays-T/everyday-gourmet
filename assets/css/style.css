@@ -10,6 +10,10 @@ html h1 {
     font-size: 5.9vw;
 }
 
+.fancy-text {
+    font-family: ;
+}
+
 /* ------------------------------ Navbar styling */
 
 .navbar-fixed-transparent {
@@ -91,7 +95,7 @@ section-one {
     text-align: center;
     max-width: 50%;
     clear: both;
-    margin: 30vh 0;
+    margin: 30vh 4vw 20vh 0;
     padding: 10px;
     border-top: solid .5px rgba(236, 64, 73, 0.3);
     border-bottom: solid .5px rgba(236, 64, 73, 0.3);
@@ -164,10 +168,10 @@ section-one {
 
 .headlines {
     border: 12px solid rgb(70, 8, 8);
-    background-color: #fafafa;
-    color: #000;
-    font-weight: 400;
-    font-size: 1.3em;
+    background-color: rgba(59, 26, 26, 0.1);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 1.5rem;
     box-shadow: .3rem .3rem .5rem rgba(243, 228, 228, 0.3);
 }
 
@@ -242,7 +246,7 @@ footer {
     }
 
     .fade-in-headlines {
-    margin: 10vh 12vw;
+    margin: 14vh 4vw;
 }
 }
 
@@ -262,7 +266,7 @@ footer {
 
   .fade-in-headlines {
     max-width: 95%;
-    margin: 5vh 2vw;
+    margin: 14vh 2vw;
 }
 
 }
