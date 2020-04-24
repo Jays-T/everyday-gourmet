@@ -3,9 +3,9 @@
 
 $(".arrow").click(function() {
   $("#headline-one")[0].scrollIntoView({
-    behavior: "smooth", 
-    block: "center" 
-});
+        behavior: "smooth", 
+        block: "center" 
+    });
 })
 
 

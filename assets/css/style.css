@@ -171,10 +171,20 @@ section-one {
     max-width: 40%;
     clear: both;
     border-radius: 2px;
-    margin: 0 16vw;
     padding: 10px;
 }
 
+#headline-one {
+    margin: 24vh 16vw 22vh 16vw;
+}
+
+#headline-two {
+    margin: 22vh 16vw;
+}
+
+#headline-three {
+    margin: 22vh 16vw 70vh 16vw;
+}
 
 
 .headlines {
@@ -271,7 +281,7 @@ footer {
     }
 
     .fade-in-headlines {
-    margin: 4vh 4vw;
+    margin: 14vh 4vw;
 }
     .hero-text {
 
@@ -293,9 +303,9 @@ footer {
     text-align: center;
   }
 
-  .fade-in-headlines {
+.fade-in-headlines {
     max-width: 95%;
-    margin: 4vh 2vw;
+    margin: 8vh 2vw;
 }
 
 }
