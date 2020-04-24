@@ -232,6 +232,7 @@ footer {
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {
+
     .main-bg {
         background: 
     radial-gradient(circle, transparent 40%, var(--color-v) 75%),
@@ -265,6 +266,10 @@ footer {
     .fade-in-headlines {
     margin: 14vh 4vw;
 }
+    .hero-text {
+
+        margin: 47vh 4vw 10vh 0;
+    }
 }
 
 @media screen and (max-width: 576px) {
