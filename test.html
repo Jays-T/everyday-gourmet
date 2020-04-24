@@ -22,42 +22,62 @@
   </head>
 
   <body>
-<div class="container arrow-wrapper"> Hello World
-      <p class="arrow">
-            <span></span>
-            <span></span>
-            <span></span>
-            </p>
-            </div>
+    <style>
+      .intro {
+        font-size: 120%;
+        color: red;
+      }
+    </style>
 
-            
-          <div
-            class="fade-in-headlines aos-init"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-          >
-            <button class="btn btn-primary headlines">
-              We'll also show you where you can shop wines locally.
-            </button>
-          </div>
+    <h1>This is a heading</h1>
 
-          <div
-            class="fade-in-headlines aos-init"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-          >
-            <button class="btn btn-primary headlines">
-              Turn every meal into something special and make each day,<br />
-              <br />
-              EveryDay Gourmet.
-            </button>
-          </div>
+    <p class="intro">This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <button>Does any p element have an "intro" class?</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/aos-global.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <script></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          alert($("p").hasClass("intro"));
+        });
+      });
+    </script>
+
+    <script>
+            $(function (easyScroll) {
+              $("#headline-one")[0].scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              });
+            });
+
+            $(".arrow, .arrow2").click(function() {
+
+          var target = $(this.target);
+
+          if (target.hasClass("arrow")) {
+              $(easyScroll)
+          };
+          }
+
+          document.querySelectorAll(`.arrow`)].forEach(el => el.addEventListener(_ => {
+          $("#headline-one")[0].scrollIntoView({
+              behavior: "smooth",
+              block: "center"
+          });
+      }));
+      document.querySelectorAll(`.arrow2`)].forEach(el => el.addEventListener(_ => {
+          $("#footer-details")[0].scrollIntoView({
+              behavior: "smooth",
+              block: "center"
+          });
+      }));
+    </script>
   </body>
 </html>

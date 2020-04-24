@@ -6,6 +6,7 @@
 .font-montserrat {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    color: #999;
 }
 
 .uppercase {
@@ -38,23 +39,23 @@ html h1 {
 
 .navbar-fixed-transparent {
     display: inline-block;
-  padding: 3px 3px;
+    padding: 3px 3px;
     background-color: transparent;
     border: none;
     position: fixed;
     z-index: 3;
     overflow: hidden;
-  top:0;
-  left: 0;
-  min-width: 90vw;
+    top:0;
+    left: 0;
+    min-width: 90vw;
 }
 
 .navbar i {
-    color: white;
+    font-weight: 700;
 }
 
 .navbar i:hover {
-  color: rgba(224, 18, 28, 0.3);
+  color: rgba(229, 255, 0, 0.8);
   font-weight: bold;
 }
 
@@ -118,8 +119,8 @@ section-one {
     margin: 30vh 4vw 20vh 0;
     padding: 10px;
     letter-spacing: 0.2em;
-    border-top: solid .5px rgba(236, 64, 73, 0.3);
-    border-bottom: solid .5px rgba(236, 64, 73, 0.3);
+    border-top: solid .5px rgba(236, 64, 73, 0.4);
+    border-bottom: solid .5px rgba(236, 64, 73, 0.4);
 }
 
 .circle {
@@ -187,17 +188,17 @@ section-one {
 }
 
 #headline-one {
-    margin: 24vh 16vw 22vh 8vw;
+    margin: 24vh 8vw 22vh 8vw;
 }
 
 #headline-two {
-    margin: 22vh 16vw 70vh 16vw;
+    margin: 22vh 8vw 24vh 8vw;
 }
 
 
 .headlines {
-    border-top: solid .5px rgba(236, 64, 73, 0.3);
-    border-bottom: solid .5px rgba(236, 64, 73, 0.3);
+    border-top: solid .5px rgba(236, 64, 73, 0.4);
+    border-bottom: solid .5px rgba(236, 64, 73, 0.4);
     background: transparent;
     color: rgb(255, 255, 255);
     font-weight: 700;
@@ -297,9 +298,7 @@ footer {
         margin: 47vh 4vw 10vh 0;
     }
     
-.headlines {
-    background: rgba(0, 0, 0, 0.6);
-}
+
 }
 
 @media screen and (max-width: 576px) {
@@ -307,6 +306,10 @@ footer {
 .fade-in-headlines {
     max-width: 95%;
     margin: 8vh 2vw;
+}
+
+.headlines {
+    background: rgba(0, 0, 0, 0.6);
 }
 }
 

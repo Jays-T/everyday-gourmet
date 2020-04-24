@@ -1,49 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/sketchy/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-	<link rel="stylesheet" href="assets/css/teststyle.css">
-	<title>Everday Gourmet</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/sketchy/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300|Yellowtail:400,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Everday Gourmet</title>
+  </head>
 
-<body>
-<header>
-      <div class="container-fluid landing-page">
-        <!-- Sidebar *** sourced from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp 
-                    and adapted/edited accordingly *************************** -->
+  <body>
 
-          <div class="sidebar">
-            <div class="social-media-sm">
-              <a target="_blank" href="#headline-one">
-                <i
-                  class="fas fa-wine-glass sidebar-icons"
-                  aria-hidden="true"
-                  alt="Find the perfect wine pairing"
-                ></i>
-                <span class="sr-only">wine pairing</span>
-              </a>
-            </div>
-            <div class="social-media-sm">
-              <a target="_blank" href="#">
-                <i
-                  class="fas fa-wine-bottle sidebar-icons"
-                  aria-hidden="true"
-                  alt="Shop for wine locally"
-                ></i>
-                <span class="sr-only">top wines list</span>
-              </a>
-            </div>
-          </div>
+<!-- Navigation -->  
 
-          <!-- End of Sidebar -->
-        <h1 class="">Everyday Gourmet</h1>
-        <h1 class="">Wine Pairings</h1>
+    <header id="home">
+      <div class="container-fluid" role="navigation">
+        <div class="navbar navbar-fixed-transparent">
+          <a class="navbar-brand" href="#home">
+            <i
+              class="fas fa-home"
+              aria-hidden="true"
+              alt="Find the perfect wine pairing"
+            ></i>
+            <span class="sr-only">home</span>
+          </a>
+          <a class="navbar-brand font-montserrat uppercase" href="contact.html">
+            Contact
+            <span class="sr-only">Contact Page</span>
+          </a>
+          <a class="navbar-brand font-montserrat uppercase" href="contact.html">
+            Top Wines
+            <span class="sr-only">Contact Page</span>
+          </a>
+        </div>
       </div>
-       
     </header>
-</body>
+
+<!-- Main landing page and fade in headlines -->
+
+    <section-one>
+      <div class="container-fluid main-bg" role="landing page">
+        <div class="container-fluid main-headlines">
+          <h1 class="hero-text font-montserrat">
+            Everyday <span class="fancy-text fancy-large">G</span><span class="fancy-text fancy-small">ourmet</span>
+          </h1>
+          <div class="container-fluid arrow-wrapper">
+            <p class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </p>
+          </div>
+          <div
+            id="headline-one" 
+            class="fade-in-headlines aos-init"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
+            <p class="headlines font-montserrat center-text">
+            <br />
+              Hello and welcome to<br />
+              <br />
+              <span class="uppercase">EveryDay</span> <span class="fancy-text fancy-large">G</span><span class="fancy-text fancy-small">ourmet</span><br />
+              <br />
+              A premier wine pairing site.<br />
+              <br />
+            </p>
+          </div>
+          
+          <div
+            id="headline-two"
+            class="fade-in-headlines aos-init"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
+            <p class="headlines font-montserrat center-text">
+            <br />
+              Simply tell us <br />
+              what's on the menu.<br />
+              <br />
+              We'll suggest the best wine <br />
+              to pair with your meal.<br />
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section-one>
+
+    <!-- Footer / Main service/Wine Pairing section  -->
+
+    <footer class="container-fluid footer-sticky" role="main service">
+      
+      <div id="footer-details" class="row">
+        <div class="col center-text font-lora">
+        <h1 class="font-montserrat">Don't know which wine to choose?</h1>
+          Let us suggest a fantastic pairing.<br />
+          All you have to do is let us know,
+          <form>
+            <div class="form-group">
+              <label class="font-montserrat uppercase" for="inputMeal">what's on the menu?</label>
+              <input
+                type="meal"
+                class="form-control"
+                id="inputMeal"
+                aria-describedby="menuHelp"
+                placeholder="for example: Italian"
+              />
+              <small id="menuHelp" class="form-text text-muted font-lora"
+                >Tell us what you're planning to eat, the food to get a pairing
+                for. This can be a dish ("steak"), an ingredient ("salmon"), or
+                a cuisine ("italian").</small
+              >
+            </div>
+            <button type="submit" class="btn btn-primary font-montserrat">Submit</button>
+          </form>
+        </div>
+        <div class="col center-text" id="data">
+          Results output area
+        </div>
+      </div>
+
+      <!-- Social Media Links -->
+
+      <div class="container-fluid social-media-anchor">
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 center-text social-media-links card-footer">
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-pinterest" aria-hidden="true"></i>
+                <span class="sr-only">Pinterest</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+                <span class="sr-only">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/aos-global.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    
+  </body>
 </html>
