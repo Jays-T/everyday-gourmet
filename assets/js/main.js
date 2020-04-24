@@ -25,7 +25,7 @@ xhr.addEventListener("readystatechange", function () {
 xhr.open("GET", "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com");
 //xhr.open("GET", baseURL + food + '=' + $document.getElementById("inputMeal");
 xhr.setRequestHeader("x-rapidapi-host", "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com");
-xhr.setRequestHeader("x-rapidapi-key", "556f1a08acmsh72d41478bea3e6ap19227ajsn0bf8a497994a");
+xhr.setRequestHeader("x-rapidapi-key", "KEY HERE");
 
 xhr.send();
 
