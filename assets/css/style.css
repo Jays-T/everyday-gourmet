@@ -108,19 +108,28 @@ section-one {
   background: transparent;
 }
 
+.arrow-wrapper {
+    background-color: transparent;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+}
+
 /* Arrow by Rafael Amorim sourced from https://codepen.io/raf187/pen/BvgGRQ */
 .arrow{
-    
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    /*transform: translate(-50%,-50%);*/
 }
 .arrow span{
     display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid rgba(241, 75, 83, 0.8);
-    border-right: 5px solid rgba(241, 75, 83, 0.8);
+    width: 2rem;
+    height: 2rem;
+    border-bottom: 5px solid rgba(241, 75, 83, 0.2);
+    border-right: 5px solid rgba(241, 75, 83, 0.2);
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
