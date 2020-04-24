@@ -199,7 +199,10 @@ section-one {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top right;
+    display: flex;
+    flex-direction: column;
 }
+
 footer {
   position: sticky;
   padding-top: 7rem;
@@ -220,7 +223,9 @@ footer {
   border-radius: 50%;
 }
 
-                
+.social-media-anchor {
+    margin-top: auto;
+}                
 
 
 
