@@ -1,4 +1,13 @@
-/* ------------------------------ global styles and input/textarea styling */
+/* ------------------------------ global styles and font styling */
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
 
 input,textarea {
      width:100%;
@@ -175,26 +184,23 @@ section-one {
 }
 
 #headline-one {
-    margin: 24vh 16vw 22vh 16vw;
+    margin: 24vh 16vw 22vh 8vw;
 }
 
 #headline-two {
-    margin: 22vh 16vw;
-}
-
-#headline-three {
     margin: 22vh 16vw 70vh 16vw;
 }
 
 
 .headlines {
-    border: 8px solid rgb(70, 8, 8);
-    background-color: rgba(0, 0, 0, 0.8);
+    border-top: solid .5px rgba(236, 64, 73, 0.3);
+    border-bottom: solid .5px rgba(236, 64, 73, 0.3);
+    background: transparent;
     color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 1.5rem;
     letter-spacing: 0.2em;
-    box-shadow: .3rem .3rem .5rem rgba(243, 228, 228, 0.3);
+    
 }
 
 /* ------------------------------ Footer and Wine Pairing submit form */
@@ -287,6 +293,10 @@ footer {
 
         margin: 47vh 4vw 10vh 0;
     }
+    
+.headlines {
+    background: rgba(0, 0, 0, 0.6);
+}
 }
 
 @media screen and (max-width: 576px) {
@@ -307,6 +317,5 @@ footer {
     max-width: 95%;
     margin: 8vh 2vw;
 }
-
 }
 

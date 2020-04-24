@@ -17,7 +17,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300|Yellowtail:400,700" rel="stylesheet">
+    
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Everday Gourmet</title>
   </head>
@@ -54,7 +55,7 @@
     <section-one>
       <div class="container-fluid main-bg" role="landing page">
         <div class="container-fluid main-headlines">
-          <h1 class="hero-text">
+          <h1 class="hero-text font-montserrat">
             Everyday <span class="fancy-text fancy-large">G</span><span class="fancy-text fancy-small">ourmet</span>
           </h1>
           <div class="container-fluid arrow-wrapper">
@@ -70,7 +71,7 @@
             data-aos="zoom-in-up"
             data-aos-duration="1000"
           >
-            <button class="btn btn-primary headlines">
+            <p class="headlines font-lora">
             <br />
               Hello and welcome to<br />
               <br />
@@ -78,35 +79,16 @@
               <br />
               A premier wine pairing site.<br />
               <br />
-            </button>
+            </p>
           </div>
-
+          
           <div
             id="headline-two"
             class="fade-in-headlines aos-init"
             data-aos="zoom-in-up"
             data-aos-duration="1000"
           >
-            <button class="btn btn-primary headlines">
-            <br />
-              When you've worked<br /> 
-              hard to prepare <br />
-              the perfect meal<br />
-              <br />
-              the last thing <br />
-              you want to do <br />
-              is pick the wrong wine.<br />
-              <br />
-            </button>
-          </div>
-
-          <div
-            id="headline-three"
-            class="fade-in-headlines aos-init"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-          >
-            <button class="btn btn-primary headlines">
+            <p class="headlines font-lora">
             <br />
               Simply tell us <br />
               what's on the menu.<br />
@@ -114,7 +96,7 @@
               We'll suggest the best wine <br />
               to pair with your meal.<br />
               <br />
-            </button>
+            </p>
           </div>
         </div>
       </div>
@@ -123,14 +105,14 @@
     <!-- Footer / Main service/Wine Pairing section  -->
 
     <footer class="container-fluid footer-sticky" role="main service">
-      <h1>Don't know which wine to choose?</h1>
+      <h1 class="font-montserrat">Don't know which wine to choose?</h1>
       <div id="footer-details" class="row">
-        <div class="col center-text">
+        <div class="col center-text font-lora">
           Let us suggest a fantastic pairing.<br />
           All you have to do is let us know,
           <form>
             <div class="form-group">
-              <label for="inputMeal">what's on the menu?</label>
+              <label class="font-montserrat" for="inputMeal">what's on the menu?</label>
               <input
                 type="meal"
                 class="form-control"
@@ -138,13 +120,13 @@
                 aria-describedby="menuHelp"
                 placeholder="for example: Italian"
               />
-              <small id="menuHelp" class="form-text text-muted"
+              <small id="menuHelp" class="form-text text-muted font-lora"
                 >Tell us what you're planning to eat, the food to get a pairing
                 for. This can be a dish ("steak"), an ingredient ("salmon"), or
                 a cuisine ("italian").</small
               >
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary font-montserrat">Submit</button>
           </form>
         </div>
         <div class="col center-text" id="data">
