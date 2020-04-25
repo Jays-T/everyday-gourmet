@@ -22,19 +22,8 @@
   </head>
 
   <body>
-    <style>
-      .intro {
-        font-size: 120%;
-        color: red;
-      }
-    </style>
+    
 
-    <h1>This is a heading</h1>
-
-    <p class="intro">This is a paragraph.</p>
-    <p>This is another paragraph.</p>
-
-    <button>Does any p element have an "intro" class?</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -42,29 +31,6 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-      $(document).ready(function () {
-        $("button").click(function () {
-          alert($("p").hasClass("intro"));
-        });
-      });
-    </script>
-
-    <script>
-            $(function (easyScroll) {
-              $("#headline-one")[0].scrollIntoView({
-                behavior: "smooth",
-                block: "center",
-              });
-            });
-
-            $(".arrow, .arrow2").click(function() {
-
-          var target = $(this.target);
-
-          if (target.hasClass("arrow")) {
-              $(easyScroll)
-          };
-          }
 
           document.querySelectorAll(`.arrow`)].forEach(el => el.addEventListener(_ => {
           $("#headline-one")[0].scrollIntoView({
