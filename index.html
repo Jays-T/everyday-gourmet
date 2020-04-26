@@ -67,10 +67,12 @@
         console.log($('#max-price').val());
       }); */
 
+      var baseURL =
+        "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?";
+      var basePrice = `maxPrice=`;
+      var baseMenu = `&food=`;
+
       $("#get-wine-pairing").click(function () {
-        let baseURL = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?";
-        let basePrice = `maxPrice=`;
-        let baseMenu = `&food=`;
         let inputPrice = document.getElementById("max-price").value;
         let inputMenu = document.getElementById("my-food").value;
 
@@ -78,10 +80,7 @@
         console.log(baseMenu);
         console.log(inputPrice);
         console.log(inputMenu);
-
       });
-
-
     </script>
   </body>
 </html>
