@@ -1,4 +1,8 @@
 /* ------------------------------ global styles and font styling */
+.blur {
+    filter: blur(4px);
+}
+
 .font-lora {
     font-family: 'Lora', serif;
 }
@@ -221,7 +225,7 @@ section-one {
 }
 
 .footer-sticky {
-    background-color: rgba(224, 18, 28, 0.3);
+    background-color: rgba(173, 158, 159, 0.3);
     background-image: url("../images/red-wine-pouring-into-glass-1000x1320.png");
     background-size: contain;
     background-repeat: no-repeat;

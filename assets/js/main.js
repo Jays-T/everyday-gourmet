@@ -1,5 +1,5 @@
 
-// Front page animated arrow scroll functions 
+// Front page scroll functions 
 
 
 $(".arrow").click(function() {
@@ -9,61 +9,47 @@ $(".arrow").click(function() {
     });
 });
 
-// XMLRequest for spoonacular API  
-/*
-var data = null;
 
-var xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
 
-xhr.addEventListener("readystatechange", function () {
-	if (this.readyState === this.DONE) {
-		console.log(this.responseText);
-	}
+
+// Blur effect 
+
+// When hovering on Wine Pairing
+
+$('#wine-pairing').mouseenter(function(){
+    $('#contact, #home-icon, .main-headlines').addClass('blur');
 });
 
-xhr.open("GET", "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?maxPrice=50&food=fish");
-xhr.setRequestHeader("x-rapidapi-host", "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com");
-xhr.setRequestHeader("x-rapidapi-key", "556f1a08acmsh72d41478bea3e6ap19227ajsn0bf8a497994a");
+$('#wine-pairing').mouseleave(function(){
+    $('#contact, #home-icon, .main-headlines').removeClass('blur');
+});
 
-xhr.send(data);
+// When hovering on Contact
 
-// 
+$('#contact').mouseenter(function(){
+    $('#wine-pairing, #home-icon, .main-headlines').addClass('blur');
+});
 
-const Url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?";
+$('#contact').mouseleave(function(){
+    $('#wine-pairing, #home-icon, .main-headlines').removeClass('blur');
+});
 
-$('#get-wine-sug').click(function(xhr) {
-    $.get(Url, function(data,status){
-        console.log(`$data`);
-    });
-}); */
+// When hovering on Home Icon
 
+$('#home-icon').mouseenter(function(){
+    $('#wine-pairing, #contact, .main-headlines').addClass('blur');
+});
 
-    $("#get-wine-pairing").click(getWine);
-      
-    const wURL = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?";
+$('#home-icon').mouseleave(function(){
+    $('#wine-pairing, #contact, .main-headlines').removeClass('blur');
+});
 
-    let inputPrice = "maxPrice=" + document.getElementById("max-price").value;
-    let inputMenu = "&food=" + document.getElementById("my-food").value;
+/*   
 
-      function getWine() {
-        fetch(
-          wURL + inputPrice + inputMenu,
-          {
-            method: "GET",
-            headers: {
-              "x-rapidapi-host":
-                "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-              "x-rapidapi-key":
-                "556f1a08acmsh72d41478bea3e6ap19227ajsn0bf8a497994a",
-            },
-          }
-        )
-          .then((response) => {
-            document.getElementById("data-wine-suggestion").innerHTML(response);
-            console.log(response);
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      }
+$("button").mouseenter(function() {
+  $("button").removeClass('make-red').addClass('make-border');
+});
+$("button").mouseleave(function() {
+  $("button").removeClass('make-border').addClass('make-red');
+});
+*/
