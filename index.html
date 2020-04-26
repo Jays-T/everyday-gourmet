@@ -37,7 +37,7 @@
     <header id="home">
       <div class="container-fluid" role="navigation">
         <div class="navbar navbar-fixed-transparent">
-          <a class="navbar-brand" href="#home">
+          <a class="navbar-brand font-montserrat" href="#home">
             <i
               id="home-icon"
               class="fas fa-home"
@@ -125,58 +125,50 @@
 
     <footer class="container-fluid footer-sticky" role="main service">
       <div id="footer-details" class="row">
-        <div class="col center-text font-lora">
-          <h1 class="font-montserrat">Don't know which wine to choose?</h1>
-          Let us suggest a fantastic pairing.<br />
-          All you have to do is let us know,
-          <form>
-            <div class="form-group">
-              <label class="font-montserrat dark-text uppercase" for="inputMeal"
-                >what's on the menu?</label
-              >
-              <input
-                type="meal"
-                class="form-control"
-                id="my-food"
-                aria-describedby="menuHelp"
-                placeholder="example: Steak"
-              />
-              <input
-                type="maxPrice"
-                class="form-control"
-                id="max-price"
-                aria-describedby="menuHelp"
-                placeholder="example: 50"
-              />
-              <small id="menuHelp" class="form-text text-muted font-lora border"
-                >Tell us what you're planning to eat, the food to get a pairing
-                for. This can be a dish ("steak"), an ingredient ("salmon"), or
-                a cuisine ("italian").</small
-              >
-            </div>
-            <button type="submit" class="btn btn-primary font-montserrat" id="get-wine-pairing">
-              Submit
-            </button>
-          </form>
-        </div>
-        <div class="col center-text font-montserrat dark-text" id="data-steak">
-        <div class="btn btn-secondary">
-          <p>
-            "Merlot, Cabernet Sauvignon, and Pinot Noir are our top picks for
-            Steak. <br />
-            The Franciscan Estate Merlot with a 4.3 out of 5 star rating seems
-            like a good match. It costs about 25 dollars per bottle."
-            <img
-              url="https://spoonacular.com/productImages/443286-312x231.jpg"
-            />
-            <a
-              href="https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Ffranciscan-estate-merlot-1998%2F7308"
-               target="_blank">Shop Wine</a
+      <div class="col center-text font-lora">
+        <h1 class="font-montserrat">Don't know which wine to choose?</h1>
+        Let us suggest a fantastic pairing.<br />
+        All you have to do is let us know,
+        <form>
+          <div class="form-group">
+            <label class="font-montserrat dark-text uppercase" for="inputMeal"
+              >what's on the menu?</label
             >
-          </p>
+            <input
+              type="meal"
+              class="form-control"
+              id="my-food"
+              aria-describedby="menuHelp"
+              placeholder="example: Steak"
+            />
+            <input
+              type="maxPrice"
+              class="form-control"
+              id="max-price"
+              aria-describedby="menuHelp"
+              placeholder="example: 50"
+            />
+            <small id="menuHelp" class="form-text text-muted font-lora"
+              >Tell us what you're planning to eat, the food to get a pairing
+              for. This can be a dish ("steak"), an ingredient ("salmon"), or a
+              cuisine ("italian").</small
+            >
           </div>
-        </div>
+          <button
+            type="submit"
+            class="btn btn-primary font-montserrat"
+            id="get-wine-pairing"
+          >
+            Get Wine Pairing
+          </button>
+        </form>
       </div>
+      <div
+        class="col center-text font-montserrat dark-text"
+        id="data-wine-suggestion"
+      ></div>
+    </div>
+        
 
       <!-- Social Media Links -->
 

@@ -63,9 +63,9 @@ html h1 {
     font-weight: 700;
 }
 
-.navbar i:hover {
-  color: rgba(229, 255, 0, 0.8);
-  font-weight: bold;
+.navbar a:hover {
+  color: rgba(236, 64, 73, 0.4);
+  
 }
 
 /* ------------------------------ section-one */
