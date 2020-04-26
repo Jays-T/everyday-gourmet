@@ -137,9 +137,16 @@
               <input
                 type="meal"
                 class="form-control"
-                id="inputMeal"
+                id="my-food"
                 aria-describedby="menuHelp"
                 placeholder="example: Steak"
+              />
+              <input
+                type="maxPrice"
+                class="form-control"
+                id="max-price"
+                aria-describedby="menuHelp"
+                placeholder="example: 50"
               />
               <small id="menuHelp" class="form-text text-muted font-lora border"
                 >Tell us what you're planning to eat, the food to get a pairing
@@ -147,7 +154,7 @@
                 a cuisine ("italian").</small
               >
             </div>
-            <button type="submit" class="btn btn-primary font-montserrat">
+            <button type="submit" class="btn btn-primary font-montserrat" id="get-wine-pairing">
               Submit
             </button>
           </form>
