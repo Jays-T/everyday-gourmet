@@ -1,3 +1,11 @@
+$(".chat-box-textarea_2V28W").click(function () {
+  console.log($(".chat-box-textarea_2V28W").val());
+});
+
+console.log($(".bananas").val());
+
+
+/*
 let price = document.getElementById("max-price");
 let menu = document.getElementById("my-food");
 
@@ -7,21 +15,10 @@ document.querySelector('form.form-group').addEventListener('#get-wine-pairing', 
     e.preventDefault();
 
     console.log(price.value, menu.value);    
-});
+});  */
 
 
 
-
-/*let inputPrice = `maxPrice=${document.getElementById("max-price").value}`;
-let inputMenu = `&food=${document.getElementById("my-food").value}`;
-    
-console.log(inputPrice);
-console.log(inputMenu);
-    
-    
-    
- $("#get-wine-pairing").click(console.log(inputPrice, inputMenu));
-    */
     
     /* 
     

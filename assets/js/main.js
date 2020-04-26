@@ -1,6 +1,5 @@
 
-// Front page scroll functions 
-
+// Main page scroll functions 
 
 $(".arrow").click(function() {
   $("#headline-one")[0].scrollIntoView({
@@ -9,10 +8,7 @@ $(".arrow").click(function() {
     });
 });
 
-
-
-
-// Blur effect 
+// Blur effect using addClass
 
 // When hovering on Wine Pairing
 
@@ -43,4 +39,3 @@ $('#home-icon').mouseenter(function(){
 $('#home-icon').mouseleave(function(){
     $('#wine-pairing, #contact, .main-headlines').removeClass('blur');
 });
-
