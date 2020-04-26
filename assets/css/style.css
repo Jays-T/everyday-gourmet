@@ -72,8 +72,8 @@ html h1 {
   
 }
 
-/* ------------------------------ section-one */
-section-one {
+/* ------------------------------ section */
+section {
   position: relative;
   z-index: 3;
    
@@ -151,6 +151,7 @@ section-one {
     display: inline-block;
     text-align: center;
     align-content: center;
+    width: 100%;
 }
 
 /* Arrow by Rafael Amorim sourced from https://codepen.io/raf187/pen/BvgGRQ */

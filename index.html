@@ -27,7 +27,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Everday Gourmet</title>
   </head>
 
@@ -42,7 +42,6 @@
               id="home-icon"
               class="fas fa-home"
               aria-hidden="true"
-              alt="Find the perfect wine pairing"
             ></i>
             <span class="sr-only">home</span>
           </a>
@@ -69,13 +68,13 @@
     <!-- Main landing page and fade in headlines -->
 
     <section-one>
-      <div class="container-fluid main-bg" role="landing page">
-        <div class="container-fluid main-headlines">
+      <div class="container-fluid main-bg">
+        <div class="main-headlines">
           <h1 class="hero-text font-montserrat border-thin">
             Everyday <span class="fancy-text fancy-large">G</span
             ><span class="fancy-text fancy-small">ourmet</span>
           </h1>
-          <div class="container-fluid arrow-wrapper">
+          <div class="arrow-wrapper">
             <p class="arrow">
               <span></span>
               <span></span>
@@ -123,50 +122,49 @@
 
     <!-- Footer / Main service/Wine Pairing section  -->
 
-    <footer class="container-fluid footer-sticky" role="main service">
-      <div id="footer-details" class="row">
-      <div class="col center-text font-lora">
-        <h1 class="font-montserrat">Don't know which wine to choose?</h1>
-        Let us suggest a fantastic pairing.<br />
-        All you have to do is let us know,
-        <form>
-          <div class="form-group">
-            <label class="font-montserrat dark-text uppercase" for="inputMeal"
-              >what's on the menu?</label
+    <footer class="container-fluid footer-sticky">
+      <div class="row">
+        <div class="col center-text font-lora">
+          <h1 class="font-montserrat">Don't know which wine to choose?</h1>
+          Let us suggest a fantastic pairing.<br />
+          All you have to do is let us know,
+          <form>
+            <div class="form-group">
+              <label class="font-montserrat dark-text uppercase"
+                >what's on the menu?</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="my-food"
+                aria-describedby="menuHelp"
+                placeholder="example: Steak"
+              />
+              <small id="menuHelp" class="form-text text-muted font-lora"
+                >Tell us what you're planning to eat, the food to get a pairing
+                for. This can be a dish ("steak"), an ingredient ("salmon"), or
+                a cuisine ("italian").</small
+              >
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary font-montserrat"
+              id="get-wine-pairing"
             >
-            <input
-              type="text"
-              class="form-control"
-              id="my-food"
-              aria-describedby="menuHelp"
-              placeholder="example: Steak"
-            />
-            <small id="menuHelp" class="form-text text-muted font-lora"
-              >Tell us what you're planning to eat, the food to get a pairing
-              for. This can be a dish ("steak"), an ingredient ("salmon"), or a
-              cuisine ("italian").</small
-            >
-          </div>
-          <button
-            type="submit"
-            class="btn btn-primary font-montserrat"
-            id="get-wine-pairing"
-          >
-            Get Wine Pairing
-          </button>
-        </form>
+              Get Wine Pairing
+            </button>
+          </form>
+        </div>
+        <div
+          class="col center-text font-montserrat dark-text"
+          id="data-wine-suggestion"
+        ></div>
       </div>
-      <div
-        class="col center-text font-montserrat dark-text"
-        id="data-wine-suggestion"
-      ></div>
-    </div>
-        
 
       <!-- Social Media Links -->
 
-      <div class="container-fluid social-media-anchor">
-        <div class="row">
+      <div class="social-media-anchor">
+        <div class="row social-media-anchor">
           <div class="col-sm-4"></div>
           <div class="col-sm-4 center-text social-media-links card-footer">
             <ul class="list-inline social-links">
@@ -209,7 +207,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-4"></div>
+        <div id="footer-details" class="col-sm-4"></div>
       </div>
     </footer>
 
