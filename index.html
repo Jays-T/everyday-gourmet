@@ -38,11 +38,7 @@
       <div class="container-fluid" role="navigation">
         <div class="navbar navbar-fixed-transparent">
           <a class="navbar-brand font-montserrat" href="#home">
-            <i
-              id="home-icon"
-              class="fas fa-home"
-              aria-hidden="true"
-            ></i>
+            <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
             <span class="sr-only">home</span>
           </a>
           <a
@@ -129,38 +125,38 @@
           Let us suggest a fantastic pairing.<br />
           All you have to do is let us know,
           <form>
-      <div class="form-group">
-        <label class="font-montserrat dark-text uppercase"
-          >what's on the menu?</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="my-food"
-          aria-describedby="menuHelp"
-          placeholder="example: Steak"
-        />
-        <input
-          type="text"
-          class="form-control"
-          id="max-price"
-          aria-describedby="menuHelp"
-          placeholder="example: 50"
-        />
-        <small id="menuHelp" class="form-text text-muted font-lora"
-          >Tell us what you're planning to eat, the food to get a pairing for.
-          This can be a dish ("steak"), an ingredient ("salmon"), or a cuisine
-          ("italian").</small
-        >
-      </div>
-      <button
-        type="button"
-        class="btn btn-primary font-montserrat"
-        id="get-wine-pairing"
-      >
-        Get Wine Pairing
-      </button>
-    </form>
+            <div class="form-group">
+              <label class="font-montserrat dark-text uppercase"
+                >what's on the menu?</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="my-food"
+                aria-describedby="menuHelp"
+                placeholder="example: Steak"
+              />
+              <input
+                type="text"
+                class="form-control"
+                id="max-price"
+                aria-describedby="menuHelp"
+                placeholder="example: 50"
+              />
+              <small id="menuHelp" class="form-text text-muted font-lora"
+                >Tell us what you're planning to eat, the food to get a pairing
+                for. This can be a dish ("steak"), an ingredient ("salmon"), or
+                a cuisine ("italian").</small
+              >
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary font-montserrat"
+              id="get-wine-pairing"
+            >
+              Get Wine Pairing
+            </button>
+          </form>
         </div>
         <div
           class="col center-text font-montserrat dark-text"
@@ -214,9 +210,9 @@
             </ul>
           </div>
         </div>
-        <div id="footer-details" class="col-sm-4"></div>
       </div>
     </footer>
+    <div id="footer-details" class="col-sm-4"></div>
 
     <!-- Scripts -->
 
@@ -240,23 +236,23 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-    
-    var baseURL ="https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?";
-      var basePrice = maxPrice=;
-      var baseMenu = &food=;
+      var baseURL =
+        "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?";
+      var basePrice = `maxPrice=`;
+      var baseMenu = `&food=`;
 
       function getMenu() {
         let inputPrice = document.getElementById("max-price").value;
         let inputMenu = document.getElementById("my-food").value;
         let pairingURL =
-          baseURL + basePrice + inputPrice + baseMenu + inputMenu;        console.log(baseURL);
+          baseURL + basePrice + inputPrice + baseMenu + inputMenu;
         console.log(basePrice);
         console.log(baseMenu);
         console.log(inputPrice);
         console.log(inputMenu);
         console.log(pairingURL);
-        getWine(pairingURL);
       }
+
       function getWine(pairingURL) {
         fetch(pairingURL, {
           method: "GET",
@@ -268,16 +264,20 @@
           },
         })
           .then((response) => {
-            document.getElementById("data-wine-suggestion").innerHTML(response);
-            console.log(response);
+            return response.json();
+          })
+          .then((data) => {
+            // Work with JSON data here
+            console.log(data);
           })
           .catch((err) => {
-            console.log(err);
+            console.log(err)
           });
       }
-      $("#get-wine-pairing").click(function(){
-          getMenu();
+      $("#get-wine-pairing").click(function () {
+        getMenu();
+        getWine();
       });
-      </script>
+    </script>
   </body>
 </html>

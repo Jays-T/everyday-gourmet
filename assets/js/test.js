@@ -97,3 +97,45 @@ xhr.setRequestHeader("x-rapidapi-key", "556f1a08acmsh72d41478bea3e6ap19227ajsn0b
 xhr.send(data);
 
 */
+
+
+
+  $( document ).ready(function() {
+          $("#get-wine-pairing").click(function () {
+              let inputPrice = document.getElementById("max-price").value;
+              let inputMenu = document.getElementById("my-food").value;
+              let pairingURL =
+                baseURL + basePrice + inputPrice + baseMenu + inputMenu;
+              console.log(basePrice);
+              console.log(baseMenu);
+              console.log(inputPrice);
+              console.log(inputMenu);
+              console.log(pairingURL);
+              getWine(pairingURL)
+          });
+      });
+      def getWine(pairingURL){
+        alert(pairingURL)
+      }
+            
+            
+            function getWine() {
+                fetch(pairingURL, {
+                  method: "GET",
+                  headers: {
+                    "x-rapidapi-host":
+                      "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+                    "x-rapidapi-key":
+                      "556f1a08acmsh72d41478bea3e6ap19227ajsn0bf8a497994a",
+                  },
+                })
+                  .then((response) => {
+                    document
+                      .getElementById("data-wine-suggestion")
+                      .innerHTML(response);
+                    console.log(response);
+                  })
+                  .catch((err) => {
+                    console.log(err);
+                  });
+              }

@@ -48,6 +48,20 @@ html h1 {
     border-bottom: solid .5px rgba(236, 64, 73, 0.4);
 }
 
+/* ------------------------------ Navbar hover styling */
+
+.light-border-thin {
+    
+    border-top: solid .5px rgb(173, 158, 159);
+    border-bottom: solid .5px rgb(173, 158, 159);
+    transition: all .2s ease-in-out; 
+    transform: scaleX(1.4);
+}
+
+.navbar a:hover {
+        color: rgba(241, 75, 83, 0.8);
+}
+
 /* ------------------------------ Navbar styling */
 
 .navbar-fixed-transparent {
@@ -61,15 +75,6 @@ html h1 {
     top:0;
     left: 0;
     min-width: 90vw;
-}
-
-.navbar i {
-    font-weight: 700;
-}
-
-.navbar a:hover {
-  color: rgba(136, 16, 22, 0.4);
-  font-weight: bold;
 }
 
 /* ------------------------------ Main content Styling */
@@ -126,17 +131,6 @@ html h1 {
     padding: 10px;
     letter-spacing: 0.2em;
 
-}
-
-.circle {
-  height: 70px;
-  width: 70px;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 50%; /* may require vendor prefixes */
-  border: solid 1px rgba(51, 47, 47, 0.3);;
-  background: transparent;
 }
 
 .arrow-wrapper {

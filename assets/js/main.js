@@ -13,10 +13,12 @@ $(".arrow").click(function() {
 // When hovering on Wine Pairing
 
 $('#wine-pairing').mouseenter(function(){
+    $(this).first().addClass('light-border-thin');
     $('#contact, #home-icon, .main-headlines').addClass('blur');
 });
 
 $('#wine-pairing').mouseleave(function(){
+    $(this).removeClass('light-border-thin');
     $('#contact, #home-icon, .main-headlines').removeClass('blur');
 });
 
