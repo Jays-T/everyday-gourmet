@@ -236,10 +236,13 @@
     <script src="assets/js/main.js"></script>
 
     <script>
+        /*   variables to store the base url and standard params to be passed to the url */
       var baseURL =
         "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?";
       var basePrice = `maxPrice=`;
       var baseMenu = `&food=`;
+
+      /* function to get the value of the input areas in the form and store them in variables */
 
       function getMenu() {
         let inputPrice = document.getElementById("max-price").value;
@@ -253,6 +256,8 @@
         console.log(pairingURL);
       }
 
+      /* function to pass all parameters stored in variables to pairingURL and send a GET request to the API */
+
       function getWine(pairingURL) {
         fetch(pairingURL, {
           method: "GET",
@@ -263,17 +268,26 @@
               "556f1a08acmsh72d41478bea3e6ap19227ajsn0bf8a497994a",
           },
         })
-          .then((response) => {
-            return response.json();
+          .then(function (response) {
+            if (response.status !== 200) {
+              console.log(
+                "Looks like there was a problem. Status Code: " +
+                  response.status
+              );
+              return;
+            }
+
+            /* Examine the text in the response THIS IS WHERE THE CODE CURRENTLY BREAKS */
+            response.json().then(function (data) {
+              console.log(data);
+            });
           })
-          .then((data) => {
-            // Work with JSON data here
-            console.log(data);
-          })
-          .catch((err) => {
-            console.log(err)
+          .catch(function (err) {
+            console.log("Fetch Error :-S", err);
           });
       }
+
+    
       $("#get-wine-pairing").click(function () {
         getMenu();
         getWine();
