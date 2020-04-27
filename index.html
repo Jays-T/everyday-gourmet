@@ -7,16 +7,128 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300,700|Yellowtail:400,700"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Everday Gourmet</title>
   </head>
 
   <body>
     <!-- Navigation -->
 
-    <!-- Scripts -->
+    <header id="home">
+      <div class="container-fluid" role="navigation">
+        <div class="navbar navbar-fixed-transparent">
+          <a class="navbar-brand font-montserrat" href="#home">
+            <i
+              id="home-icon"
+              class="fas fa-home"
+              aria-hidden="true"
+            ></i>
+            <span class="sr-only">home</span>
+          </a>
+          <a
+            id="contact"
+            class="navbar-brand font-montserrat uppercase"
+            href="contact.html"
+          >
+            Contact
+            <span class="sr-only">Contact Page</span>
+          </a>
+          <a
+            id="wine-pairing"
+            class="navbar-brand font-montserrat uppercase"
+            href="#footer-details"
+          >
+            Wine Pairing
+            <span class="sr-only">Wine Pairing</span>
+          </a>
+        </div>
+      </div>
+    </header>
 
-    <form>
+    <!-- Main landing page and fade in headlines -->
+
+    <section-one>
+      <div class="container-fluid main-bg">
+        <div class="main-headlines">
+          <h1 class="hero-text font-montserrat border-thin">
+            Everyday <span class="fancy-text fancy-large">G</span
+            ><span class="fancy-text fancy-small">ourmet</span>
+          </h1>
+          <div class="arrow-wrapper">
+            <p class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </p>
+          </div>
+          <div
+            id="headline-one"
+            class="fade-in-headlines aos-init"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
+            <p class="headlines font-montserrat center-text border-thin">
+              <br />
+              Hello and welcome to<br />
+              <br />
+              <span class="uppercase">EveryDay</span>
+              <span class="fancy-text fancy-large">G</span
+              ><span class="fancy-text fancy-small">ourmet</span><br />
+              <br />
+              A premier wine pairing site.<br />
+              <br />
+            </p>
+          </div>
+
+          <div
+            id="headline-two"
+            class="fade-in-headlines aos-init"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
+            <p class="headlines font-montserrat center-text border-thin">
+              <br />
+              Simply tell us <br />
+              what's on the menu.<br />
+              <br />
+              We'll suggest the best wine <br />
+              to pair with your meal.<br />
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section-one>
+
+    <!-- Footer / Main service/Wine Pairing section  -->
+
+    <footer class="container-fluid footer-sticky">
+      <div class="row">
+        <div class="col center-text font-lora">
+          <h1 class="font-montserrat">Don't know which wine to choose?</h1>
+          Let us suggest a fantastic pairing.<br />
+          All you have to do is let us know,
+          <form>
       <div class="form-group">
         <label class="font-montserrat dark-text uppercase"
           >what's on the menu?</label
@@ -42,13 +154,71 @@
         >
       </div>
       <button
-        type="submit"
+        type="button"
         class="btn btn-primary font-montserrat"
         id="get-wine-pairing"
       >
         Get Wine Pairing
       </button>
     </form>
+        </div>
+        <div
+          class="col center-text font-montserrat dark-text"
+          id="data-wine-suggestion"
+        ></div>
+      </div>
+
+      <!-- Social Media Links -->
+
+      <div class="social-media-anchor">
+        <div class="row social-media-anchor">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4 center-text social-media-links card-footer">
+            <ul class="list-inline social-links">
+              <li class="list-inline-item">
+                <a target="_blank" href="#">
+                  <i class="fab fa-facebook" aria-hidden="true"></i>
+                  <span class="sr-only">Facebook</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="#">
+                  <i class="fab fa-twitter" aria-hidden="true"></i>
+                  <span class="sr-only">Twitter</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="#">
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  <span class="sr-only">LinkedIn</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="#">
+                  <i class="fab fa-pinterest" aria-hidden="true"></i>
+                  <span class="sr-only">Pinterest</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="#">
+                  <i class="fab fa-instagram" aria-hidden="true"></i>
+                  <span class="sr-only">Instagram</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="#">
+                  <i class="fab fa-youtube" aria-hidden="true"></i>
+                  <span class="sr-only">YouTube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="footer-details" class="col-sm-4"></div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -60,27 +230,54 @@
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/aos-global.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <script>
-      /* $("#get-wine-pairing").click(function () {
-        console.log($('#my-food').val());
-        console.log($('#max-price').val());
-      }); */
+    
+    var baseURL ="https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?";
+      var basePrice = maxPrice=;
+      var baseMenu = &food=;
 
-      var baseURL =
-        "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?";
-      var basePrice = `maxPrice=`;
-      var baseMenu = `&food=`;
-
-      $("#get-wine-pairing").click(function () {
+      function getMenu() {
         let inputPrice = document.getElementById("max-price").value;
         let inputMenu = document.getElementById("my-food").value;
-
+        let pairingURL =
+          baseURL + basePrice + inputPrice + baseMenu + inputMenu;        console.log(baseURL);
         console.log(basePrice);
         console.log(baseMenu);
         console.log(inputPrice);
         console.log(inputMenu);
+        console.log(pairingURL);
+        getWine(pairingURL);
+      }
+      function getWine(pairingURL) {
+        fetch(pairingURL, {
+          method: "GET",
+          headers: {
+            "x-rapidapi-host":
+              "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+            "x-rapidapi-key":
+              "556f1a08acmsh72d41478bea3e6ap19227ajsn0bf8a497994a",
+          },
+        })
+          .then((response) => {
+            document.getElementById("data-wine-suggestion").innerHTML(response);
+            console.log(response);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      }
+      $("#get-wine-pairing").click(function(){
+          getMenu();
       });
-    </script>
+      </script>
   </body>
 </html>
