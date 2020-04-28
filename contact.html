@@ -28,6 +28,7 @@
     />
 
     <link rel="stylesheet" href="assets/css/style.css" />
+
     <title>Everyday Gourmet Contact Us</title>
   </head>
 
@@ -35,7 +36,7 @@
     <!-- Navigation -->
 
     <header id="home">
-      <div class="container-fluid" role="navigation">
+      <div class="container-fluid">
         <div class="navbar navbar-fixed-transparent">
           <a class="navbar-brand" href="index.html">
             <i
@@ -60,95 +61,95 @@
     <!-- Main content / Contact Us Email Form -->
 
     <div class="container-fluid footer-sticky contact-us-page">
-      <div id="headline-two" class="btn-group">
-        <button
-          type="button"
-          class="btn dropdown-toggle"
-          data-toggle="dropdown"
-          data-display="static"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          <p class="headlines font-montserrat center-text">
-            <br />
-            What's on the menu?<br />
-            <br />
-          </p>
-        </button>
-        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
-          <button class="dropdown-item" type="button">Action</button>
-          <button class="dropdown-item" type="button">Another action</button>
-          <button class="dropdown-item" type="button">
-            Something else here
-          </button>
-        </div>
-      </div>
-      <div class="col center-text font-montserrat dark-text" id="data-steak">
-        <div class="btn btn-secondary">
-          <p>
-            "Merlot, Cabernet Sauvignon, and Pinot Noir are our top picks for
-            Steak. <br />
-            The Franciscan Estate Merlot with a 4.3 out of 5 star rating seems
-            like a good match. It costs about 25 dollars per bottle."
-            <img
-              url="https://spoonacular.com/productImages/443286-312x231.jpg"
+      <div class="row">
+        <div class="col-6">
+          <h3 class="contact-heading uppercase text-center">Contact us</h3>
+          <h5 class="uppercase text-center">We'd love to hear from you</h5>
+
+          <form onsubmit="return sendMail(this);" id="emailform">
+            <label>from_name</label>
+            <input
+              type="text"
+              name="from_name"
+              class="form-control"
+              id="customername"
+              placeholder="Name"
+              required
             />
-            <a
-              href="https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Ffranciscan-estate-merlot-1998%2F7308"
-               target="_blank">Shop Wine</a
-            >
-          </p>
-          </div>
+            <label>from_email</label>
+            <input
+              type="text"
+              name="from_email"
+              class="form-control"
+              id="emailaddress"
+              placeholder="Email"
+              required
+            />
+            <label>content_everyday_gourmet</label>
+            <textarea
+              rows="5"
+              name="content_everyday_gourmet"
+              class="form-control"
+              id="emailcontent"
+              placeholder="Project Description"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-secondary center-block">
+              Send Email
+            </button>
+          </form>
         </div>
-
-      <!-- Social Media Links -->
-
-      <div class="container-fluid social-media-anchor">
-        <div class="row">
-          <div class="col-sm-4"></div>
-          <div class="col-sm-4 center-text social-media-links card-footer">
-            <ul class="list-inline social-links">
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-facebook" aria-hidden="true"></i>
-                  <span class="sr-only">Facebook</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-twitter" aria-hidden="true"></i>
-                  <span class="sr-only">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-linkedin" aria-hidden="true"></i>
-                  <span class="sr-only">LinkedIn</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-pinterest" aria-hidden="true"></i>
-                  <span class="sr-only">Pinterest</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-instagram" aria-hidden="true"></i>
-                  <span class="sr-only">Instagram</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-youtube" aria-hidden="true"></i>
-                  <span class="sr-only">YouTube</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4"></div>
       </div>
+      <div class="col-6">
+      </div>
+    </div>
+    <!-- Social Media Links -->
+
+    <div class="container-fluid social-media-anchor">
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 center-text social-media-links card-footer">
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-pinterest" aria-hidden="true"></i>
+                <span class="sr-only">Pinterest</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+                <span class="sr-only">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
     </div>
 
     <script
@@ -166,12 +167,19 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/aos-global.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    <script>
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_uwE1zr6VGq2l3SFfii47C");
+      })();
     </script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/sendemail.js"></script>
+
+    <script></script>
   </body>
 </html>

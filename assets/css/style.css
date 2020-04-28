@@ -10,6 +10,10 @@
 .font-montserrat {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    
+}
+
+.light-text {
     color: #999;
 }
 
@@ -213,7 +217,7 @@ html h1 {
 }
 
 .footer-sticky {
-    background-color: rgba(173, 158, 159, 0.3);
+    background-color: rgba(73, 67, 67, 0.3);
     background-image: url("../images/red-wine-pouring-into-glass-1000x1320.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -231,6 +235,7 @@ footer {
 }
 
 .contact-us-page {
+  
   position: relative;
   padding-top: 7rem;
   bottom: 0;

@@ -13,7 +13,7 @@ $(".arrow").click(function() {
 // When hovering on Wine Pairing
 
 $('#wine-pairing').mouseenter(function(){
-    $(this).first().addClass('light-border-thin');
+    $(this).addClass('light-border-thin');
     $('#contact, #home-icon, .main-headlines').addClass('blur');
 });
 
@@ -25,19 +25,23 @@ $('#wine-pairing').mouseleave(function(){
 // When hovering on Contact
 
 $('#contact').mouseenter(function(){
+    $(this).addClass('light-border-thin');
     $('#wine-pairing, #home-icon, .main-headlines').addClass('blur');
 });
 
 $('#contact').mouseleave(function(){
+    $(this).removeClass('light-border-thin');
     $('#wine-pairing, #home-icon, .main-headlines').removeClass('blur');
 });
 
 // When hovering on Home Icon
 
 $('#home-icon').mouseenter(function(){
+    $(this).addClass('light-border-thin');
     $('#wine-pairing, #contact, .main-headlines').addClass('blur');
 });
 
 $('#home-icon').mouseleave(function(){
+    $(this).removeClass('light-border-thin');
     $('#wine-pairing, #contact, .main-headlines').removeClass('blur');
 });

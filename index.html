@@ -37,13 +37,13 @@
     <header id="home">
       <div class="container-fluid" role="navigation">
         <div class="navbar navbar-fixed-transparent">
-          <a class="navbar-brand font-montserrat" href="#home">
+          <a class="navbar-brand font-montserrat light-text" href="#home">
             <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
             <span class="sr-only">home</span>
           </a>
           <a
             id="contact"
-            class="navbar-brand font-montserrat uppercase"
+            class="navbar-brand font-montserrat light-text uppercase"
             href="contact.html"
           >
             Contact
@@ -51,7 +51,7 @@
           </a>
           <a
             id="wine-pairing"
-            class="navbar-brand font-montserrat uppercase"
+            class="navbar-brand font-montserrat light-text uppercase"
             href="#footer-details"
           >
             Wine Pairing
@@ -66,7 +66,7 @@
     <section-one>
       <div class="container-fluid main-bg">
         <div class="main-headlines">
-          <h1 class="hero-text font-montserrat border-thin">
+          <h1 class="hero-text font-montserrat light-text border-thin">
             Everyday <span class="fancy-text fancy-large">G</span
             ><span class="fancy-text fancy-small">ourmet</span>
           </h1>
@@ -83,7 +83,7 @@
             data-aos="zoom-in-up"
             data-aos-duration="1000"
           >
-            <p class="headlines font-montserrat center-text border-thin">
+            <p class="headlines font-montserrat light-text center-text border-thin">
               <br />
               Hello and welcome to<br />
               <br />
@@ -102,7 +102,7 @@
             data-aos="zoom-in-up"
             data-aos-duration="1000"
           >
-            <p class="headlines font-montserrat center-text border-thin">
+            <p class="headlines font-montserrat light-text center-text border-thin">
               <br />
               Simply tell us <br />
               what's on the menu.<br />
@@ -121,47 +121,41 @@
     <footer class="container-fluid footer-sticky">
       <div class="row">
         <div class="col center-text font-lora">
-          <h1 class="font-montserrat">Don't know which wine to choose?</h1>
-          Let us suggest a fantastic pairing.<br />
-          All you have to do is let us know,
-          <form>
-            <div class="form-group">
-              <label class="font-montserrat dark-text uppercase"
-                >what's on the menu?</label
+          <h1 class="font-lora border-thin">
+            Make Everyday<br /><span class="fancy-text fancy-large">G</span
+            ><span class="fancy-text fancy-small">ourmet</span>
+          </h1>
+          <p>
+            Don't know which wine to choose?<br />
+            Let us suggest a fantastic pairing.<br />
+            All you have to do is let us know, What's on the menu...
+          </p>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <button
+                class="btn font-montserrat uppercase border-thin dark-text"
+                type="button"
               >
-              <input
-                type="text"
-                class="form-control"
-                id="my-food"
-                aria-describedby="menuHelp"
-                placeholder="example: Steak"
-              />
-              <input
-                type="text"
-                class="form-control"
-                id="max-price"
-                aria-describedby="menuHelp"
-                placeholder="example: 50"
-              />
-              <small id="menuHelp" class="form-text text-muted font-lora"
-                >Tell us what you're planning to eat, the food to get a pairing
-                for. This can be a dish ("steak"), an ingredient ("salmon"), or
-                a cuisine ("italian").</small
-              >
+                Get Wine Pairing
+              </button>
             </div>
-            <button
-              type="button"
-              class="btn btn-primary font-montserrat"
-              id="get-wine-pairing"
+            <select
+              class="custom-select"
+              id="inputGroupSelect03"
+              aria-label="Example select with button addon"
             >
-              Get Wine Pairing
-            </button>
-          </form>
+              <option selected>Choose...</option>
+              <option value="1">Steak</option>
+              <option value="2">Fish</option>
+              <option value="3">Lobster</option>
+              <option value="3">Cheese</option>
+              <option value="3">Italian</option>
+              <option value="4">Spanish</option>
+              <option value="5">French</option>
+              <option value="6">South African</option>
+            </select>
+          </div>
         </div>
-        <div
-          class="col center-text font-montserrat dark-text"
-          id="data-wine-suggestion"
-        ></div>
       </div>
 
       <!-- Social Media Links -->
@@ -217,8 +211,8 @@
     <!-- Scripts -->
 
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
       crossorigin="anonymous"
     ></script>
     <script
@@ -234,64 +228,5 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/aos-global.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <script>
-        /*   variables to store the base url and standard params to be passed to the url */
-      var baseURL =
-        "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?";
-      var basePrice = `maxPrice=`;
-      var baseMenu = `&food=`;
-
-      /* function to get the value of the input areas in the form and store them in variables */
-
-      function getMenu() {
-        let inputPrice = document.getElementById("max-price").value;
-        let inputMenu = document.getElementById("my-food").value;
-        let pairingURL =
-          baseURL + basePrice + inputPrice + baseMenu + inputMenu;
-        console.log(basePrice);
-        console.log(baseMenu);
-        console.log(inputPrice);
-        console.log(inputMenu);
-        console.log(pairingURL);
-      }
-
-      /* function to pass all parameters stored in variables to pairingURL and send a GET request to the API */
-
-      function getWine(pairingURL) {
-        fetch(pairingURL, {
-          method: "GET",
-          headers: {
-            "x-rapidapi-host":
-              "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-            "x-rapidapi-key":
-              "556f1a08acmsh72d41478bea3e6ap19227ajsn0bf8a497994a",
-          },
-        })
-          .then(function (response) {
-            if (response.status !== 200) {
-              console.log(
-                "Looks like there was a problem. Status Code: " +
-                  response.status
-              );
-              return;
-            }
-
-            /* Examine the text in the response THIS IS WHERE THE CODE CURRENTLY BREAKS */
-            response.json().then(function (data) {
-              console.log(data);
-            });
-          })
-          .catch(function (err) {
-            console.log("Fetch Error :-S", err);
-          });
-      }
-
-    
-      $("#get-wine-pairing").click(function () {
-        getMenu();
-        getWine();
-      });
-    </script>
   </body>
 </html>

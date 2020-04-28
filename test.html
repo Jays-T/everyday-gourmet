@@ -34,95 +34,32 @@
   <body>
     <!-- Navigation -->
 
-    <header id="home">
-      <div class="container-fluid" role="navigation">
-        <div class="navbar navbar-fixed-transparent">
-          <a class="navbar-brand font-montserrat" href="#home">
-            <i
-              id="home-icon"
-              class="fas fa-home"
-              aria-hidden="true"
-            ></i>
-            <span class="sr-only">home</span>
-          </a>
-          <a
-            id="contact"
-            class="navbar-brand font-montserrat uppercase"
-            href="contact.html"
+    <div class="btn-group">
+          <button
+            type="button"
+            class="btn dropdown-toggle"
+            data-toggle="dropdown"
+            data-display="static"
+            aria-haspopup="true"
+            aria-expanded="false"
           >
-            Contact
-            <span class="sr-only">Contact Page</span>
-          </a>
-          <a
-            id="wine-pairing"
-            class="navbar-brand font-montserrat uppercase"
-            href="#footer-details"
-          >
-            Wine Pairing
-            <span class="sr-only">Wine Pairing</span>
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <!-- Main landing page and fade in headlines -->
-
-    <section>
-      <div class="container-fluid main-bg">
-        <div class="main-headlines">
-          <h1 class="hero-text font-montserrat border-thin">
-            Everyday <span class="fancy-text fancy-large">G</span
-            ><span class="fancy-text fancy-small">ourmet</span>
-          </h1>
-          <div class="arrow-wrapper">
-            <p class="arrow">
-              <span></span>
-              <span></span>
-              <span></span>
-            </p>
-          </div>
-          <div
-            id="headline-one"
-            class="fade-in-headlines aos-init"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-          >
-            <p class="headlines font-montserrat center-text border-thin">
+            <p class="headlines font-montserrat center-text">
               <br />
-              Hello and welcome to<br />
-              <br />
-              <span class="uppercase">EveryDay</span>
-              <span class="fancy-text fancy-large">G</span
-              ><span class="fancy-text fancy-small">ourmet</span><br />
-              <br />
-              A premier wine pairing site.<br />
+              What's on the menu?<br />
               <br />
             </p>
-          </div>
-
-          <div
-            id="headline-two"
-            class="fade-in-headlines aos-init"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-          >
-            <p class="headlines font-montserrat center-text border-thin">
-              <br />
-              Simply tell us <br />
-              what's on the menu.<br />
-              <br />
-              We'll suggest the best wine <br />
-              to pair with your meal.<br />
-              <br />
-            </p>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+            <button class="dropdown-item" type="button">Action</button>
+            <button class="dropdown-item" type="button">Another action</button>
+            <button class="dropdown-item" type="button">
+              Something else here
+            </button>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Footer / Main service/Wine Pairing section  -->
 
-    <footer class="container-fluid footer-sticky">
+      <footer class="container-fluid footer-sticky">
       <div class="row">
         <div class="col center-text font-lora">
           <h1 class="font-montserrat">Don't know which wine to choose?</h1>
@@ -140,6 +77,13 @@
                 aria-describedby="menuHelp"
                 placeholder="example: Steak"
               />
+              <input
+                type="text"
+                class="form-control"
+                id="max-price"
+                aria-describedby="menuHelp"
+                placeholder="example: 50"
+              />
               <small id="menuHelp" class="form-text text-muted font-lora"
                 >Tell us what you're planning to eat, the food to get a pairing
                 for. This can be a dish ("steak"), an ingredient ("salmon"), or
@@ -147,7 +91,7 @@
               >
             </div>
             <button
-              type="submit"
+              type="button"
               class="btn btn-primary font-montserrat"
               id="get-wine-pairing"
             >
@@ -207,9 +151,9 @@
             </ul>
           </div>
         </div>
-        <div id="footer-details" class="col-sm-4"></div>
       </div>
     </footer>
+    <div id="footer-details" class="col-sm-4"></div>
 
     <!-- Scripts -->
 
