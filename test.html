@@ -32,79 +32,70 @@
   </head>
 
   <body>
-    <!-- Navigation -->
-
-    <div class="btn-group">
-          <button
-            type="button"
-            class="btn dropdown-toggle"
-            data-toggle="dropdown"
-            data-display="static"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <p class="headlines font-montserrat center-text">
-              <br />
-              What's on the menu?<br />
-              <br />
-            </p>
-          </button>
-          <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">
-              Something else here
-            </button>
-          </div>
-        </div>
-
-
-      <footer class="container-fluid footer-sticky">
+    <div id="footer" class="container-fluid footer-sticky">
       <div class="row">
         <div class="col center-text font-lora">
-          <h1 class="font-montserrat">Don't know which wine to choose?</h1>
-          Let us suggest a fantastic pairing.<br />
-          All you have to do is let us know,
-          <form>
-            <div class="form-group">
-              <label class="font-montserrat dark-text uppercase"
-                >what's on the menu?</label
+          <h1 class="font-lora border-thin">
+            Make Everyday<br /><span class="fancy-text fancy-large">G</span
+            ><span class="fancy-text fancy-small">ourmet</span>
+          </h1>
+          <p>
+            Don't know which wine to choose?<br />
+            Let us suggest a fantastic pairing.<br />
+            All you have to do is let us know, What's on the menu...
+          </p>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <button
+                class="btn font-montserrat uppercase border-thin dark-text"
+                id="getWine"
+                type="button"
+                data-toggle="modal" data-target="#suggestion-modal"
               >
-              <input
-                type="text"
-                class="form-control"
-                id="my-food"
-                aria-describedby="menuHelp"
-                placeholder="example: Steak"
-              />
-              <input
-                type="text"
-                class="form-control"
-                id="max-price"
-                aria-describedby="menuHelp"
-                placeholder="example: 50"
-              />
-              <small id="menuHelp" class="form-text text-muted font-lora"
-                >Tell us what you're planning to eat, the food to get a pairing
-                for. This can be a dish ("steak"), an ingredient ("salmon"), or
-                a cuisine ("italian").</small
-              >
+                Get Wine Pairing
+              </button>
             </div>
-            <button
-              type="button"
-              class="btn btn-primary font-montserrat"
-              id="get-wine-pairing"
+            <select
+              class="custom-select"
+              id="inputGroupSelect"
+              aria-label="Example select with button addon"
             >
-              Get Wine Pairing
-            </button>
-          </form>
-        </div>
-        <div
-          class="col center-text font-montserrat dark-text"
-          id="data-wine-suggestion"
-        ></div>
-      </div>
+              <option selected>Choose...</option>
+              <option value="1">Steak</option>
+              <option value="2">Fish</option>
+              <option value="3">Lobster</option>
+              <option value="3">Cheese</option>
+              <option value="3">Italian</option>
+              <option value="4">Spanish</option>
+              <option value="5">French</option>
+              <option value="6">South African</option>
+            </select>
+          </div>
+          <!-- Modal -->
+						<div class="modal fade" id="suggestion-modal">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<!-- Modal body -->
+									<div class="modal-content-text">
 
+										<h4 class="story-heading modal-elements-margin">Suggested Wines
+											<button type="button" class="close close-modal" data-dismiss="modal">×</button></h4>
+											<ul id="pairedWines">
+                                            </ul>
+                                            <p id="pairingText">
+                                            </p>
+                                                    
+											<button type="button" class="">Get My Free Download</button>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- End of Modal -->
+          </div>
+        </div>
+      
       <!-- Social Media Links -->
 
       <div class="social-media-anchor">
@@ -152,7 +143,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </div>
     <div id="footer-details" class="col-sm-4"></div>
 
     <!-- Scripts -->

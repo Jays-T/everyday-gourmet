@@ -1,3 +1,48 @@
+<span class="btn contact-icons hvr-color-adapt" data-toggle="modal" data-target="#suggestion-modal">
+
+<button type="button" class="">Shop</button>
+
+<!-- Modal -->
+	<div class="modal fade" id="suggestion-modal">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+						<!-- Modal body -->
+			<div class="modal-content-text">
+
+				<h4 class="story-heading modal-elements-margin">Suggested Wines
+					<button type="button" class="close close-modal" data-dismiss="modal">×</button></h4>
+						<ul id="pairedWines">
+                        </ul>
+                            <p id="pairingText">
+                            </p>
+                                                    
+						
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+			<!-- End of Modal -->
+
+
+
+function getMenu() {
+        let inputMenu = document.getElementById("my-food").value;
+        let pairingURL =
+          baseURL + basePrice + inputPrice + baseMenu + inputMenu;
+        console.log(basePrice);
+        console.log(baseMenu);
+        console.log(inputPrice);
+        console.log(inputMenu);
+        console.log(pairingURL);
+      }
+
+      if $("inputGroupSelect.value" !== "") {
+            document.getElementById("pairedWines").innerHTML("<h1 class="font-montserrat">Oops! Did you forget to select a food?</h1>")
+        }
+    });
+
 // getting my project to interface fully with the spoonacular api proved to be beyond 
 // my current skill level. I'm storing the initial script here as I plan to continue 
 // working on this project until I get it right. 
