@@ -326,21 +326,75 @@ function giveSuggestion(foodID, steakSug) {
         console.log(foodID);
         $('#suggestion-modal').modal('show');
         $('#suggestion-modal').on('shown.bs.modal', function() {
-            $(this).find('#pairingText').html('<h3 class="font-montserrat">Oops! Did you forget to select a food?</h3>');
+            $(this).find('#pairingText').html(`<h3 class="font-montserrat">Oops! Did you forget to select a food?</h3>`);
         });
 
     } else if (foodID == "1") {
         
         $('#suggestion-modal').modal('show');
         $('#suggestion-modal').on('shown.bs.modal', function() {
-            $(this).find('#pairingText').empty().append(`<p class="font-lora">Steak is an excellent choice</p>`);
+            $(this).find('#pairingText').empty().append(`<p class="font-lora">Steak is an excellent choice.</p>
+            <ul>
+            <li class"wine-one">Merlot
+            </li>
+            <li class"wine-two">Cabernet Sauvignon
+            </li>
+            <li class"wine-three">Pino Noir
+            </li></ul>`);
         });
 
     } else if (foodID == "2") {
         
         $('#suggestion-modal').modal('show');
         $('#suggestion-modal').on('shown.bs.modal', function() {
-            $(this).find('#pairingText').empty().append(`<p class="font-lora">I can't believe you picked fish!?</p>`);
+            $(this).find('#pairingText').empty().append(`<p class="font-lora">I can't believe you picked fish!?</p>
+            <ul>
+            <li class"wine-one">
+            </li>
+            <li class"wine-two">
+            </li>
+            <li class"wine-three">
+            </li>
+            </ul>`);
+        });
+    } else if (foodID == "3") {
+        $('#suggestion-modal').modal('show');
+        $('#suggestion-modal').on('shown.bs.modal', function() {
+            $(this).find('#pairingText').empty().append(`<p class="font-lora">Lobster, now there's a delicious food.</p>
+            <ul>
+            <li class"wine-one">
+            </li>
+            <li class"wine-two">
+            </li>
+            <li class"wine-three">
+            </li>
+            </ul>`);
+        });
+    } else if (foodID == "4") {
+        $('#suggestion-modal').modal('show');
+        $('#suggestion-modal').on('shown.bs.modal', function() {
+            $(this).find('#pairingText').empty().append(`<p class="font-lora">.........Cheese? Out of all that you pick....Cheese?</p>
+            <ul>
+            <li class"wine-one">
+            </li>
+            <li class"wine-two">
+            </li>
+            <li class"wine-three">
+            </li>
+            </ul>`);
+        });
+    } else if (foodID == "5") {
+        $('#suggestion-modal').modal('show');
+        $('#suggestion-modal').on('shown.bs.modal', function() {
+            $(this).find('#pairingText').empty().append(`<p class="font-lora">I can't believe you picked fish!?</p>
+            <ul>
+            <li class"wine-one">
+            </li>
+            <li class"wine-two">
+            </li>
+            <li class"wine-three">
+            </li>
+            </ul>`);
         });
     }
 }
