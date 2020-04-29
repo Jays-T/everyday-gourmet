@@ -1,4 +1,8 @@
 /* ------------------------------ global styles and font styling */
+body {
+    position: relative;
+}
+
 .blur {
     filter: blur(4px);
 }
@@ -112,7 +116,7 @@ html h1 {
   --color-v: black;
   --color: transparent; 
  
-    box-shadow: 0 2rem 3rem #000;
+    box-shadow: 0 6rem 8rem #000;
 }
 
 *, *::before, *::after {

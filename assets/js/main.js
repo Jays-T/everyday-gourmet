@@ -1,12 +1,33 @@
+// Main scroll functions 
 
-// Main page scroll functions 
+$(document).ready(function(){
 
-$(".arrow").click(function() {
-  $("#headline-one")[0].scrollIntoView({
-        behavior: "smooth", 
-        block: "center" 
-    });
+  // Targetting all links 
+
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value 
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior if this.hash has a value
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      // Using jQuery's scrollIntoView() method with "smooth" behavior for smooth scrolling
+      $(hash)[0].scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      }, 800, function(){
+
+        window.location.hash = hash;
+      });
+    }
+  });
 });
+
+$('body').scrollspy({ target: '#navbar-example' })
+
+
 
 // Blur effect using addClass
 

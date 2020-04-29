@@ -31,32 +31,40 @@
     <title>Everday Gourmet</title>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar-example">
     <!-- Navigation -->
 
     <header id="home">
-      <div class="container-fluid" role="navigation">
-        <div class="navbar navbar-fixed-transparent">
-          <a class="navbar-brand font-montserrat light-text" href="#home">
-            <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
-            <span class="sr-only">home</span>
-          </a>
-          <a
-            id="contact"
-            class="navbar-brand font-montserrat light-text uppercase"
-            href="contact.html"
-          >
-            Contact
-            <span class="sr-only">Contact Page</span>
-          </a>
-          <a
-            id="wine-pairing"
-            class="navbar-brand font-montserrat light-text uppercase"
-            href="#footer-details"
-          >
-            Wine Pairing
-            <span class="sr-only">Wine Pairing</span>
-          </a>
+      <div class="container-fluid">
+        <div id="navigation" class="navbar navbar-fixed-transparent">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="navbar-brand font-montserrat light-text" href="#home">
+                <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
+                <span class="sr-only">home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="contact"
+                class="navbar-brand font-montserrat light-text uppercase"
+                href="contact.html"
+              >
+                Contact
+                <span class="sr-only">Contact Page</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="wine-pairing"
+                class="navbar-brand font-montserrat light-text uppercase"
+                href="#footer-details"
+              >
+                Wine Pairing
+                <span class="sr-only">Wine Pairing</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -71,11 +79,13 @@
             ><span class="fancy-text fancy-small">ourmet</span>
           </h1>
           <div class="arrow-wrapper">
+          <a href="#headline-one">
             <p class="arrow">
               <span></span>
               <span></span>
               <span></span>
             </p>
+            </a>
           </div>
           <div
             id="headline-one"
@@ -83,7 +93,9 @@
             data-aos="zoom-in-up"
             data-aos-duration="1000"
           >
-            <p class="headlines font-montserrat light-text center-text border-thin">
+            <p
+              class="headlines font-montserrat light-text center-text border-thin"
+            >
               <br />
               Hello and welcome to<br />
               <br />
@@ -102,7 +114,9 @@
             data-aos="zoom-in-up"
             data-aos-duration="1000"
           >
-            <p class="headlines font-montserrat light-text center-text border-thin">
+            <p
+              class="headlines font-montserrat light-text center-text border-thin"
+            >
               <br />
               Simply tell us <br />
               what's on the menu.<br />
