@@ -32,120 +32,13 @@
   </head>
 
   <body>
-    <div id="footer" class="container-fluid footer-sticky">
-      <div class="row">
-        <div class="col center-text font-lora">
-          <h1 class="font-lora border-thin">
-            Make Everyday<br /><span class="fancy-text fancy-large">G</span
-            ><span class="fancy-text fancy-small">ourmet</span>
-          </h1>
-          <p>
-            Don't know which wine to choose?<br />
-            Let us suggest a fantastic pairing.<br />
-            All you have to do is let us know, What's on the menu...
-          </p>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <button
-                class="btn font-montserrat uppercase border-thin dark-text"
-                id="getWine"
-                type="button"
-                data-toggle="modal" data-target="#suggestion-modal"
-              >
-                Get Wine Pairing
-              </button>
-            </div>
-            <select
-              class="custom-select"
-              id="inputGroupSelect"
-              aria-label="Example select with button addon"
-            >
-              <option selected>Choose...</option>
-              <option value="1">Steak</option>
-              <option value="2">Fish</option>
-              <option value="3">Lobster</option>
-              <option value="3">Cheese</option>
-              <option value="3">Italian</option>
-              <option value="4">Spanish</option>
-              <option value="5">French</option>
-              <option value="6">South African</option>
-            </select>
-          </div>
-          <!-- Modal -->
-						<div class="modal fade" id="suggestion-modal">
-							<div class="modal-dialog modal-dialog-centered">
-								<div class="modal-content">
-									<!-- Modal body -->
-									<div class="modal-content-text">
 
-										<h4 class="story-heading modal-elements-margin">Suggested Wines
-											<button type="button" class="close close-modal" data-dismiss="modal">×</button></h4>
-											<ul id="pairedWines">
-                                            </ul>
-                                            <p id="pairingText">
-                                            </p>
-                                                    
-											<button type="button" class="">Get My Free Download</button>
+  <button>First</button>
+<button>Second</button>
+<button>Third</button>
+ 
 
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<!-- End of Modal -->
-          </div>
-        </div>
-      
-      <!-- Social Media Links -->
-
-      <div class="social-media-anchor">
-        <div class="row social-media-anchor">
-          <div class="col-sm-4"></div>
-          <div class="col-sm-4 center-text social-media-links card-footer">
-            <ul class="list-inline social-links">
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-facebook" aria-hidden="true"></i>
-                  <span class="sr-only">Facebook</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-twitter" aria-hidden="true"></i>
-                  <span class="sr-only">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-linkedin" aria-hidden="true"></i>
-                  <span class="sr-only">LinkedIn</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-pinterest" aria-hidden="true"></i>
-                  <span class="sr-only">Pinterest</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-instagram" aria-hidden="true"></i>
-                  <span class="sr-only">Instagram</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-youtube" aria-hidden="true"></i>
-                  <span class="sr-only">YouTube</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="footer-details" class="col-sm-4"></div>
-
+    
     <!-- Scripts -->
 
     <script
@@ -167,6 +60,92 @@
     <script src="assets/js/aos-global.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <script></script>
+    <script>
+    const wineSug = [
+  { type: 'steak', wine1: 'Merlot', wine2: 'Cabernet Sauvignon', wine3: 'Pino Noir', text: `Merlot, Cabernet Sauvignon, and Pinot Noir 
+                are our top picks for Steak. After all, beef and red wine 
+                are a classic combination. Generally, leaner steaks go well 
+                with light or medium-bodied reds, such as pinot noir or merlot, 
+                while fattier steaks can handle a bold red, such as cabernet sauvingnon.`, image: ''},
+  { type: 'fish', wine1: 'Pinot Grigio', wine2: 'Gruener Veltliner', wine3: 'Pinot Noir', text: `Pinot Grigio, Gruener Veltliner, and Pinot Noir are 
+                our top picks for Fish. Fish is as diverse as wine, 
+                so it's hard to pick wines that go with every fish. 
+                A crisp white wine, such as a pinot grigio or Grüner Veltliner, 
+                will suit any delicately flavored white fish. Meaty, strongly 
+                flavored fish such as salmon and tuna can even handle 
+                a light red wine, such as a pinot noir.`, image: ''},
+  { type: 'lobster', wine1: 'Chablis', wine2: 'Chardonnay', text: `Lobster works really well with Chablis and Chardonnay. 
+                Chablis is perfect with lobster, but a chardonny 
+                from other regions is bound to hit the spot too.`, image: ''},
+  { type: 'cheese', wine1: 'Cabernet Savignon', wine2: 'Port', wine3: 'Sparkling White Wine', text: `The best wine for cheese definitely depends on the cheese. 
+                Aged cheeses and other intense cheeses go best with bold 
+                red wines, such as cabernet sauvignon or Nero d'Avola. 
+                Blue cheeses go well with sweet port wines. Soft cheeses 
+                like brie and camembert usually taste great with sparkling 
+                white wine.`, image: ''},
+  { type: 'italian', wine1: 'Chianti', wine2: 'Trebbiano', wine3: 'Verdicchio', text: `Italian cuisine can be paired with Chianti, Trebbiano, 
+                and Verdicchio. Italians know food and they know wine. 
+                Trebbiano and Verdicchio are Italian white wines that 
+                pair well with fish and white meat, while Chianti is 
+                a great Italian red for heavier, bolder dishes.`, image: ''},
+  { type: 'spanish', wine1: 'Tempranillo', wine2: 'Grenache', wine3: 'Albarino', text: `Spanish cuisine on the menu? Try pairing with Tempranillo, 
+                Grenache, and Albarino. When pairing wine with Spanish dishes, 
+                why not follow the rule 'what grows together goes together'? 
+                We recommend albariño for white wine and garnachan 
+                and tempranillo for red.`, image: ''},
+  { type: 'french', wine1: 'Bordeaux', wine2: 'Champagne', wine3: 'White Burgundy', text: `French cuisine works really well with Bordeaux, Champagne, 
+                and White Burgundy. French wine is just as diverse as French 
+                food, but you rarely go wrong with champagne. If your meal 
+                calls for a white wine, you might also try a white burgundy. 
+                For a red, try a red bordeaux blend.`, image: ''},
+  { type: 'south african', wine1: 'Pinotage', wine2: 'Riesling', wine3: 'Chenin Blanc', text: `The best wine for African dishes will depend on the dish, 
+                but a fruity, aromatic white wine is a safe bet for 
+                spicy dishes while pinotage would be a traditional 
+                match for South African cuisine.`, image: ''},
+]
+
+frenchWine = wineSug.find(wineSug => wineSug.type ==='french');
+console.log(frenchSug); 
+
+$( "button" ).click(function(frenchWine) {
+  $( this ).replaceWith( `"<div>" + ${frenchWine} + "</div>"` );
+});
+
+
+
+switch(foodID) {
+  case 1:
+    {$('#suggestion-modal').modal('show');
+        $('#suggestion-modal').on('shown.bs.modal', function() {
+            $(this).find('#pairingText').empty().append(`<p class="font-lora">${steakSug}</p>`);
+        });}
+    break;
+  case 2:
+    // code block
+    break;
+    case 3:
+    // code block
+    break;
+  case 4:
+    // code block
+    break;
+    case 5:
+    // code block
+    break;
+  case 6:
+    // code block
+    break;
+    case 7:
+    // code block
+    break;
+  case 8:
+    // code block
+    break;
+  default:
+    // code block
+}
+</script>
+ 
+    
   </body>
 </html>
