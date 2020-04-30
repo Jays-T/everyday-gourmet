@@ -64,10 +64,6 @@ html h1 {
     border-top: solid .5px rgba(73, 67, 67, 0.3);
 }
 
-.modal-content {
-    padding: 2vh 2vw;
-}
-
 .get-wine-bg {
     background: rgba(0, 0, 0, 0.6);
 }
@@ -76,6 +72,31 @@ html h1 {
     background: rgba(243, 243, 243, 0.6)
 }
 
+/* ------------------------------ Modal wine suggestion main styling */
+
+
+.modal-content {
+    padding: 2vh 2vw;
+}
+
+.modal-flex-display {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-height {
+    min-height: 100%;
+}
+
+.btn-colors {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(235, 233, 233);
+}
+
+.btn-font-size {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+}
 /* ------------------------------ Navbar hover styling */
 
 .light-border-thin {
@@ -86,8 +107,9 @@ html h1 {
     transform: scaleX(1.4);
 }
 
-.navbar a:hover {
+body a:hover {
         color: rgba(241, 75, 83, 0.8);
+        transition: all .3s ease-in-out; 
 }
 
 /* ------------------------------ Navbar styling */
@@ -254,6 +276,10 @@ html h1 {
   z-index: 1;
 }
 
+.content-anchor {
+    margin-top: auto;    
+}  
+
 
 .contact-us-page {
   
@@ -275,12 +301,11 @@ html h1 {
   border-radius: 50%;
 }
 
-.social-media-anchor {
-    margin-top: auto;
-}                
+.social-media-center {
+    justify-content: center;
+}
 
-
-
+          
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {

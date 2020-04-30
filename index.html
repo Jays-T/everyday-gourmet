@@ -121,7 +121,7 @@
               Simply tell us <br />
               what's on the menu.<br />
               <br />
-              We'll suggest the best wine <br />
+              We'll suggest a fantastic wine <br />
               to pair with your meal.<br />
               <br />
             </p>
@@ -139,10 +139,8 @@
               ><span class="fancy-text fancy-small">ourmet</span></h5>
 				<h4 class="font-montserrat dark-text uppercase center-text">Suggested Wines
 					<button type="button" class="close close-modal" data-dismiss="modal">×</button></h4>
-						<ul id="pairedWines">
-                        </ul>
-                            <p id="pairingText">
-                            </p>
+                            <div id="pairingText">
+                            </div>
                                                     
 						
 
@@ -157,9 +155,9 @@
     <!-- Footer / Main service/Wine Pairing section  -->
 
     <div id="footer" class="container-fluid footer-sticky">
-      <div class="row">
-        <div class="col center-text font-lora get-wine-bg light-text">
-          <h1 class="font-montserrat border-thin">
+      <div class="row content-anchor">
+        <div class="col center-text font-lora get-wine-bg light-text border-thin">
+          <h1 class="font-montserrat">
             Make Everyday<br /><span class="fancy-text fancy-large">G</span
             ><span class="fancy-text fancy-small">ourmet</span>
           </h1>
@@ -201,9 +199,9 @@
       
       <!-- Social Media Links -->
 
-      <div class="social-media-anchor">
-        <div class="row social-media-anchor">
-          <div class="col-sm-4"></div>
+      
+        <div class="row social-media-center content-anchor">
+          
           <div class="col-sm-4 center-text social-media-links card-footer">
             <ul class="list-inline social-links">
               <li class="list-inline-item">
@@ -246,7 +244,6 @@
           </div>
         </div>
       </div>
-    </div>
     <div id="footer-details" class="col-sm-4"></div>
 
     <!-- Scripts -->
@@ -269,149 +266,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/aos-global.js"></script>
     <script src="assets/js/main.js"></script>
-    <!-- <script src="assets/js/winesuggest.js"></script> -->
-    <script>
-    const wineSug = [
-  { type: 'steak', wine1: 'Merlot', wine2: 'Cabernet Sauvignon', wine3: 'Pino Noir', text: `Merlot, Cabernet Sauvignon, and Pinot Noir 
-                are our top picks for Steak. After all, beef and red wine 
-                are a classic combination. Generally, leaner steaks go well 
-                with light or medium-bodied reds, such as pinot noir or merlot, 
-                while fattier steaks can handle a bold red, such as cabernet sauvingnon.`, image: ''},
-  { type: 'fish', wine1: 'Pinot Grigio', wine2: 'Gruener Veltliner', wine3: 'Pinot Noir', text: `Pinot Grigio, Gruener Veltliner, and Pinot Noir are 
-                our top picks for Fish. Fish is as diverse as wine, 
-                so it's hard to pick wines that go with every fish. 
-                A crisp white wine, such as a pinot grigio or Grüner Veltliner, 
-                will suit any delicately flavored white fish. Meaty, strongly 
-                flavored fish such as salmon and tuna can even handle 
-                a light red wine, such as a pinot noir.`, image: ''},
-  { type: 'lobster', wine1: 'Chablis', wine2: 'Chardonnay', text: `Lobster works really well with Chablis and Chardonnay. 
-                Chablis is perfect with lobster, but a chardonny 
-                from other regions is bound to hit the spot too.`, image: ''},
-  { type: 'cheese', wine1: 'Cabernet Savignon', wine2: 'Port', wine3: 'Sparkling White Wine', text: `The best wine for cheese definitely depends on the cheese. 
-                Aged cheeses and other intense cheeses go best with bold 
-                red wines, such as cabernet sauvignon or Nero d'Avola. 
-                Blue cheeses go well with sweet port wines. Soft cheeses 
-                like brie and camembert usually taste great with sparkling 
-                white wine.`, image: ''},
-  { type: 'italian', wine1: 'Chianti', wine2: 'Trebbiano', wine3: 'Verdicchio', text: `Italian cuisine can be paired with Chianti, Trebbiano, 
-                and Verdicchio. Italians know food and they know wine. 
-                Trebbiano and Verdicchio are Italian white wines that 
-                pair well with fish and white meat, while Chianti is 
-                a great Italian red for heavier, bolder dishes.`, image: ''},
-  { type: 'spanish', wine1: 'Tempranillo', wine2: 'Grenache', wine3: 'Albarino', text: `Spanish cuisine on the menu? Try pairing with Tempranillo, 
-                Grenache, and Albarino. When pairing wine with Spanish dishes, 
-                why not follow the rule 'what grows together goes together'? 
-                We recommend albariño for white wine and garnachan 
-                and tempranillo for red.`, image: ''},
-  { type: 'french', wine1: 'Bordeaux', wine2: 'Champagne', wine3: 'White Burgundy', text: `French cuisine works really well with Bordeaux, Champagne, 
-                and White Burgundy. French wine is just as diverse as French 
-                food, but you rarely go wrong with champagne. If your meal 
-                calls for a white wine, you might also try a white burgundy. 
-                For a red, try a red bordeaux blend.`, image: ''},
-  { type: 'south african', wine1: 'Pinotage', wine2: 'Riesling', wine3: 'Chenin Blanc', text: `The best wine for African dishes will depend on the dish, 
-                but a fruity, aromatic white wine is a safe bet for 
-                spicy dishes while pinotage would be a traditional 
-                match for South African cuisine.`, image: ''},
-]
-    
-    function getFoodId() {
-    let foodID = $("#foodSelect option:selected").val();
-    let steakSug = wineSug.find(wineSug => wineSug.type ==='steak');
-    console.log(foodID);
-    console.log(steakSug);
-    return foodID;
-    return steakSug;
-}
-    
-function giveSuggestion(foodID, steakSug) {
-    if (foodID == "Choose...") {
-        console.log(foodID);
-        $('#suggestion-modal').modal('show');
-        $('#suggestion-modal').on('shown.bs.modal', function() {
-            $(this).find('#pairingText').html(`<h3 class="font-montserrat">Oops! Did you forget to select a food?</h3>`);
-        });
-
-    } else if (foodID == "1") {
-        
-        $('#suggestion-modal').modal('show');
-        $('#suggestion-modal').on('shown.bs.modal', function() {
-            $(this).find('#pairingText').empty().append(`
-            <ul class="border-top">
-            <li class"wine-one">Merlot
-            </li>
-            <li class"wine-two">Cabernet Sauvignon
-            </li>
-            <li class"wine-three">Pino Noir
-            </li></ul>
-            <p class="font-lora border-thin">Merlot, Cabernet Sauvignon, and Pinot Noir 
-                are our top picks for Steak. After all, beef and red wine 
-                are a classic combination. Generally, leaner steaks go well 
-                with light or medium-bodied reds, such as pinot noir or merlot, 
-                while fattier steaks can handle a bold red, such as cabernet sauvingnon.</p>
-            `);
-        });
-
-    } else if (foodID == "2") {
-        
-        $('#suggestion-modal').modal('show');
-        $('#suggestion-modal').on('shown.bs.modal', function() {
-            $(this).find('#pairingText').empty().append(`<p class="font-lora">I can't believe you picked fish!?</p>
-            <ul>
-            <li class"wine-one">
-            </li>
-            <li class"wine-two">
-            </li>
-            <li class"wine-three">
-            </li>
-            </ul>`);
-        });
-    } else if (foodID == "3") {
-        $('#suggestion-modal').modal('show');
-        $('#suggestion-modal').on('shown.bs.modal', function() {
-            $(this).find('#pairingText').empty().append(`<p class="font-lora">Lobster, now there's a delicious food.</p>
-            <ul>
-            <li class"wine-one">
-            </li>
-            <li class"wine-two">
-            </li>
-            <li class"wine-three">
-            </li>
-            </ul>`);
-        });
-    } else if (foodID == "4") {
-        $('#suggestion-modal').modal('show');
-        $('#suggestion-modal').on('shown.bs.modal', function() {
-            $(this).find('#pairingText').empty().append(`<p class="font-lora">.........Cheese? Out of all that you pick....Cheese?</p>
-            <ul>
-            <li class"wine-one">
-            </li>
-            <li class"wine-two">
-            </li>
-            <li class"wine-three">
-            </li>
-            </ul>`);
-        });
-    } else if (foodID == "5") {
-        $('#suggestion-modal').modal('show');
-        $('#suggestion-modal').on('shown.bs.modal', function() {
-            $(this).find('#pairingText').empty().append(`<p class="font-lora">I can't believe you picked fish!?</p>
-            <ul>
-            <li class"wine-one">
-            </li>
-            <li class"wine-two">
-            </li>
-            <li class"wine-three">
-            </li>
-            </ul>`);
-        });
-    }
-}
-
-$("#getWine").click(function(){
-    getFoodId();
-    giveSuggestion(getFoodId());
-});
-</script>
+    <script src="assets/js/winesuggest.js"></script>
 
 </body>
 </html>

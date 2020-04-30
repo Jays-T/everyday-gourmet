@@ -41,34 +41,344 @@ const wineSug = [
                 match for South African cuisine.`, image: ''},
 ]
 
-steakSug = wineSug.find(wineSug => wineSug.type ==='steak');
-console.log(steakSug);
-return steakSug;
-
-function getFoodId() {
+    function getFoodId() {
+        // Get value of user selction store it in variable
     let foodID = $("#foodSelect option:selected").val();
     console.log(foodID);
-};
-    
-function giveSuggestion(foodID) {
-    if (foodID !== "") {
+    return foodID;
+}
+    // Function to print suggestion based on user selection
+function giveSuggestion(foodID, steakSug) {
+    if (foodID == "Choose...") {
+        console.log(foodID);
         $('#suggestion-modal').modal('show');
         $('#suggestion-modal').on('shown.bs.modal', function() {
-            $('#suggestion-modal').find('#pairingText').append('<h3 class="font-montserrat">Oops! Did you forget to select a food?</h3>');
+            $(this).find('#pairingText').html(`
+            <div class="modal-content center-text">
+            <p class="font-lora border-thin"><span class="fancy-text fancy-large">Oops</span> 
+            did you forget to select a food?
+            </p>
+            </div>
+            `);
         });
-    } else if (foodID === "1") {
-        $('#pairingText').empty();
-        $('#suggestion-modal').modal('show');
-        $('#suggestion-modal').on('shown.bs.modal', function() {
-            $('#suggestion-modal').find('#pairingText').append('<p class="font-lora">Pinot Noir is one of our top picks for Steak</p>');
-        });
+
+    } else if (foodID == "1") {
         
+        $('#suggestion-modal').modal('show'); // open/show modal
+        $('#suggestion-modal').on('shown.bs.modal', function() {
+            // empty any previous content and append with new content
+            // content printed consists of buttons with links to shop for suggested wines on wine.com
+            // content inludes a short paragraph with the wine suggestions
+            // content structure is the same for each result, only the information changes
+            $(this).find('#pairingText').empty().append(`
+            <div class="modal-flex-display">
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                href=""
+              ><a class="light-text" href="https://www.wine.com/search/Cabernet%20Sauvignon/0" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">C</span
+            >abernet
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/Pinot%20Noir/0" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">P</span
+            >inot
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/merlot/0" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">M</span
+            >erlot
+            </a>
+              </button>
+            
+              </div>
+            <div class="modal-content center-text">
+            <p class="font-lora border-thin">Merlot, Cabernet Sauvignon, and Pinot Noir 
+                are our top picks for Steak. After all, beef and red wine 
+                are a classic combination. Generally, leaner steaks go well 
+                with light or medium-bodied reds, such as pinot noir or merlot, 
+                while fattier steaks can handle a bold red, such as cabernet sauvingnon.
+                </p>
+                </div>
+            `);
+        });
+
+    } else if (foodID == "2") {
+        
+        $('#suggestion-modal').modal('show');
+        $('#suggestion-modal').on('shown.bs.modal', function() {
+            $(this).find('#pairingText').empty().append(`
+             <div class="modal-flex-display">
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                href=""
+              ><a class="light-text" href="https://www.wine.com/search/Pinot%20Grigio/0" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">P</span
+            >inot Grigio
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/Gruener/0" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">G</span
+            >ruener
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/Pinot%20Noir/0" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">P</span
+            >inot Noir
+            </a>
+              </button>
+            
+              </div>
+            <div class="modal-content center-text">
+            <p class="font-lora border-thin">Pinot Grigio, Gruener Veltliner, and Pinot Noir are 
+                our top picks for Fish. Fish is as diverse as wine, 
+                so it's hard to pick wines that go with every fish. 
+                A crisp white wine, such as a pinot grigio or Grüner Veltliner, 
+                will suit any delicately flavored white fish. Meaty, strongly 
+                flavored fish such as salmon and tuna can even handle 
+                a light red wine, such as a pinot noir.
+                </p>
+                </div>
+            `);
+        });
+    } else if (foodID == "3") {
+        $('#suggestion-modal').modal('show');
+        $('#suggestion-modal').on('shown.bs.modal', function() {
+            $(this).find('#pairingText').empty().append(`
+            <div class="modal-flex-display">
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                href=""
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">C</span
+            >abernet
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">P</span
+            >inot
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">M</span
+            >erlot
+            </a>
+              </button>
+            
+              </div>
+            <div class="modal-content center-text">
+            <p class="font-lora border-thin">
+                </p>
+                </div>
+            `);
+        });
+    } else if (foodID == "4") {
+        $('#suggestion-modal').modal('show');
+        $('#suggestion-modal').on('shown.bs.modal', function() {
+            $(this).find('#pairingText').empty().append(`
+            <div class="modal-flex-display">
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                href=""
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">C</span
+            >abernet
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">P</span
+            >inot
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">M</span
+            >erlot
+            </a>
+              </button>
+            
+              </div>
+            <div class="modal-content center-text">
+            <p class="font-lora border-thin">
+                </p>
+                </div>
+            `);
+        });
+    } else if (foodID == "5") {
+        $('#suggestion-modal').modal('show');
+        $('#suggestion-modal').on('shown.bs.modal', function() {
+            $(this).find('#pairingText').empty().append(`
+            <div class="modal-flex-display">
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                href=""
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">C</span
+            >abernet
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">P</span
+            >inot
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">M</span
+            >erlot
+            </a>
+              </button>
+            
+              </div>
+            <div class="modal-content center-text">
+            <p class="font-lora border-thin">
+                </p>
+                </div>
+            `);
+        });
+    } else if (foodID == "6") {
+        $('#suggestion-modal').modal('show');
+        $('#suggestion-modal').on('shown.bs.modal', function() {
+            $(this).find('#pairingText').empty().append(`
+            <div class="modal-flex-display">
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                href=""
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">C</span
+            >abernet
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">P</span
+            >inot
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">M</span
+            >erlot
+            </a>
+              </button>
+            
+              </div>
+            <div class="modal-content center-text">
+            <p class="font-lora border-thin">
+                </p>
+                </div>
+            `);
+        });
+    } else if (foodID == "7") {
+        $('#suggestion-modal').modal('show');
+        $('#suggestion-modal').on('shown.bs.modal', function() {
+            $(this).find('#pairingText').empty().append(`
+            <div class="modal-flex-display">
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                href=""
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">C</span
+            >abernet
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">P</span
+            >inot
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">M</span
+            >erlot
+            </a>
+              </button>
+            
+              </div>
+            <div class="modal-content center-text">
+            <p class="font-lora border-thin">
+                </p>
+                </div>
+            `);
+        });
+    } else if (foodID == "8") {
+        $('#suggestion-modal').modal('show');
+        $('#suggestion-modal').on('shown.bs.modal', function() {
+            $(this).find('#pairingText').empty().append(`
+            <div class="modal-flex-display">
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                href=""
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">C</span
+            >abernet
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">P</span
+            >inot
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="https://www.wine.com/search/" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">M</span
+            >erlot
+            </a>
+              </button>
+            
+              </div>
+            <div class="modal-content center-text">
+            <p class="font-lora border-thin">
+                </p>
+                </div>
+            `);
+        });
     }
 }
 
 $("#getWine").click(function(){
     getFoodId();
-    giveSuggestion();
+    giveSuggestion(getFoodId());
 });
-
-
