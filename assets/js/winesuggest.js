@@ -1,20 +1,20 @@
 // Store individual links to search on wine.come for the various wine suggestions
 
 const mylinks = [
-    ["0", "https://www.wine.com/search/merlot/0", "https://www.wine.com/search/cabernet%20sauvignon/0", "https://www.wine.com/search/pinot%20noir/0"], 
-    ["1", "https://www.wine.com/search/pinot%20grigio/0", "https://www.wine.com/search/gruener%20veltliner/0", "https://www.wine.com/search/pinot%20noir/0"], 
-    ["2", "https://www.wine.com/search/chenin%20blanc/0", "https://www.wine.com/search/cru%20beaujolais/0", "https://www.wine.com/search/pinot%20noir/0"],
-    ["3", "https://www.wine.com/search/chianti/0", "https://www.wine.com/search/trebbiano/0", "https://www.wine.com/search/verdicchio/0"],
-    ["4", "https://www.wine.com/search/tempranillo/0", "https://www.wine.com/search/grenache/0", "https://www.wine.com/search/albarino/0"],
-    ["5", "https://www.wine.com/search/bordeaux/0", "https://www.wine.com/search/champagne/0", "https://www.wine.com/search/white%20burgundy/0"],
-    ["6", "https://www.wine.com/search/pinot%20noir/0", "https://www.wine.com/search/chablis/0", "https://www.wine.com/search/champagne/0"],
-    ["7", "https://www.wine.com/search/lambrusco%20dolce/0", "https://www.wine.com/search/port/0", "https://www.wine.com/search/sauternes/0"],
-    ["8", "https://www.wine.com/search/chardonnay/0", "https://www.wine.com/search/pinot%20noir/0", "https://www.wine.com/search/sauvignon%20blanc/0"]
+    ["1", "https://www.wine.com/search/merlot/0", "https://www.wine.com/search/cabernet%20sauvignon/0", "https://www.wine.com/search/pinot%20noir/0"], 
+    ["2", "https://www.wine.com/search/pinot%20grigio/0", "https://www.wine.com/search/gruener%20veltliner/0", "https://www.wine.com/search/pinot%20noir/0"], 
+    ["3", "https://www.wine.com/search/chenin%20blanc/0", "https://www.wine.com/search/cru%20beaujolais/0", "https://www.wine.com/search/pinot%20noir/0"],
+    ["4", "https://www.wine.com/search/chianti/0", "https://www.wine.com/search/trebbiano/0", "https://www.wine.com/search/verdicchio/0"],
+    ["5", "https://www.wine.com/search/tempranillo/0", "https://www.wine.com/search/grenache/0", "https://www.wine.com/search/albarino/0"],
+    ["6", "https://www.wine.com/search/bordeaux/0", "https://www.wine.com/search/champagne/0", "https://www.wine.com/search/white%20burgundy/0"],
+    ["7", "https://www.wine.com/search/pinot%20noir/0", "https://www.wine.com/search/chablis/0", "https://www.wine.com/search/champagne/0"],
+    ["8", "https://www.wine.com/search/lambrusco%20dolce/0", "https://www.wine.com/search/port/0", "https://www.wine.com/search/sauternes/0"],
+    ["9", "https://www.wine.com/search/chardonnay/0", "https://www.wine.com/search/pinot%20noir/0", "https://www.wine.com/search/sauvignon%20blanc/0"]
 ];
 
 
 
-$(document).ready(function() {
+$("#getWine").click(function() {
     
       $("#foodSelect").change(function () {  // check which food option is selected
            alert($("#foodSelect").text().toLowerCase());
