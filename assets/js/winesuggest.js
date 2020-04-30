@@ -70,7 +70,7 @@ function giveSuggestion(foodID, steakSug) {
             // content printed consists of buttons with links to shop for suggested wines on wine.com
             // content inludes a short paragraph with the wine suggestions
             // content structure is the same for each result, only the information changes
-            $(this).find('#pairingText').empty().append(`
+            $(this).find('#pairingText').empty().html(`
             <div class="modal-flex-display">
             <button
                 class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
@@ -84,8 +84,7 @@ function giveSuggestion(foodID, steakSug) {
                 class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
                 type="button" 
               ><a class="light-text" href="https://www.wine.com/search/Pinot%20Noir/0" target="_blank">
-                <i class="fas fa-wine-bottle modal-content"></i><span class="fancy-text fancy-large">P</span
-            >inot
+                <i class="fas fa-wine-bottle modal-content"></i>'+pairedwines[0]+'
             </a>
               </button>
             <button

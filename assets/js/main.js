@@ -32,34 +32,47 @@ $(document).ready(function(){
 
 $('#wine-pairing').mouseenter(function(){
     $(this).addClass('light-border-thin');
-    $('#contact, #home-icon, .main-headlines').addClass('blur');
+    $('#contact, #home-icon, #shop, .main-headlines').addClass('blur');
 });
 
 $('#wine-pairing').mouseleave(function(){
     $(this).removeClass('light-border-thin');
-    $('#contact, #home-icon, .main-headlines').removeClass('blur');
+    $('#contact, #home-icon, #shop, .main-headlines').removeClass('blur');
 });
 
 // When hovering on Contact
 
 $('#contact').mouseenter(function(){
     $(this).addClass('light-border-thin');
-    $('#wine-pairing, #home-icon, .main-headlines').addClass('blur');
+    $('#wine-pairing, #home-icon, #shop, .main-headlines').addClass('blur');
 });
 
 $('#contact').mouseleave(function(){
     $(this).removeClass('light-border-thin');
-    $('#wine-pairing, #home-icon, .main-headlines').removeClass('blur');
+    $('#wine-pairing, #home-icon, #shop, .main-headlines').removeClass('blur');
 });
 
 // When hovering on Home Icon
 
 $('#home-icon').mouseenter(function(){
     $(this).addClass('light-border-thin');
-    $('#wine-pairing, #contact, .main-headlines').addClass('blur');
+    $('#wine-pairing, #contact, #shop, .main-headlines').addClass('blur');
 });
 
 $('#home-icon').mouseleave(function(){
     $(this).removeClass('light-border-thin');
-    $('#wine-pairing, #contact, .main-headlines').removeClass('blur');
+    $('#wine-pairing, #contact, #shop, .main-headlines').removeClass('blur');
+});
+
+
+// When hovering on Shop Local
+
+$('#shop').mouseenter(function(){
+    $(this).addClass('light-border-thin');
+    $('#wine-pairing, #contact, #home-icon, .main-headlines').addClass('blur');
+});
+
+$('#shop').mouseleave(function(){
+    $(this).removeClass('light-border-thin');
+    $('#wine-pairing, #contact, #home-icon, .main-headlines').removeClass('blur');
 });

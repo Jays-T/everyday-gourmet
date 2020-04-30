@@ -47,11 +47,11 @@
             </li>
             <li class="nav-item">
               <a
-                id="shop"
+                id="contact"
                 class="navbar-brand font-montserrat dark-text uppercase"
-                href="searchlocal.html"
+                href="contact.html"
               >
-                Shop Local
+                Contact
                 <span class="sr-only">Contact Page</span>
               </a>
             </li>
@@ -65,42 +65,10 @@
     <div class="container-fluid footer-sticky contact-us-page">
       <div class="row">
         <div class="col">
-          <h3 class="contact-heading uppercase text-center">Contact us</h3>
-          <h5 class="uppercase text-center">We'd love to hear from you</h5>
-
-          <form onsubmit="return sendMail(this);" id="emailform">
-            
-            <input
-              type="text"
-              name="from_name"
-              class="form-control"
-              id="customername"
-              placeholder="Name"
-              required
-            />
-            
-            <input
-              type="text"
-              name="from_email"
-              class="form-control"
-              id="emailaddress"
-              placeholder="Email"
-              required
-            />
-            
-            <textarea
-              rows="5"
-              name="content_everyday_gourmet"
-              class="form-control"
-              id="emailcontent"
-              placeholder="Project Description"
-              required
-            ></textarea>
-            <button type="submit" class="btn btn-secondary center-block">
-              Send Email
-            </button>
-          </form>
+          <h3 class="contact-heading uppercase text-center">Shop Wines</h3>
+          <h5 class="uppercase text-center">Find local wine shops</h5>
         </div>
+        <div class="col" id="map"></div>
       </div>
       <!-- Social Media Links -->
       <div class="row social-media-center content-anchor">
@@ -174,6 +142,10 @@
         emailjs.init("user_uwE1zr6VGq2l3SFfii47C");
       })();
     </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcuRYmMc1O9HX7R6W5Ko7zPWXT1qbOpOQ&callback=initMap"></script>
+    <script src="assets/js/map.js"></script>
+
     <script src="assets/js/main.js"></script>
     <script src="assets/js/sendemail.js"></script>
 

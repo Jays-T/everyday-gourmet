@@ -46,22 +46,32 @@
             </li>
             <li class="nav-item">
               <a
-                id="contact"
-                class="navbar-brand font-montserrat light-text uppercase"
-                href="contact.html"
-              >
-                Contact
-                <span class="sr-only">Contact Page</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
                 id="wine-pairing"
                 class="navbar-brand font-montserrat light-text uppercase"
                 href="#footer-details"
               >
                 Wine Pairing
                 <span class="sr-only">Wine Pairing</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="shop"
+                class="navbar-brand font-montserrat light-text uppercase"
+                href="searchlocal.html"
+              >
+                Shop Local
+                <span class="sr-only">Shop Local</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="contact"
+                class="navbar-brand font-montserrat light-text uppercase"
+                href="contact.html"
+              >
+                Contact
+                <span class="sr-only">Contact Page</span>
               </a>
             </li>
           </ul>
@@ -139,13 +149,39 @@
               ><span class="fancy-text fancy-small">ourmet</span></h5>
 				<h4 class="font-montserrat dark-text uppercase center-text">Suggested Wines
 					<button type="button" class="close close-modal" data-dismiss="modal">×</button></h4>
-                            <div id="pairingText">
-                            </div>
-                                                    
-						
-
-					
-
+                    <div id="pairingText">
+            <div class="modal-flex-display">
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                href=""
+              ><a class="light-text" href="" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span id="wine-one" class="fancy-text"></span
+            >
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span id="wine-two" class="fancy-text"></span
+            >
+            </a>
+              </button>
+            <button
+                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                type="button" 
+              ><a class="light-text" href="" target="_blank">
+                <i class="fas fa-wine-bottle modal-content"></i><span id="wine-three" class="fancy-text"></span
+            >
+            </a>
+              </button>
+            
+              </div>
+            <div class="modal-content center-text">
+            <p id="wine-text" class="font-lora border-thin">
+                </p>
+                </div>
+        </div>
 				</div>
 			</div>
 		</div>
@@ -266,7 +302,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/aos-global.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/winesuggest.js"></script>
+    <!-- <script src="assets/js/winesuggest.js"></script> -->
+    <script src="assets/js/failedscripts.js"></script>
 
 </body>
 </html>
