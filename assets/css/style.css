@@ -97,7 +97,7 @@ html h1 {
 }
 
 .btn-font-size {
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1em;
 }
 /* ------------------------------ Navbar hover styling */
@@ -155,7 +155,7 @@ body a:hover {
     var(--blend-bottom, saturation),
     normal;
   
-  --image: url(../images/glass-of-red-wine-bg-5169x3648.jpg);
+  --image: url(../images/glass-of-red-wine-bg-1964x1386.jpg);
   --image2: url(../images/glass-of-red-wine-bg-900x1320.jpg);
   
   --color-v: black;
@@ -334,7 +334,7 @@ body a:hover {
     var(--blend-bottom, saturation),
     normal;
   
-  --image: url(../images/glass-of-red-wine-bg-5169x3648.jpg);
+  --image: url(../images/glass-of-red-wine-bg-1954x1386.jpg);
   --image2: url(../images/glass-of-red-wine-bg-900x1320.jpg);
   
   --color-v: black;
@@ -363,6 +363,11 @@ body a:hover {
 
 .headlines {
     background: rgba(0, 0, 0, 0.6);
+}
+
+.btn-font-size {
+    font-size: .8rem;
+    letter-spacing: 0.1em;
 }
 }
 

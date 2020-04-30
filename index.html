@@ -35,8 +35,7 @@
     <!-- Navigation -->
 
     <header id="home">
-      <div class="container-fluid">
-        <div id="navigation" class="navbar navbar-fixed-transparent">
+        <nav id="navigation" class="navbar navbar-fixed-transparent">
           <ul class="nav">
             <li class="nav-item">
               <a class="navbar-brand font-montserrat light-text" href="#home">
@@ -51,7 +50,7 @@
                 href="#footer-details"
               >
                 Wine Pairing
-                <span class="sr-only">Wine Pairing</span>
+                <span class="sr-only">wine pairing</span>
               </a>
             </li>
             <li class="nav-item">
@@ -61,7 +60,7 @@
                 href="searchlocal.html"
               >
                 Shop Local
-                <span class="sr-only">Shop Local</span>
+                <span class="sr-only">shop local</span>
               </a>
             </li>
             <li class="nav-item">
@@ -71,12 +70,11 @@
                 href="contact.html"
               >
                 Contact
-                <span class="sr-only">Contact Page</span>
+                <span class="sr-only">contact page</span>
               </a>
             </li>
           </ul>
-        </div>
-      </div>
+        </nav>
     </header>
 
     <!-----------------------------End of Navigation-->
@@ -91,12 +89,12 @@
             ><span class="fancy-text fancy-small">ourmet</span>
           </h1>
           <div class="arrow-wrapper">
-          <a href="#headline-one">
-            <p class="arrow">
-              <span></span>
-              <span></span>
-              <span></span>
-            </p>
+            <a href="#headline-one">
+              <p class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+              </p>
             </a>
           </div>
           <div
@@ -140,67 +138,80 @@
           </div>
         </div>
       </div>
-                <!---------------------------------------------End of Headlines-->
+      <!---------------------------------------------End of Headlines-->
 
-                <!--------------------------------------------- Modal -->
-	<div class="modal fade" id="suggestion-modal">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-						<!-- Modal body -->
-			
-                <h5 class="center-text"><span class="uppercase font-montserrat">EveryDay</span>
+      <!--------------------------------------------- Modal -->
+      <div class="modal fade" id="suggestion-modal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal body -->
+
+            <h5 class="center-text">
+              <span class="uppercase font-montserrat">EveryDay</span>
               <span class="fancy-text fancy-large">G</span
-              ><span class="fancy-text fancy-small">ourmet</span></h5>
-				<h4 class="font-montserrat dark-text uppercase center-text">Suggested Wines
-					<button type="button" class="close close-modal" data-dismiss="modal">×</button></h4>
-                    <div id="pairingText">
-            <div class="modal-flex-display">
-                    <!--------------------------------wine one-->
-            <button
-                class="btn btn-height btn-colors uppercase border-thin get-wine-btn-bg btn-font-size"
-                href=""
-              ><a class="light-text" href="" target="_blank">
-                <i class="fas fa-wine-bottle modal-content"></i><span id="wine-one" class="font-lora fancy-thin"></span
-            >
-            </a>
+              ><span class="fancy-text fancy-small">ourmet</span>
+            </h5>
+            <h4 class="font-montserrat dark-text uppercase center-text">
+              Suggested Wines
+              <button
+                type="button"
+                class="close close-modal"
+                data-dismiss="modal"
+              >
+                ×
               </button>
-              <!--------------------------------wine two-->
-            <button
-                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
-                type="button" 
-              ><a class="light-text" href="" target="_blank">
-                <i class="fas fa-wine-bottle modal-content"></i><span id="wine-two" class="font-lora fancy-thin"></span
-            >
-            </a>
-              </button>
-              <!--------------------------------wine three-->
-            <button
-                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
-                type="button" 
-              ><a class="light-text" href="" target="_blank">
-                <i class="fas fa-wine-bottle modal-content"></i><span id="wine-three" class="font-lora fancy-thin"></span
-            >
-            </a>
-              </button>
-            
+            </h4>
+            <div id="pairingText">
+              <div class="modal-flex-display">
+                <!--------------------------------wine one-->
+                <button
+                  class="btn btn-height btn-colors uppercase border-thin get-wine-btn-bg btn-font-size"
+                  href=""
+                >
+                  <a class="light-text" href="" target="_blank">
+                    <i class="fas fa-wine-bottle modal-content"></i
+                    ><span id="wine-one" class="font-lora fancy-thin"></span>
+                  </a>
+                </button>
+                <!--------------------------------wine two-->
+                <button
+                  class="btn btn-height btn-colors uppercase border-thin get-wine-btn-bg btn-font-size"
+                  type="button"
+                >
+                  <a class="light-text" href="" target="_blank">
+                    <i class="fas fa-wine-bottle modal-content"></i
+                    ><span id="wine-two" class="font-lora fancy-thin"></span>
+                  </a>
+                </button>
+                <!--------------------------------wine three-->
+                <button
+                  class="btn btn-height btn-colors uppercase border-thin get-wine-btn-bg btn-font-size"
+                  type="button"
+                >
+                  <a class="light-text" href="" target="_blank">
+                    <i class="fas fa-wine-bottle modal-content"></i
+                    ><span id="wine-three" class="font-lora fancy-thin"></span>
+                  </a>
+                </button>
               </div>
-            <div class="modal-content center-text">
-            <!------------------------------------------paired text for wine selection-->
-            <p id="wine-text" class="font-lora border-thin">
-                </p>
-                </div>
+              <div class="modal-content center-text">
+                <!------------------------------------------paired text for wine selection-->
+                <p id="wine-text" class="font-lora border-thin"></p>
+              </div>
+            </div>
+          </div>
         </div>
-				</div>
-			</div>
-		</div>
-			<!-- End of Modal -->
+      </div>
+      <!-- End of Modal -->
     </section>
 
     <!-- Footer / Main service/Wine Pairing section  -->
 
     <div id="footer" class="container-fluid footer-sticky">
       <div class="row content-anchor">
-        <div class="col center-text font-lora get-wine-bg light-text border-thin">
+        <div
+          class="col center-text font-lora get-wine-bg light-text border-thin"
+        >
           <h1 class="font-montserrat">
             Make Everyday<br /><span class="fancy-text fancy-large">G</span
             ><span class="fancy-text fancy-small">ourmet</span>
@@ -216,7 +227,6 @@
                 class="btn font-montserrat uppercase border-thin get-wine-btn-bg dark-text"
                 id="getWine"
                 type="button"
-                
               >
                 Get Wine Pairing
               </button>
@@ -237,60 +247,56 @@
               <option value="7">Brie</option>
               <option value="8">Blue Cheese</option>
               <option value="9">Gruyere</option>
-
             </select>
-
-          </div>
-          </div>
-        </div>
-      
-      <!-- Social Media Links -->
-
-      
-        <div class="row social-media-center content-anchor">
-          
-          <div class="col-sm-4 center-text social-media-links card-footer">
-            <ul class="list-inline social-links">
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-facebook" aria-hidden="true"></i>
-                  <span class="sr-only">Facebook</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-twitter" aria-hidden="true"></i>
-                  <span class="sr-only">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-linkedin" aria-hidden="true"></i>
-                  <span class="sr-only">LinkedIn</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-pinterest" aria-hidden="true"></i>
-                  <span class="sr-only">Pinterest</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-instagram" aria-hidden="true"></i>
-                  <span class="sr-only">Instagram</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-youtube" aria-hidden="true"></i>
-                  <span class="sr-only">YouTube</span>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
+
+      <!-- Social Media Links -->
+
+      <div class="row social-media-center content-anchor">
+        <div class="col-sm-4 center-text social-media-links card-footer">
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-facebook light-text" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-twitter light-text" aria-hidden="true"></i>
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-linkedin light-text" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-pinterest light-text" aria-hidden="true"></i>
+                <span class="sr-only">Pinterest</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-instagram light-text" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="#">
+                <i class="fab fa-youtube light-text" aria-hidden="true"></i>
+                <span class="sr-only">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div id="footer-details" class="col-sm-4"></div>
 
     <!-- Scripts -->
@@ -313,8 +319,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/aos-global.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/winesuggest.js"></script> 
+    <script src="assets/js/winesuggest.js"></script>
     <!-- <script src="assets/js/failedscripts.js"></script> -->
-
-</body>
+  </body>
 </html>
