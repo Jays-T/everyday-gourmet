@@ -79,6 +79,8 @@
       </div>
     </header>
 
+    <!-----------------------------End of Navigation-->
+
     <!-- Main landing page and fade in headlines -->
 
     <section>
@@ -138,7 +140,9 @@
           </div>
         </div>
       </div>
-                <!-- Modal -->
+                <!---------------------------------------------End of Headlines-->
+
+                <!--------------------------------------------- Modal -->
 	<div class="modal fade" id="suggestion-modal">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -151,33 +155,37 @@
 					<button type="button" class="close close-modal" data-dismiss="modal">×</button></h4>
                     <div id="pairingText">
             <div class="modal-flex-display">
+                    <!--------------------------------wine one-->
             <button
-                class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
+                class="btn btn-height btn-colors uppercase border-thin get-wine-btn-bg btn-font-size"
                 href=""
               ><a class="light-text" href="" target="_blank">
-                <i class="fas fa-wine-bottle modal-content"></i><span id="wine-one" class="fancy-text"></span
+                <i class="fas fa-wine-bottle modal-content"></i><span id="wine-one" class="font-lora fancy-thin"></span
             >
             </a>
               </button>
+              <!--------------------------------wine two-->
             <button
                 class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
                 type="button" 
               ><a class="light-text" href="" target="_blank">
-                <i class="fas fa-wine-bottle modal-content"></i><span id="wine-two" class="fancy-text"></span
+                <i class="fas fa-wine-bottle modal-content"></i><span id="wine-two" class="font-lora fancy-thin"></span
             >
             </a>
               </button>
+              <!--------------------------------wine three-->
             <button
                 class="btn btn-height btn-colors font-montserrat uppercase border-thin get-wine-btn-bg btn-font-size"
                 type="button" 
               ><a class="light-text" href="" target="_blank">
-                <i class="fas fa-wine-bottle modal-content"></i><span id="wine-three" class="fancy-text"></span
+                <i class="fas fa-wine-bottle modal-content"></i><span id="wine-three" class="font-lora fancy-thin"></span
             >
             </a>
               </button>
             
               </div>
             <div class="modal-content center-text">
+            <!------------------------------------------paired text for wine selection-->
             <p id="wine-text" class="font-lora border-thin">
                 </p>
                 </div>
@@ -213,6 +221,7 @@
                 Get Wine Pairing
               </button>
             </div>
+            <!---------------------------------------select food type-->
             <select
               class="custom-select font-lora border-thin get-wine-btn-bg dark-text"
               id="foodSelect"
@@ -221,12 +230,14 @@
               <option selected>Choose...</option>
               <option value="1">Steak</option>
               <option value="2">Fish</option>
-              <option value="3">Lobster</option>
-              <option value="4">Cheese</option>
-              <option value="5">Italian</option>
-              <option value="6">Spanish</option>
-              <option value="7">French</option>
-              <option value="8">South African</option>
+              <option value="3">Turkey</option>
+              <option value="4">Italian</option>
+              <option value="5">Spanish</option>
+              <option value="6">French</option>
+              <option value="7">Brie</option>
+              <option value="8">Blue Cheese</option>
+              <option value="9">Gruyere</option>
+
             </select>
 
           </div>
@@ -302,8 +313,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/aos-global.js"></script>
     <script src="assets/js/main.js"></script>
-    <!-- <script src="assets/js/winesuggest.js"></script> -->
-    <script src="assets/js/failedscripts.js"></script>
+    <script src="assets/js/winesuggest.js"></script> 
+    <!-- <script src="assets/js/failedscripts.js"></script> -->
 
 </body>
 </html>

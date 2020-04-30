@@ -10,15 +10,18 @@ $(document).ready(function() {
                     "556f1a08acmsh72d41478bea3e6ap19227ajsn0bf8a497994a" },
                 type: "GET",
                 success: function(result) { 
-                    console.log(result['pairedWines']);
-                    console.log(result['pairedWines'][0]);
-                    console.log(result['pairedWines'][1]);
-                    console.log(result['pairedWines'][2]);
-                    console.log(result['pairingText']);
+                    
 
                     $('#suggestion-modal').modal('show'); // open/show modal
-                    $('#suggestion-modal').on('shown.bs.modal', function(result){
-                        $(this).find('#wine-text').empty().html('this will be your'+ $(result['pairedWines'],[0]), +'see');
+                    $('#suggestion-modal').on('shown.bs.modal', function(){
+                        const wineArray = (result['pairedWines']);
+                        wineArray.forEach(myFunc => console.log(myFunc.charAt(0)));
+                        console.log(wineArray);
+                        
+                        $(this).find('#wine-one').empty().html((result['pairedWines'][0]));
+                        $(this).find('#wine-two').empty().html((result['pairedWines'][1]));
+                        $(this).find('#wine-three').empty().html((result['pairedWines'][2]));
+                        $(this).find('#wine-text').empty().html((result['pairingText']));
                     });
                     
                 },
@@ -28,6 +31,10 @@ $(document).ready(function() {
         });
       });
 });
+
+
+
+
 
 /*
 function getWine(pairingURL) {
