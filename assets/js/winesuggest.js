@@ -42,9 +42,8 @@ const wineSug = [
 ]
 
 steakSug = wineSug.find(wineSug => wineSug.type ==='steak');
-console.log(frenchSug); 
-
-
+console.log(steakSug);
+return steakSug;
 
 function getFoodId() {
     let foodID = $("#foodSelect option:selected").val();

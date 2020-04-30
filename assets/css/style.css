@@ -18,11 +18,15 @@ body {
 }
 
 .light-text {
-    color: #999;
+    color: rgb(235, 233, 233);
 }
 
 .dark-text {
     color: #000;
+}
+
+.center-text {
+    text-align: center;
 }
 
 .uppercase {
@@ -54,6 +58,22 @@ html h1 {
 .border-thin {
     border-top: solid .5px rgba(236, 64, 73, 0.4);
     border-bottom: solid .5px rgba(236, 64, 73, 0.4);
+}
+
+.border-top {
+    border-top: solid .5px rgba(73, 67, 67, 0.3);
+}
+
+.modal-content {
+    padding: 2vh 2vw;
+}
+
+.get-wine-bg {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.get-wine-btn-bg {
+    background: rgba(243, 243, 243, 0.6)
 }
 
 /* ------------------------------ Navbar hover styling */
@@ -215,10 +235,6 @@ html h1 {
 }
 
 /* ------------------------------ Footer and Wine Pairing submit form */
-
-.center-text {
-    text-align: center;
-}
 
 .footer-sticky {
     background-color: rgba(73, 67, 67, 0.3);
