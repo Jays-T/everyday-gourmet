@@ -10,7 +10,9 @@ myform.submit(function(event){
   emailjs.sendForm(service_id,template_id,myform[0])
   	.then(function(){ 
     	alert("Sent!");
-       myform.find("button").text("Send").then(reset());
+       myform.find("button").text("Send").then(() => {
+        reset("#emailform");
+       });
     }, function(err) {
        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
        myform.find("button").text("Send");
