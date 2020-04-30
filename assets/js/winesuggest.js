@@ -14,10 +14,10 @@ const mylinks = [
 
 
 
-$("#getWine").click(function() {
+$(document).ready(function() {
     
       $("#foodSelect").change(function () {  // check which food option is selected
-           alert($("#foodSelect").text().toLowerCase());
+           // Send the GET request to the API
             $.ajax({
                 url: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?maxPrice=50&food="+$("#foodSelect option:selected").text().toLowerCase(),
                 headers: { "x-rapidapi-host":
