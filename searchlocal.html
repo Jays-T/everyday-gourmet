@@ -28,8 +28,9 @@
     />
 
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mapstyle.css" />
 
-    <title>Everyday Gourmet Contact Us</title>
+    <title>Everyday Gourmet Search Local Shops</title>
   </head>
 
   <body>
@@ -40,7 +41,10 @@
         <div id="navigation" class="navbar navbar-fixed-transparent">
           <ul class="nav">
             <li class="nav-item">
-              <a class="navbar-brand font-montserrat dark-text" href="index.html">
+              <a
+                class="navbar-brand font-montserrat dark-text"
+                href="index.html"
+              >
                 <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
                 <span class="sr-only">home</span>
               </a>
@@ -62,61 +66,68 @@
 
     <!-- Main content / Contact Us Email Form -->
 
-    <div class="container-fluid footer-sticky contact-us-page">
-      <div class="row">
-        <div class="col">
-          <h3 class="contact-heading uppercase text-center">Shop Wines</h3>
-          <h5 class="uppercase text-center">Find local wine shops</h5>
+    <div class="container-fluid footer-sticky contact-us-page map-wrapper">
+      <div class="row content-anchor">
+        <div
+          class="col map-column center-text font-lora get-wine-bg light-text border-thin"
+        >
+          <h4 class="font-montserrat">
+            Make Every Day<br />
+            </h4>
+            <h2 class="border-thin"><span class="fancy-text fancy-large">G</span
+            ><span class="fancy-text fancy-small">ourmet</span>
+          </h2>
+          <div id="map"></div>
+          <div id="map-text">
+            <h3 class="contact-heading uppercase text-center">Shop Wines</h3>
+            <h5 class="uppercase text-center">Find local wine shops</h5>
+          </div>
         </div>
-        <div class="col" id="map"></div>
       </div>
       <!-- Social Media Links -->
       <div class="row social-media-center content-anchor">
-          
-          <div class="col-sm-4 center-text social-media-links card-footer">
-            <ul class="list-inline social-links">
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-facebook" aria-hidden="true"></i>
-                  <span class="sr-only">Facebook</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-twitter" aria-hidden="true"></i>
-                  <span class="sr-only">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-linkedin" aria-hidden="true"></i>
-                  <span class="sr-only">LinkedIn</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-pinterest" aria-hidden="true"></i>
-                  <span class="sr-only">Pinterest</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-instagram" aria-hidden="true"></i>
-                  <span class="sr-only">Instagram</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a target="_blank" href="#">
-                  <i class="fab fa-youtube" aria-hidden="true"></i>
-                  <span class="sr-only">YouTube</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="col-sm-4 center-text social-media-links card-footer">
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.facebook.com">
+                <i class="fab fa-facebook dark-text" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.twitter.com">
+                <i class="fab fa-twitter dark-text" aria-hidden="true"></i>
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.linkedin.com">
+                <i class="fab fa-linkedin dark-text" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.pinterest.com">
+                <i class="fab fa-pinterest dark-text" aria-hidden="true"></i>
+                <span class="sr-only">Pinterest</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.instagram.com">
+                <i class="fab fa-instagram dark-text" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.youtube.com">
+                <i class="fab fa-youtube dark-text" aria-hidden="true"></i>
+                <span class="sr-only">YouTube</span>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-    
-
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -143,7 +154,11 @@
       })();
     </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcuRYmMc1O9HX7R6W5Ko7zPWXT1qbOpOQ&callback=initMap"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcuRYmMc1O9HX7R6W5Ko7zPWXT1qbOpOQ&callback=initMap"
+    ></script>
     <script src="assets/js/map.js"></script>
 
     <script src="assets/js/main.js"></script>

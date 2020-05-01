@@ -1,0 +1,15 @@
+#map {
+    height: 40vh;
+    width: 80vw;
+}
+
+.map-wrapper {
+    min-height: 100vh;
+}
+
+.map-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}

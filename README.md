@@ -1,42 +1,35 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# <a href="https://jays-t.github.io/everyday-gourmet/">Everyday Gourmet</a> - Milestone Two Project for Code Institute Fullstack Web Developer course
 
-Welcome Jays-T,
+## Structure
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+* The main site is structured as a one page website scrolling over a fixed background image with a sticky footer
+* Navigation links at the top left of the page 
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* The landing page features the Band Logo front and center with the Band name image fading in 
 
-`python3 -m http.server`
 
-A blue button should appear to click: *Make Public*,
+* The smooth scrolling overlap feature and fixed background images are disabled on smaller devices and the site reverts to a single page long scroll site at a width of 1024px
+* There is a Navigation bar at the top of the site - This bar is fixed and does not dissapear when scrolling - The Navigation bar collapses on smaller devices and a button appears which gives access to the Nav-Links on smaller devices
+* Users can navigate to each section on the site by clicking the appropriate link within the Navigation bar - The buttons/links are designated by name corresponding to their respective sections
+* Users can also scroll through the site by clicking on the small down facing chevrons located at the bottom of each section.
 
-Another blue button should appear to click: *Open Browser*.
+## **Interactions that are fully functional include:**
+1. The Local Site Navigation links located in the Navigation Bar fixed at the top of the site - These links also function on smaller devices and are accessed via the Toggle at the top right of the screen
+1. The Social Media links in the sidebar which are linked to external sites
+1. Links to open Modals (a small overlay box with content)
+1. Links to close Modals
+1. All scrolling chevrons
+1. All 'Tickets' links are functional but currently click through to https://www.ticketmaster.com
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## **Areas where a link or interaction will not function as intended:**
 
-A blue button should appear to click: *Make Public*,
+1. The 'Get my free download' in the Call to Action modal. The modal can be opened by clicking on the ! Free Download of our latest Album !.
+1. The 'Send project request' in the Lets Work Together modal in the 'Contact' section.
+1. The 'Sign Up' button in the form at the bottom of the 'Contact' section.
 
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+### **No form submit actions will work and will simply reload the page.**
+### **This is because this is a static site with no backend currently.**
 
 Testing during development
 
