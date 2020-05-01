@@ -68,7 +68,7 @@
     <div class="container-fluid footer-sticky contact-us-page">
       <div class="row get-wine-bg content-anchor">
         <div
-          class="col center-text font-lora light-text border-thin email-text-area-width"
+          class="col center-text font-lora light-text border-thin input-text-areas-width"
         >
           <h4 class="font-montserrat">Make Every Day<br /></h4>
           <h2 class="border-thin">
@@ -76,9 +76,10 @@
             ><span class="fancy-text fancy-small">ourmet</span>
           </h2>
           <h3 class="contact-heading uppercase">Contact us</h3>
-          <h5 class="uppercase">We'd love to hear from you</h5>
 
           <form id="emailform">
+
+            <!-- Name input -->
             <input
               type="text"
               name="from_name"
@@ -87,6 +88,7 @@
               required
             />
 
+            <!-- Sender email add input -->
             <input
               type="text"
               name="from_email"
@@ -95,6 +97,7 @@
               required
             />
 
+            <!-- Text input for email main content -->
             <textarea
               rows="5"
               name="content_everyday_gourmet"
@@ -156,7 +159,7 @@
         </div>
       </div>
     </div>
-
+    <!-- Scripts -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

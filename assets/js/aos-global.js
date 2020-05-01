@@ -1,4 +1,5 @@
 // Animate on Scroll Global settings //
+// Sourced from https://michalsnik.github.io/aos/ //
 
 AOS.init({
         useClassNames: false, // if true, will add content of `data-aos` as classes on scroll

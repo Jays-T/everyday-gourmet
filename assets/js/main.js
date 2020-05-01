@@ -1,12 +1,10 @@
-// Main scroll functions 
+// Main scroll functions
 
-$(document).ready(function(){
+$(document).ready(function () {
+  // Targetting all links
 
-  // Targetting all links 
-
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value 
+  $("a").on("click", function (event) {
+    // Make sure this.hash has a value
     if (this.hash !== "") {
       // Prevent default anchor click behavior if this.hash has a value
       event.preventDefault();
@@ -14,65 +12,52 @@ $(document).ready(function(){
       var hash = this.hash;
 
       // Using jQuery's scrollIntoView() method with "smooth" behavior for smooth scrolling
-      $(hash)[0].scrollIntoView({
-        behavior: "smooth",
-        block: "center"
-      }, 800, function(){
-
-        window.location.hash = hash;
-      });
+      $(hash)[0].scrollIntoView(
+        {
+          behavior: "smooth",
+          block: "center",
+        },
+        800,
+        function () {
+          window.location.hash = hash;
+        }
+      );
     }
   });
 });
 
-
 // Blur effect using addClass
 
-// When hovering on Wine Pairing
+//  Targetting all nav-items
 
-$('#wine-pairing').mouseenter(function(){
-    $(this).addClass('light-border-thin');
-    $('#contact, #home-icon, #shop, .main-headlines').addClass('blur');
+$(".nav-item").mouseenter(function () {
+  $(this).addClass("light-border-thin");
+  $(this).siblings().addClass("blur");
 });
 
-$('#wine-pairing').mouseleave(function(){
-    $(this).removeClass('light-border-thin');
-    $('#contact, #home-icon, #shop, .main-headlines').removeClass('blur');
+$(".nav-item").mouseleave(function () {
+  $(this).removeClass("light-border-thin");
+  $(this).siblings().removeClass("blur");
 });
 
-// When hovering on Contact
+// Targetting the social media links icons
 
-$('#contact').mouseenter(function(){
-    $(this).addClass('light-border-thin');
-    $('#wine-pairing, #home-icon, #shop, .main-headlines').addClass('blur');
+$(".list-inline-item").mouseenter(function () {
+  $(this, "i").addClass("zoom");
+  $(this).siblings().addClass("blur");
 });
 
-$('#contact').mouseleave(function(){
-    $(this).removeClass('light-border-thin');
-    $('#wine-pairing, #home-icon, #shop, .main-headlines').removeClass('blur');
+$(".list-inline-item").mouseleave(function () {
+  $(this, "i").removeClass("zoom");
+  $(this).siblings().removeClass("blur");
 });
 
-// When hovering on Home Icon
+// Targetting the buttons in the wine suggestion modal
 
-$('#home-icon').mouseenter(function(){
-    $(this).addClass('light-border-thin');
-    $('#wine-pairing, #contact, #shop, .main-headlines').addClass('blur');
+$(".btn-blur").mouseenter(function () {
+  $(this).siblings().addClass("blur");
 });
 
-$('#home-icon').mouseleave(function(){
-    $(this).removeClass('light-border-thin');
-    $('#wine-pairing, #contact, #shop, .main-headlines').removeClass('blur');
-});
-
-
-// When hovering on Shop Local
-
-$('#shop').mouseenter(function(){
-    $(this).addClass('light-border-thin');
-    $('#wine-pairing, #contact, #home-icon, .main-headlines').addClass('blur');
-});
-
-$('#shop').mouseleave(function(){
-    $(this).removeClass('light-border-thin');
-    $('#wine-pairing, #contact, #home-icon, .main-headlines').removeClass('blur');
+$(".btn-blur").mouseleave(function () {
+  $(this).siblings().removeClass("blur");
 });

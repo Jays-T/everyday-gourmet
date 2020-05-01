@@ -24,6 +24,11 @@ body {
     color: #000;
 }
 
+.btn:hover {
+    color: rgba(241, 75, 83, 0.8);
+    transition: all .3s ease-in-out; 
+}
+
 .center-text {
     text-align: center;
 }
@@ -125,7 +130,8 @@ html h1 {
 
 body a:hover {
         color: rgba(241, 75, 83, 0.8);
-        transition: all .3s ease-in-out; 
+        transition: all .3s ease-in-out;
+        text-decoration: none; 
 }
 
 /* ------------------------------ Navbar styling */
@@ -306,7 +312,7 @@ body a:hover {
   min-height: 100vh;
 }
 
-.email-text-area-width {
+.input-text-areas-width {
     padding-left: 28vw;
     padding-right: 28vw;
 }
@@ -325,6 +331,15 @@ body a:hover {
 
 .social-media-center {
     justify-content: center;
+}
+
+.zoom {
+  transform: scale(2);
+  transition: all .3s ease-in-out;
+}
+
+.list-inline-item i:hover {
+      color: rgb(218, 32, 41);
 }
 
           
@@ -369,7 +384,7 @@ body a:hover {
 
         margin: 47vh 4vw 10vh 0;
     }
-    .email-text-area-width {
+    .input-text-areas-width {
     padding-left: 14vw;
     padding-right: 14vw;
 }
@@ -392,7 +407,7 @@ body a:hover {
     font-size: .8rem;
     letter-spacing: 0.1em;
 }
-.email-text-area-width {
+.input-text-areas-width {
     padding-left: 2.8vw;
     padding-right: 2.8vw;
 }
