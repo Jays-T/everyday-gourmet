@@ -78,11 +78,10 @@
           <h3 class="contact-heading uppercase">Contact us</h3>
           <h5 class="uppercase">We'd love to hear from you</h5>
 
-          <form onsubmit="return sendMail(this);" id="emailform">
+          <form id="emailform">
             <input
               type="text"
               name="from_name"
-              class="form-control"
               id="customername"
               placeholder="Name"
               required
@@ -91,7 +90,6 @@
             <input
               type="text"
               name="from_email"
-              class="form-control"
               id="emailaddress"
               placeholder="Email"
               required
@@ -100,12 +98,15 @@
             <textarea
               rows="5"
               name="content_everyday_gourmet"
-              class="form-control"
               id="emailcontent"
               placeholder="Say hi...."
               required
             ></textarea>
-            <button type="submit" class="btn btn-secondary center-block">
+            <button
+              id="email-button"
+              class="btn font-montserrat uppercase border-thin btn-colors center-block"
+              type="submit"
+            >
               Send Email
             </button>
           </form>

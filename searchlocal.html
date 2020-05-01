@@ -77,10 +77,18 @@
             <h2 class="border-thin"><span class="fancy-text fancy-large">G</span
             ><span class="fancy-text fancy-small">ourmet</span>
           </h2>
-          <div id="map"></div>
+          <h5 class="uppercase">Find local wine shops</h5>
+          <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+            <div id="map"></div>
           <div id="map-text">
-            <h3 class="contact-heading uppercase">Shop Wines</h3>
-            <h5 class="uppercase">Find local wine shops</h5>
+          <button
+                class="btn font-montserrat uppercase border-thin btn-colors"
+                type="button"
+              >
+                <a target="_blank" href="https://wine.com" class="light-text">Shop Wines Online</a>
+              </button>
+            
+            
           </div>
         </div>
       </div>
@@ -144,97 +152,17 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_uwE1zr6VGq2l3SFfii47C");
-      })();
-    </script>
+    
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
     <script
       async
       defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcuRYmMc1O9HX7R6W5Ko7zPWXT1qbOpOQ&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcuRYmMc1O9HX7R6W5Ko7zPWXT1qbOpOQ&callback=initMap&libraries=places"
     ></script>
+    
     <script src="assets/js/map.js"></script>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/sendemail.js"></script>
-
-     <script>
-    /* Note: This example requires that you consent to location sharing when
-     * prompted by your browser. If you see the error "Geolocation permission
-     * denied.", it means you probably did not give permission for the browser * to locate you. */
-
-    /* TODO: Step 2, Geolocate your user
-     * Replace the code from here to the END TODO comment with this code
-     * from codelab instructions. */
-    let pos;
-    let map;
-    let bounds;
-    let infoWindow;
-    let currentInfoWindow;
-    let service;
-    let infoPane;
-    function initMap() {
-      // Initialize variables
-      bounds = new google.maps.LatLngBounds();
-      infoWindow = new google.maps.InfoWindow;
-      currentInfoWindow = infoWindow;
-      /* TODO: Step 4A3: Add a generic sidebar */
-
-      // Try HTML5 geolocation
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(position => {
-          pos = {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude
-          };
-          map = new google.maps.Map(document.getElementById('map'), {
-            center: pos,
-            zoom: 15
-          });
-          bounds.extend(pos);
-
-          infoWindow.setPosition(pos);
-          infoWindow.setContent('Location found.');
-          infoWindow.open(map);
-          map.setCenter(pos);
-
-          /* TODO: Step 3B2, Call the Places Nearby Search */
-        }, () => {
-          // Browser supports geolocation, but user has denied permission
-          handleLocationError(true, infoWindow);
-        });
-      } else {
-        // Browser doesn't support geolocation
-        handleLocationError(false, infoWindow);
-      }
-    }
-
-    // Handle a geolocation error
-    function handleLocationError(browserHasGeolocation, infoWindow) {
-      // Set default location to Sydney, Australia
-      pos = {lat: -33.856, lng: 151.215};
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: pos,
-        zoom: 15
-      });
-
-      // Display an InfoWindow at the map center
-      infoWindow.setPosition(pos);
-      infoWindow.setContent(browserHasGeolocation ?
-        'Geolocation permissions denied. Using default location.' :
-        'Error: Your browser doesn\'t support geolocation.');
-      infoWindow.open(map);
-      currentInfoWindow = infoWindow;
-
-      /* TODO: Step 3B3, Call the Places Nearby Search */
-    }
     
-  </script>
   </body>
 </html>
