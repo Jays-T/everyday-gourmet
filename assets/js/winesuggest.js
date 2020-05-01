@@ -18,6 +18,7 @@ $(document).ready(function() {
     
       $("#foodSelect").change(function () {  // check which food option is selected
            // Send the GET request to the API
+           
             $.ajax({
                 url: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/pairing?maxPrice=50&food="+$("#foodSelect option:selected").text().toLowerCase(),
                 headers: { "x-rapidapi-host":
@@ -38,44 +39,61 @@ $(document).ready(function() {
                         for(let i = 0; i< mylinks.length; i++ ) {
                         if (selection === "Steak"){
                                                       //  target specific ID's, empty and then add html including specific URL 
-                         $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[0][1]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[0][2]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[0][3]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         console.log(mylinks[0][1]);
+                         $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[0][1]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[0][2]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[0][3]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         
                         } else if (selection === "Fish"){
-                         $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[1][1]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[1][2]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[1][3]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
+
+                         $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[1][1]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[1][2]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[1][3]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                        
                         } else if (selection === "Turkey"){
-                        $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[2][1]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[2][2]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[2][3]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
+
+                        $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[2][1]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[2][2]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[2][3]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                        
                         } else if (selection === "Italian"){
-                        $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[3][1]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[3][2]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[3][3]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
+
+                        $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[3][1]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[3][2]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[3][3]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                        
                         } else if (selection === "Spanish"){
-                        $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[4][1]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[4][2]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[4][3]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
+
+                        $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[4][1]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[4][2]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[4][3]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                        
                         } else if (selection === "French"){
-                        $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[5][1]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[5][2]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[5][3]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
+
+                        $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[5][1]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[5][2]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[5][3]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                        
                         } else if (selection === "Brie"){
-                        $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[6][1]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[6][2]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[6][3]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
+
+                        $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[6][1]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[6][2]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[6][3]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                        
                         } else if (selection === "Blue Cheese"){
-                            $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[7][1]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[7][2]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[7][3]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
+
+                            $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[7][1]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[7][2]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[7][3]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                        
                         } else if (selection === "Gruyere"){
-                        $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[8][1]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[8][2]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
-                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[8][3]+'" target="_blank" class="font-montserrat light-text uppercase">Shop</a>'));
+
+                        $('#suggestion-modal').find('#link-wine-one').empty().html(('<a href="'+mylinks[8][1]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-two').empty().html(('<a href="'+mylinks[8][2]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
+                         $('#suggestion-modal').find('#link-wine-three').empty().html(('<a href="'+mylinks[8][3]+'" target="_blank" class="shop-border font-montserrat light-text uppercase">Shop</a>'));
                         }
                         }
+                                                    // after adding the relevant links, target specific information returned from API
+                                                    // and pass into the relevant ID'd elements html
 
                         $(this).find('#wine-one').empty().html((result['pairedWines'][0]));
                         $(this).find('#wine-two').empty().html((result['pairedWines'][1]));

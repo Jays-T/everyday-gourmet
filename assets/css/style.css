@@ -88,7 +88,7 @@ html h1 {
 }
 
 .btn-height {
-    min-height: 60px;
+    min-height: 100%;
 }
 
 .btn-colors {
@@ -99,6 +99,23 @@ html h1 {
 .btn-font-size {
     font-size: 1.2rem;
     letter-spacing: 0.1em;
+}
+
+.shop-border {
+    border-top: solid .8px rgba(243, 243, 243, 0.6);
+    border-bottom: solid .8px rgba(243, 243, 243, 0.6);
+}
+
+#center-wine-btn {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.wine-text-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75px;
 }
 /* ------------------------------ Navbar hover styling */
 
