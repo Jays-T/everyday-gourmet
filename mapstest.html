@@ -28,8 +28,9 @@
     />
 
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mapstyle.css" />
 
-    <title>Everyday Gourmet Contact Us</title>
+    <title>Everyday Gourmet Search Local Shops</title>
   </head>
 
   <body>
@@ -50,11 +51,11 @@
             </li>
             <li class="nav-item">
               <a
-                id="shop"
+                id="contact"
                 class="navbar-brand font-montserrat dark-text uppercase"
-                href="searchlocal.html"
+                href="contact.html"
               >
-                Shop Local
+                Contact
                 <span class="sr-only">Contact Page</span>
               </a>
             </li>
@@ -65,50 +66,23 @@
 
     <!-- Main content / Contact Us Email Form -->
 
-    <div class="container-fluid footer-sticky contact-us-page">
-      <div class="row get-wine-bg content-anchor">
+    <div class="container-fluid footer-sticky contact-us-page map-wrapper">
+      <div class="row content-anchor get-wine-bg">
         <div
-          class="col center-text font-lora light-text border-thin email-text-area-width"
+          class="col map-column center-text font-lora light-text border-thin"
         >
-          <h4 class="font-montserrat">Make Every Day<br /></h4>
-          <h2 class="border-thin">
-            <span class="fancy-text fancy-large">G</span
+          <h4 class="font-montserrat">
+            Make Every Day<br />
+            </h4>
+            <h2 class="border-thin"><span class="fancy-text fancy-large">G</span
             ><span class="fancy-text fancy-small">ourmet</span>
           </h2>
-          <h3 class="contact-heading uppercase">Contact us</h3>
-          <h5 class="uppercase">We'd love to hear from you</h5>
-
-          <form onsubmit="return sendMail(this);" id="emailform">
-            <input
-              type="text"
-              name="from_name"
-              class="form-control"
-              id="customername"
-              placeholder="Name"
-              required
-            />
-
-            <input
-              type="text"
-              name="from_email"
-              class="form-control"
-              id="emailaddress"
-              placeholder="Email"
-              required
-            />
-
-            <textarea
-              rows="5"
-              name="content_everyday_gourmet"
-              class="form-control"
-              id="emailcontent"
-              placeholder="Say hi...."
-              required
-            ></textarea>
-            <button type="submit" class="btn btn-secondary center-block">
-              Send Email
-            </button>
-          </form>
+          <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+            <div id="map"></div>
+          <div id="map-text">
+            <h3 class="contact-heading uppercase ">Shop Wines</h3>
+            <h5 class="uppercase">Find local wine shops</h5>
+          </div>
         </div>
       </div>
       <!-- Social Media Links -->
@@ -171,18 +145,17 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
     <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcuRYmMc1O9HX7R6W5Ko7zPWXT1qbOpOQ&callback=initMap&libraries=places"
     ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_uwE1zr6VGq2l3SFfii47C");
-      })();
-    </script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/sendemail.js"></script>
+    
+    <script src="assets/js/map.js"></script>
 
-    <script></script>
+    <script src="assets/js/main.js"></script>
+    
   </body>
 </html>

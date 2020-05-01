@@ -296,6 +296,7 @@ body a:hover {
     margin-top: auto;    
 }  
 
+/* -------------- Contact Us */
 
 .contact-us-page {
   
@@ -303,6 +304,11 @@ body a:hover {
   padding-top: 7rem;
   bottom: 0;
   min-height: 100vh;
+}
+
+.email-text-area-width {
+    padding-left: 28vw;
+    padding-right: 28vw;
 }
 
 /* ------------------------------ Social Media Links */
@@ -363,6 +369,10 @@ body a:hover {
 
         margin: 47vh 4vw 10vh 0;
     }
+    .email-text-area-width {
+    padding-left: 14vw;
+    padding-right: 14vw;
+}
     
 
 }
@@ -381,6 +391,10 @@ body a:hover {
 .btn-font-size {
     font-size: .8rem;
     letter-spacing: 0.1em;
+}
+.email-text-area-width {
+    padding-left: 2.8vw;
+    padding-right: 2.8vw;
 }
 }
 
