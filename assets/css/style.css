@@ -88,7 +88,7 @@ html h1 {
 }
 
 .btn-height {
-    min-height: 100%;
+    min-height: 60px;
 }
 
 .btn-colors {
