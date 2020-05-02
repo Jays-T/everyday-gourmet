@@ -100,8 +100,6 @@ html h1 {
 }
 
 .shadow-up {
-    -moz-box-shadow: inset 0 -2rem 8rem rgb(12, 11, 11);
-    -webkit-box-shadow: inset 0 -2rem 8rem rgb(12, 11, 11);
     box-shadow: inset 0 -2rem 8rem rgb(12, 11, 11);
 }
 
@@ -216,8 +214,7 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
   --color: transparent; 
  
     box-shadow: 0 6rem 8rem #000;
-    -moz-box-shadow:    0 6rem 8rem #000;
-    -webkit-box-shadow: 0 6rem 8rem #000;
+
 }
 
 *, *::before, *::after {
@@ -418,8 +415,7 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
   --color: transparent; 
  
     box-shadow: 0 2rem 3rem #000;
-    -moz-box-shadow:    0 2rem 3rem #000;
-    -webkit-box-shadow: 0 2rem 3rem #000;
+
     }
 
     .fade-in-headlines {

@@ -18,12 +18,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Yellowtail:400,700"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,700%7CYellowtail:400,700"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="assets/css/style.css" />
-
 
     <title>Everyday Gourmet Contact Us</title>
   </head>
@@ -32,18 +31,18 @@
     <!-- Navigation -->
 
     <header>
-        <div id="navigation" class="navbar navbar-fixed-transparent rounded">
-          <ul class="nav nav-ul-flex-sm">
-              <a
-                class="navbar-brand font-montserrat light-text"
-                href="index.html"
-              >
-              <li class="nav-item">
-                <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
-                <span class="sr-only">home</span>
-                </li>
-              </a>
-            <li class="nav-item">
+      <div id="navigation" class="navbar navbar-fixed-transparent rounded">
+        <ul class="nav nav-ul-flex-sm">
+          <li class="nav-item">
+            <a
+              class="navbar-brand font-montserrat light-text"
+              href="index.html"
+            >
+              <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
+              <span class="sr-only">home</span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a
               id="wine-pairing"
               class="navbar-brand font-montserrat light-text uppercase text-spacing"
@@ -53,18 +52,18 @@
               <span class="sr-only">wine pairing</span>
             </a>
           </li>
-            <li class="nav-item">
-              <a
-                id="shop"
-                class="navbar-brand font-montserrat light-text uppercase text-spacing"
-                href="searchlocal.html"
-              >
-                Shop Local
-                <span class="sr-only">Contact Page</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item">
+            <a
+              id="shop"
+              class="navbar-brand font-montserrat light-text uppercase text-spacing"
+              href="searchlocal.html"
+            >
+              Shop Local
+              <span class="sr-only">Contact Page</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- Main content / Contact Us Email Form -->
@@ -82,7 +81,6 @@
           <h3 class="contact-heading uppercase">Contact us</h3>
 
           <form id="emailform">
-
             <!-- Name input -->
             <input
               type="text"
@@ -124,7 +122,9 @@
       </div>
       <!-- Social Media Links -->
       <div class="row social-media-center content-anchor">
-        <div class="col-sm-10 center-text social-media-links card-footer shadow-up rounded">
+        <div
+          class="col-sm-10 center-text social-media-links card-footer shadow-up rounded"
+        >
           <ul class="list-inline social-links">
             <li class="list-inline-item">
               <a target="_blank" href="https://www.facebook.com">
@@ -183,10 +183,9 @@
       crossorigin="anonymous"
     ></script>
     <script
-      type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
     ></script>
-    <script type="text/javascript">
+    <script>
       (function () {
         emailjs.init("user_uwE1zr6VGq2l3SFfii47C");
       })();
