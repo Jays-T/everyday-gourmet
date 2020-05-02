@@ -10,4 +10,4 @@ let checkSelection = $("#foodSelect option:selected").text();
              $(this).find("#suggestion-buttons").empty();
              $(this).find("#wine-text").empty().html('<span class="fancy-text">Oops!</span><br /> Did you forget to choose a food?');
         });
-    } else {
+    } else {};
