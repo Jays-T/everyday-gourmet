@@ -163,7 +163,7 @@ body a:hover {
     position: fixed;
     z-index: 3;
     top: 2.8em;
-    left: 4.2em;
+    left: 8vw;
 }
 
 
@@ -435,6 +435,19 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
 .bg-img-contact {
     background-image: url("../images/food-and-wine-bottles-on-table-by-lake-1000x1320.jpg");
 }
+
+.navbar-fixed-transparent {
+    background-color: rgba(0, 0, 0, 0.6);
+    min-width: 83.3%;
+    top: 0;
+    left: 8.33vw;
+}
+
+
+.nav-ul-flex-sm {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
     
 }
 
@@ -467,6 +480,15 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
 .bg-img-contact {
     background-image: url("../images/food-and-wine-bottles-on-table-by-lake-578x900.jpg");
 }
+.navbar-fixed-transparent {
+    min-width: 100%;
+    top: 0;
+    left: 0;
+}
 
+.navbar-brand {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    font-size: 0.6rem;
 }
 
