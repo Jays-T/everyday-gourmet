@@ -12,11 +12,13 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    margin-left: 7vw ;
+    margin-right: 7vw;
 }
 
 
-      #description {
-        font-size: 15px;
+    #description {
+        font-size: 2em;
         font-weight: 300;
       }
 
@@ -52,35 +54,53 @@
         padding: 5px 11px;
       }
 
-      .pac-controls label {
-        
-        font-size: 13px;
-        font-weight: 300;
-      }
+
 
       #pac-input {
-        background-color: #fff;
-        
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        width: 400px;
+    background-color: rgba(243, 243, 243, 0.6);
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 50%;
+    min-height: 5vh;
+    position: relative!important;
+    left: 20%!important;
+    top: 80%!important;
       }
 
-      #pac-input:focus {
-        border-color: #4d90fe;
+      #pac-input:hover {
+        border-color: rgb(236, 64, 73);
       }
 
       #title {
-        color: #fff;
-        background-color: #4d90fe;
-        font-size: 25px;
+        font-size: 2em;
         font-weight: 500;
         padding: 6px 12px;
       }
+
       #target {
         width: 345px;
       }
+
+@media screen and (max-width: 768px) {
+    #title {
+        font-size: 1em;
+        font-weight: 300;
+        padding: 2vw 2vh;
+    }
+
+    #pac-container {
+        padding-bottom: 6px;
+        margin-right: 6px;
+      }
+
+    #description {
+        font-size: 1em;
+      }
+
+    #map {
+    height: 50vh;
+    width: 80vw;
+}
+
+}
     

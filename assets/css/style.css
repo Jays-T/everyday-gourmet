@@ -138,7 +138,7 @@ body a:hover {
 
 .navbar-fixed-transparent {
     display: inline-block;
-    padding: 3px 3px;
+    padding: 2vh 1vw;
     background-color: transparent;
     border: none;
     position: fixed;
