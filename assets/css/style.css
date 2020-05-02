@@ -3,10 +3,6 @@ body {
     position: relative;
 }
 
-.jumbo-adapt {
-    padding: 4rem 9rem;
-}
-
 .blur {
     filter: blur(4px);
 }
@@ -166,8 +162,8 @@ body a:hover {
     border: none;
     position: fixed;
     z-index: 3;
-    top: 4em;
-    left: 4.5em;
+    top: 2.8em;
+    left: 4.2em;
 }
 
 
@@ -303,8 +299,7 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
 
     background: transparent;
     color: rgb(255, 255, 255);
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     letter-spacing: 0.2em;
     
 }
@@ -439,17 +434,6 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
 
 .bg-img-contact {
     background-image: url("../images/food-and-wine-bottles-on-table-by-lake-1000x1320.jpg");
-}
-    
-.jumbo-adapt {
-    padding: 1.1rem 1.8rem;
-}
-}
-
-@media screen and (max-width: 768px) {
-
-.jumbo-adapt {
-    padding: 0.7rem 1.4rem;
 }
     
 }

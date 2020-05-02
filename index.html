@@ -31,27 +31,25 @@
     <title>Everday Gourmet</title>
   </head>
 
-  <body data-spy="scroll" data-target="#navbar-example">
+  <body>
     <!-- Navigation -->
-<div class="jumbotron jumbo-adapt">
+
     <header id="home">
 
-    
       <nav id="navigation" class="navbar navbar-fixed-transparent">
         <ul class="nav nav-ul-flex-sm">
-        <li class="nav-item">
               <a
-                class="navbar-brand font-montserrat light-text"
+                class="smooth-scroll navbar-brand font-montserrat light-text"
                 href="#home"
-              >
+              ><li class="nav-item">
                 <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
                 <span class="sr-only">home</span>
+                </li>
               </a>
-              </li>
           <li class="nav-item">
             <a
               id="wine-pairing"
-              class="navbar-brand font-montserrat light-text uppercase text-spacing"
+              class="smooth-scroll navbar-brand font-montserrat light-text uppercase text-spacing"
               href="#footer-details"
             >
               Wine Pairing
@@ -96,7 +94,7 @@
           </h2>
           <div class="arrow-wrapper">
             <a href="#headline-one">
-              <p class="arrow">
+              <p class="smooth-scroll arrow">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -151,21 +149,22 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <!-- Modal body -->
-            <p class="border-thin">
-            <h5 class="center-text">
+            <p>
+            <h5 class="center-text border-thin">
               <span class="uppercase font-montserrat text-spacing">EveryDay</span>
               <span class="fancy-text fancy-large">G</span
               ><span class="fancy-text fancy-small text-spacing">ourmet</span>
-            </h5>
-            <h4 class="font-montserrat dark-text uppercase center-text">
-              Suggested Wines
               <button
                 type="button"
-                class="close close-modal fancy-text fancy-large uppercase"
+                class="close close-modal font-montserrat fancy-large uppercase"
                 data-dismiss="modal"
               >
                 ×
               </button>
+            </h5>
+            <h4 class="font-montserrat dark-text uppercase center-text">
+            <br />
+              Suggested Wines
             </h4>
             </p>
             <div id="pairingText" class="rounded">
@@ -207,7 +206,7 @@
               </div>
               <div class="modal-content center-text">
                 <!------------------------------------------paired text for wine selection-->
-                <p id="wine-text" class="font-lora border-thin text-spacing"></p>
+                <p id="wine-text" class="font-montserrat border-thin text-spacing"></p>
                 <button
                 type="button"
                 class="close close-modal fancy-thin text-spacing"
@@ -222,14 +221,14 @@
       </div>
       <!-- End of Modal -->
     </section>
-    </div>
+    
 
     <!-- Footer / Main service/Wine Pairing section  -->
 
     <div id="footer" class="container-fluid footer-sticky bg-img-index">
       <div class="row social-media-center content-anchor">
         <div
-          class="col-sm-10 center-text font-lora get-wine-bg light-text border-thin"
+          class="col-sm-10 center-text font-montserrat get-wine-bg light-text border-thin"
         >
           <h4 class="font-montserrat text-spacing">Make Every Day<br /></h4>
           <h2 class="border-thin">
@@ -253,7 +252,7 @@
             </div>
             <!---------------------------------------select food type-->
             <select
-              class="custom-select font-lora border-thin get-wine-btn-bg dark-text text-spacing"
+              class="custom-select font-montserrat border-thin get-wine-btn-bg dark-text"
               id="foodSelect"
               aria-label="Example select with button addon"
             >

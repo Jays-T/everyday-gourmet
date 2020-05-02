@@ -1,9 +1,9 @@
 // Main scroll functions
 
 $(document).ready(function () {
-  // Targetting all links
+  // Targetting all links with class of smooth-scroll
 
-  $("a").on("click", function (event) {
+  $(".smooth-scroll").on("click", function (event) {
     // Make sure this.hash has a value
     if (this.hash !== "") {
       // Prevent default anchor click behavior if this.hash has a value
@@ -32,14 +32,10 @@ $(document).ready(function () {
 
 $(".nav-item").mouseenter(function () {
   $(this).addClass("light-border-thin");
-  $(this).siblings().addClass("blur");
-  $(".main-headlines").addClass("blur");
 });
 
 $(".nav-item").mouseleave(function () {
   $(this).removeClass("light-border-thin");
-  $(this).siblings().removeClass("blur");
-  $(".main-headlines").removeClass("blur");
 });
 
 // Targetting the social media links icons
