@@ -3,6 +3,10 @@ body {
     position: relative;
 }
 
+.jumbo-adapt {
+    padding: 4rem 9rem;
+}
+
 .blur {
     filter: blur(4px);
 }
@@ -50,6 +54,10 @@ input,textarea {
 html h1 {
     text-transform: uppercase;
     font-size: 5.9vw;
+}
+
+.text-spacing {
+    letter-spacing: 0.12em;
 }
 
 .fancy-text {
@@ -158,10 +166,15 @@ body a:hover {
     border: none;
     position: fixed;
     z-index: 3;
-    overflow: hidden;
-    top:0;
-    left: 0;
-    min-width: 90vw;
+    top: 4em;
+    left: 4.5em;
+}
+
+
+.nav-ul-flex-sm {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 /* ------------------------------ Main content Styling */
@@ -218,7 +231,7 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
     max-width: 50%;
     clear: both;
     margin: 30vh 4vw 20vh 0;
-    padding: 10px;
+    padding: 1vh 1vw 1vh 15vw;
     letter-spacing: 0.2em;
 
 }
@@ -410,6 +423,7 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
     .hero-text {
 
         margin: 47vh 4vw 10vh 0;
+        padding: 10px;
     }
     .input-text-areas-width {
     padding-left: 14vw;
@@ -427,11 +441,16 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
     background-image: url("../images/food-and-wine-bottles-on-table-by-lake-1000x1320.jpg");
 }
     
-
+.jumbo-adapt {
+    padding: 1.1rem 1.8rem;
+}
 }
 
 @media screen and (max-width: 768px) {
 
+.jumbo-adapt {
+    padding: 0.7rem 1.4rem;
+}
     
 }
 
@@ -465,20 +484,5 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
     background-image: url("../images/food-and-wine-bottles-on-table-by-lake-578x900.jpg");
 }
 
-.nav-ul-flex-sm {
-    display: flex;
-    flex-direction: column;
-    
-}
-    .navbar-fixed-transparent {
-    background-color: transparent;
-    margin-left: 6vw;
-    border: none;
-    position: fixed;
-    z-index: 3;
-    overflow: hidden;
-    top:0;
-    left: 0;
-}
 }
 

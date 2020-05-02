@@ -1,3 +1,6 @@
+//  This bit of code was breaking the winesuggest.js API function
+//  Storing here to work on debugging later
+
 let checkSelection = $("#foodSelect option:selected").text();
 
     if (checkSelection === "Choose...") {

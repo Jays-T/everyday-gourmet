@@ -33,20 +33,25 @@
 
   <body data-spy="scroll" data-target="#navbar-example">
     <!-- Navigation -->
-
+<div class="jumbotron jumbo-adapt">
     <header id="home">
+
+    
       <nav id="navigation" class="navbar navbar-fixed-transparent">
         <ul class="nav nav-ul-flex-sm">
-          <li class="nav-item">
-            <a class="navbar-brand font-montserrat light-text" href="#home">
-              <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
-              <span class="sr-only">home</span>
-            </a>
-          </li>
+        <li class="nav-item">
+              <a
+                class="navbar-brand font-montserrat light-text"
+                href="#home"
+              >
+                <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
+                <span class="sr-only">home</span>
+              </a>
+              </li>
           <li class="nav-item">
             <a
               id="wine-pairing"
-              class="navbar-brand font-montserrat light-text uppercase"
+              class="navbar-brand font-montserrat light-text uppercase text-spacing"
               href="#footer-details"
             >
               Wine Pairing
@@ -56,7 +61,7 @@
           <li class="nav-item">
             <a
               id="shop"
-              class="navbar-brand font-montserrat light-text uppercase"
+              class="navbar-brand font-montserrat light-text uppercase text-spacing"
               href="searchlocal.html"
             >
               Shop Local
@@ -66,7 +71,7 @@
           <li class="nav-item">
             <a
               id="contact"
-              class="navbar-brand font-montserrat light-text uppercase"
+              class="navbar-brand font-montserrat light-text uppercase text-spacing"
               href="contact.html"
             >
               Contact
@@ -75,6 +80,7 @@
           </li>
         </ul>
       </nav>
+
     </header>
 
     <!-----------------------------End of Navigation-->
@@ -84,10 +90,10 @@
     <section>
       <div class="container-fluid main-bg">
         <div class="main-headlines">
-          <h1 class="hero-text font-montserrat light-text border-thin">
+          <h2 class="hero-text font-montserrat uppercase light-text border-thin">
             Every day <span class="fancy-text fancy-large">G</span
             ><span class="fancy-text fancy-small">ourmet</span>
-          </h1>
+          </h2>
           <div class="arrow-wrapper">
             <a href="#headline-one">
               <p class="arrow">
@@ -110,8 +116,8 @@
               Hello and welcome to<br />
               <br />
               <span class="uppercase">EveryDay</span>
-              <span class="fancy-text fancy-large">G</span
-              ><span class="fancy-text fancy-small">ourmet</span><br />
+              <span class="fancy-text fancy-large text-spacing">G</span
+              ><span class="fancy-text fancy-small text-spacing">ourmet</span><br />
               <br />
               A premier wine pairing site.<br />
               <br />
@@ -147,9 +153,9 @@
             <!-- Modal body -->
             <p class="border-thin">
             <h5 class="center-text">
-              <span class="uppercase font-montserrat">EveryDay</span>
+              <span class="uppercase font-montserrat text-spacing">EveryDay</span>
               <span class="fancy-text fancy-large">G</span
-              ><span class="fancy-text fancy-small">ourmet</span>
+              ><span class="fancy-text fancy-small text-spacing">ourmet</span>
             </h5>
             <h4 class="font-montserrat dark-text uppercase center-text">
               Suggested Wines
@@ -201,10 +207,10 @@
               </div>
               <div class="modal-content center-text">
                 <!------------------------------------------paired text for wine selection-->
-                <p id="wine-text" class="font-lora border-thin"></p>
+                <p id="wine-text" class="font-lora border-thin text-spacing"></p>
                 <button
                 type="button"
-                class="close close-modal fancy-thin"
+                class="close close-modal fancy-thin text-spacing"
                 data-dismiss="modal"
               >
                 <span class="fancy-text fancy-large uppercase">C</span>lose
@@ -216,18 +222,19 @@
       </div>
       <!-- End of Modal -->
     </section>
+    </div>
 
     <!-- Footer / Main service/Wine Pairing section  -->
 
     <div id="footer" class="container-fluid footer-sticky bg-img-index">
-      <div class="row content-anchor">
+      <div class="row social-media-center content-anchor">
         <div
-          class="col center-text font-lora get-wine-bg light-text border-thin"
+          class="col-sm-10 center-text font-lora get-wine-bg light-text border-thin"
         >
-          <h4 class="font-montserrat">Make Every Day<br /></h4>
+          <h4 class="font-montserrat text-spacing">Make Every Day<br /></h4>
           <h2 class="border-thin">
             <span class="fancy-text fancy-large">G</span
-            ><span class="fancy-text fancy-small">ourmet</span>
+            ><span class="fancy-text fancy-small text-spacing">ourmet</span>
           </h2>
           <p>
             Don't know which wine to choose?<br />
@@ -237,7 +244,7 @@
           <div class="input-group mb-3 input-text-areas-width">
             <div class="input-group-prepend">
               <button
-                class="btn font-montserrat uppercase border-thin btn-colors"
+                class="btn font-montserrat uppercase border-thin btn-colors text-spacing"
                 id="getWine"
                 type="button"
               >
@@ -246,7 +253,7 @@
             </div>
             <!---------------------------------------select food type-->
             <select
-              class="custom-select font-lora border-thin get-wine-btn-bg dark-text"
+              class="custom-select font-lora border-thin get-wine-btn-bg dark-text text-spacing"
               id="foodSelect"
               aria-label="Example select with button addon"
             >
@@ -268,7 +275,7 @@
       <!-- Social Media Links -->
 
       <div class="row social-media-center content-anchor">
-        <div class="col-sm-4 center-text social-media-links card-footer shadow-up">
+        <div class="col-sm-10 center-text social-media-links card-footer shadow-up">
           <ul class="list-inline social-links">
             <li class="list-inline-item">
               <a target="_blank" href="https://www.facebook.com">
