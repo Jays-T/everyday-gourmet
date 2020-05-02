@@ -36,7 +36,7 @@
 
     <header id="home">
       <nav id="navigation" class="navbar navbar-fixed-transparent">
-        <ul class="nav modal-flex-display">
+        <ul class="nav nav-ul-flex-sm">
           <li class="nav-item">
             <a class="navbar-brand font-montserrat light-text" href="#home">
               <i id="home-icon" class="fas fa-home" aria-hidden="true"></i>
@@ -145,7 +145,7 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <!-- Modal body -->
-
+            <p class="border-thin">
             <h5 class="center-text">
               <span class="uppercase font-montserrat">EveryDay</span>
               <span class="fancy-text fancy-large">G</span
@@ -155,12 +155,13 @@
               Suggested Wines
               <button
                 type="button"
-                class="close close-modal"
+                class="close close-modal fancy-text fancy-large uppercase"
                 data-dismiss="modal"
               >
                 ×
               </button>
             </h4>
+            </p>
             <div id="pairingText" class="rounded">
               <div id="suggestion-buttons" class="modal-flex-display">
                 <!--------------------------------wine one-->
@@ -171,7 +172,7 @@
                   <i class="fas fa-wine-bottle modal-content dark-text"></i>
                   <span id="link-wine-one"></span>
                   <p class="font-lora fancy-thin wine-text-area">
-                    <span id="wine-one"></span>
+                    <span id="wine-one" class="border-thin"></span>
                   </p>
                 </button>
                 <!--------------------------------wine two-->
@@ -183,7 +184,7 @@
                   <i class="fas fa-wine-bottle modal-content dark-text"></i>
                   <span id="link-wine-two"></span>
                   <p class="font-lora fancy-thin wine-text-area">
-                    <span id="wine-two"></span>
+                    <span id="wine-two" class="border-thin"></span>
                   </p>
                 </button>
                 <!--------------------------------wine three-->
@@ -194,13 +195,20 @@
                   <i class="fas fa-wine-bottle modal-content dark-text"></i>
                   <span id="link-wine-three"></span>
                   <p class="font-lora fancy-thin wine-text-area">
-                    <span id="wine-three"></span>
+                    <span id="wine-three" class="border-thin"></span>
                   </p>
                 </button>
               </div>
               <div class="modal-content center-text">
                 <!------------------------------------------paired text for wine selection-->
                 <p id="wine-text" class="font-lora border-thin"></p>
+                <button
+                type="button"
+                class="close close-modal fancy-thin"
+                data-dismiss="modal"
+              >
+                <span class="fancy-text fancy-large uppercase">C</span>lose
+              </button>
               </div>
             </div>
           </div>

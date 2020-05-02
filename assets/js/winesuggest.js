@@ -60,16 +60,7 @@ const mylinks = [
 $(document).ready(function () {
   $("#foodSelect").change(function () {
     // check which food option is selected
-    let checkSelection = $("#foodSelect option:selected").text();
 
-    if (checkSelection === "Choose...") {
-        $("#suggestion-modal").modal("show");
-        $("#suggestion-modal").on("shown.bs.modal", function (){
-                                       // If no food option is selected print error message to modal
-             $(this).find("#suggestion-buttons").empty();
-             $(this).find("#wine-text").empty().html('<h1><span class="fancy-text">Oops!</span><br /> Did you forget to choose a food?</h1>');
-        });
-    };
 
     // Send the GET request to the API
 
@@ -337,4 +328,5 @@ $(document).ready(function () {
     });
   });
 });
+
 

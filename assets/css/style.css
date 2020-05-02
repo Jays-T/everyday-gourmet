@@ -465,7 +465,7 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
     background-image: url("../images/food-and-wine-bottles-on-table-by-lake-578x900.jpg");
 }
 
-.modal-flex-display, .nav-ul-flex-sm {
+.nav-ul-flex-sm {
     display: flex;
     flex-direction: column;
     
