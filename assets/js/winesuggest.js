@@ -60,6 +60,17 @@ const mylinks = [
 $(document).ready(function () {
   $("#foodSelect").change(function () {
     // check which food option is selected
+    let checkSelection = $("#foodSelect option:selected").text();
+
+    if (checkSelection === "Choose...") {
+        $("#suggestion-modal").modal("show");
+        $("#suggestion-modal").on("shown.bs.modal", function (){
+                                       // If no food option is selected print error message to modal
+             $(this).find("#suggestion-buttons").empty();
+             $(this).find("#wine-text").empty().html('<h1><span class="fancy-text">Oops!</span><br /> Did you forget to choose a food?</h1>');
+        });
+    };
+
     // Send the GET request to the API
 
     $.ajax({
@@ -71,6 +82,7 @@ $(document).ready(function () {
           "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
         "x-rapidapi-key": "556f1a08acmsh72d41478bea3e6ap19227ajsn0bf8a497994a",
       },
+      
       type: "GET",
       success: function (result) {
         $("#suggestion-modal").modal("show"); // open/show modal
@@ -325,3 +337,4 @@ $(document).ready(function () {
     });
   });
 });
+
