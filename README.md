@@ -10,26 +10,26 @@
 // INSERT LINK TO SCREENSHOT
 # CONTENTS
 * UX
-  * <a href="#ownergoals">Owner Goals</a>
-  * <a href="#usergoals">User Goals</a>
-  * <a href="#userstories">User Stories</a>
-  * <a href="#strategy">Strategy</a>
-  * <a href="#structure">structure</a>
-* <a href="#userinterface">UI</a>
-* <a href="#features">Features</a>
-* <a href="#scope">Scope</a>
-* <a href="#technologies">Technologies Used</a>
-* <a href="#sources">Sites Sourced from</a>
-* <a href="#testing">Testing</a>
-* <a href="#bugs">Bugs</a>
-* <a href="deployment">Deployment</a>
-* <a href="#credits">Credits</a>
+  * <a href="#-markdown-header-owner-goals">Owner Goals</a>
+  * <a href="#-markdown-header-user-goals">User Goals</a>
+  * <a href="#-markdown-header-user-stories">User Stories</a>
+  * <a href="#-markdown-header-my-strategy">Strategy</a>
+  * <a href="#-markdown-header-structure">structure</a>
+* <a href="#-markdown-header-user-interface">UI</a>
+* <a href="#-markdown-header-features">Features</a>
+* <a href="#-markdown-header-scope">Scope</a>
+* <a href="#-markdown-header-technologies">Technologies Used</a>
+* <a href="#-markdown-header-sources">Sites Sourced from</a>
+* <a href="#-markdown-header-testing">Testing</a>
+* <a href="#-markdown-header-bugs">Bugs</a>
+* <a href="#-markdown-header-deployment">Deployment</a>
+* <a href="#-markdown-header-credits">Credits</a>
 
 <a href=""></a>
 
 # **UX**
 
-## Owner Goals{#ownergoals}
+## Owner Goals
 
 #### For the owner the goals are:
 
@@ -43,7 +43,7 @@
   * Encourage the user to click through on the 'Shop' links
   * Drive profits through click through referral sales commissions 
 
-## User Goals{#usergoals}
+## User Goals
 
 #### For the user the goals are:
 
@@ -56,7 +56,7 @@
 * To find out what 'Everyday Gourmet' means
 
 
-## User Stories{#userstories}
+## User Stories
 
 1. "As an **event planner** I'm planning the menu for a wedding and I need to quickly find a good wine pairing for the second course."
 1. "As a **wine afficionado** I love trying new wines and pretending to be able to discern the ingredients by swirling the wine around my glass and then tasting the wines bouquet."
@@ -65,11 +65,11 @@
 1. "As a **frequent lunch and/or dinner party host** I need to pair the right wine with this weekends lunch, after last times disaster I think I'll do a search online for some suggestions."
 
 
-## My Strategy{#strategy}
+## My Strategy
 
 * My goal was to ensure the information was easy to access while striving for a responsive and elegant design.
 
-## Structure{#structure}
+## Structure
 
 * I wanted the landing page to be fairly minimalistic and elegant but also make it easy for the user to quickly get straight to the main purpose and service of the site.
 
@@ -78,7 +78,7 @@
 * From the landing page the user can scroll manually down to reveal the wine pairing service, or they can click on the "wine pairing" link in the Navbar
 * Links to the Contact and Shop Local are also in the Navbar and from each of those two pages the user can easy navigate back to the home/landing page area and the pairing wines service area and either the contact or shop local page, depending on which page the user is on.
 
-# UI{#userinterface}
+# User Interface
 * My design choices were based on the owner goals of communicating a feeling of elegance and simplicity and the user goals of wanting to quickly access and make use of the sites main services.
 * I went with a pallette of slightly offwhite text juxtaposed against a dark background with thin offred borders.
 * For the main sections I went with the same color combinations playing light against dark with semi-transparent backgrounds over vibrantly colored images of various fruits, cheeses and wine.
@@ -89,17 +89,17 @@
   * <a href="https://fonts.google.com/specimen/Yellowtail/" target="_blank">Yellowtail</a> used for the word 'Gourmet' and the 'C' in the 'close' button at the bottom of the wine suggestion modal.
   * <a href="https://fonts.google.com/specimen/Lora" target="_blank">Lora</a> used only to style the names of the wine suggestions returned from the wine pairing service.
 
-# Features{#features}
+# Features
 
 * Automated wine pairing service: allows the User to select a food type and get a suggestion for three types of wines to pair with their selection, the information returned includes buttons with the text 'Shop' which include links to the types of wines suggested which will open in a new tab and take the user to wine.com with a search having already been performed for the specific type of wine they clicked "shop" on.
 * Email service: allows the User to contact the site owner.
 * Shop locally service: allows the User to do a search for 'wines near me' or in reality anything the User might wish to search for in relation to google.maps allowed searches.
 
-# Scope{#scope}
+# Scope
 
 * The current scope of the project is limited, users have a limited number of food selection options. The reason for this is simply due to the nature of the project, the level of my current coding skills, and the limited time to complete the project. I didn't want to overcommit myself and so I kept the scope of the project within what I felt was currenty achievable.
 
-# Technologies Used{#technologies}
+# Technologies
 
 * <a href="https://html.com/" target="_blank">HTML</a> - for overall structure
 * <a href="https://css-tricks.com/" target="_blank">Css</a> - to style the site
@@ -113,7 +113,7 @@
 * <a href="https://www.gitpod.io/" target="_blank">Gitpod</a> - as my development environment
 * <a href="https://github.com/" target="_blank">GitHub</a> - for version control and site Deployment
 
-# Sites sourced from{#sources}
+# Sources
 
 * <a href="https://www.w3schools.com">w3schools</a> - used for the initial 'smoothscroll' function structure coding
 * <a href="https://michalsnik.github.io/aos/" target="_blank">AOS</a> - Animate On Scroll used for the fade-in effect on the landing page headlines
@@ -123,7 +123,7 @@
 * <a href="https://fontawesome.com/">Font Awesome</a> - for icons
 * <a href="https://fonts.google.com/">Google Fonts</a> - for fonts
 
-# Testing{#testing}
+# Testing
 
 * All HTML validated with <a href="https://validator.w3.org/">w3 validator</a>
 * All CSS validated with <a href="https://jigsaw.w3.org/css-validator/">w3 css validator</a>
@@ -150,7 +150,7 @@ Phones tested:
 * While watching the console log in real time, no major errors were found across the site apart from major bug #1(See <a href="#bugs">Known Bugs</a>)
 
 
-## Known Bugs{#bugs}
+## Bugs
 
 **Major Bugs**
 * Bug #1: if user select == 'Choose...' : **Bug Description** In the Choose Food section if the option 'Choose...' is chosen, the code will break and return wines #2 and #3 from the previous selection. The user will have to refresh the page in order for the food select/wine pairing function to work correctly again. This bug re-occurred on every device tested.
@@ -164,7 +164,7 @@ Phones tested:
   * While using a different app entirely, quickly switching to the browser on the device and immediately after the browser has opened clicking on the "wine pairing" in the navbar may re-produce this bug.
   * Bug status: Unresolved
 
-# Deployment{#deployment}
+# Deployment
 
 * This project and all project files are hosted on GitHub via my GitHub repository at <a href="https://github.com/Jays-T/everyday-gourmet" target="_blank">Everyday Gourmet Repository</a>
 * I coded the project using GitPod as my development environment. 
@@ -210,7 +210,7 @@ When in the main directory enter the following into the command prompt
 4. If you want to stop the local server from running simply press crtl + C
 
 
-# **Credits**{#credits}
+# **Credits**
 
 **Code**
 
