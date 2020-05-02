@@ -9,20 +9,20 @@
 
 # CONTENTS
 * UX
-  * <a href="/#owner-goals">Owner Goals</a>
-  * <a href="/#user-goals">User Goals</a>
-  * <a href="/#user-stories">User Stories</a>
-  * <a href="/#my-strategy">Strategy</a>
-  * <a href="/#structure">structure</a>
-* <a href="/#user-interface">UI</a>
-* <a href="/#features">Features</a>
-* <a href="/#scope">Scope</a>
-* <a href="/#technologies">Technologies Used</a>
-* <a href="/#sources">Sites Sourced from</a>
-* <a href="/#testing">Testing</a>
-* <a href="/#bugs">Bugs</a>
-* <a href="/#deployment">Deployment</a>
-* <a href="/#credits">Credits</a>
+  * Owner Goals
+  * User Goals
+  * User Stories
+  * Strategy
+  * structure
+* UI
+* Features
+* Scope
+* Technologies Used
+* Sites Sourced from
+* Testing
+* Bugs
+* Deployment
+* Credits
 
 # **UX**
 
