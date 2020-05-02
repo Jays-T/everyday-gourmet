@@ -85,6 +85,12 @@ html h1 {
     background: rgba(0, 0, 0, 0.6);
 }
 
+.shadow-up {
+    -moz-box-shadow: inset 0 -2rem 8rem rgb(12, 11, 11);
+    -webkit-box-shadow: inset 0 -2rem 8rem rgb(12, 11, 11);
+    box-shadow: inset 0 -2rem 8rem rgb(12, 11, 11);
+}
+
 /* ------------------------------ Modal wine suggestion main styling */
 
 
@@ -191,6 +197,8 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
   --color: transparent; 
  
     box-shadow: 0 6rem 8rem #000;
+    -moz-box-shadow:    0 6rem 8rem #000;
+    -webkit-box-shadow: 0 6rem 8rem #000;
 }
 
 *, *::before, *::after {
@@ -342,7 +350,6 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
 .social-media-links {
   display: flex;
   justify-content: space-evenly;
-  padding: 3px 3px;
   text-decoration: none;
   border-radius: 50%;
 }
@@ -393,6 +400,8 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
   --color: transparent; 
  
     box-shadow: 0 2rem 3rem #000;
+    -moz-box-shadow:    0 2rem 3rem #000;
+    -webkit-box-shadow: 0 2rem 3rem #000;
     }
 
     .fade-in-headlines {
@@ -419,6 +428,11 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
 }
     
 
+}
+
+@media screen and (max-width: 768px) {
+
+    
 }
 
 @media screen and (max-width: 576px) {
@@ -449,6 +463,22 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
 
 .bg-img-contact {
     background-image: url("../images/food-and-wine-bottles-on-table-by-lake-578x900.jpg");
+}
+
+.modal-flex-display, .nav-ul-flex-sm {
+    display: flex;
+    flex-direction: column;
+    
+}
+    .navbar-fixed-transparent {
+    background-color: transparent;
+    margin-left: 6vw;
+    border: none;
+    position: fixed;
+    z-index: 3;
+    overflow: hidden;
+    top:0;
+    left: 0;
 }
 }
 

@@ -33,11 +33,13 @@ $(document).ready(function () {
 $(".nav-item").mouseenter(function () {
   $(this).addClass("light-border-thin");
   $(this).siblings().addClass("blur");
+  $(".main-headlines").addClass("blur");
 });
 
 $(".nav-item").mouseleave(function () {
   $(this).removeClass("light-border-thin");
   $(this).siblings().removeClass("blur");
+  $(".main-headlines").removeClass("blur");
 });
 
 // Targetting the social media links icons
