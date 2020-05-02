@@ -66,7 +66,10 @@
 * For the main sections I went with the same color combinations playing light against dark with semi-transparent backgrounds over vibrantly colored images of various fruits, cheeses and wine.
 * My design choices in the main sections were based on maintaining a feeling of elegance, simplicity, but also a sense of occasion... to make every day, Gourmet!
 
-// Insert Link to Color pallette and links to main areas screenshots
+* Fonts I chose are:
+  * <a href="https://fonts.google.com/specimen/Montserrat/" target="_blank">Montserrat</a> with a font-weight of 300. I used this font for all the text content on the site except for the word 'Gourmet' the 'C' in the 'close' button at the bottom of the wine suggestion modal and the names of the three wines returned as a suggestion to the user.
+  * <a href="https://fonts.google.com/specimen/Yellowtail/" target="_blank">Yellowtail</a> used for the word 'Gourmet' and the 'C' in the 'close' button at the bottom of the wine suggestion modal.
+  * <a href="https://fonts.google.com/specimen/Lora" target="_blank">Lora</a> used only to style the names of the wine suggestions returned from the wine pairing service.
 
 ## Features
 
@@ -91,6 +94,34 @@
 * <a href="https://cloud.google.com/maps-platform/" target="_blank">Google Maps</a> - used to provide the shop locally search service
 * <a href="https://www.gitpod.io/" target="_blank">Gitpod</a> - as my development environment
 * <a href="https://github.com/" target="_blank">GitHub</a> - for version control and site Deployment
+
+# Sites sourced from
+
+* <a href="https://www.w3schools.com">w3schools</a> - used for the initial 'smoothscroll' function structure coding
+* <a href="https://michalsnik.github.io/aos/" target="_blank">AOS</a> - Animate On Scroll used for the fade-in effect on the landing page headlines
+* <a href="https://css-tricks.com/apply-a-filter-to-a-background-image/" target="_blank">Image Overlay</a> - solution by Dan Wilson used for main landing page darkened overlay, codepen for the solution can be found <a href="https://codepen.io/danwilson/pen/dqZvmx" target="_blank">here</a>
+* <a href="https://codepen.io/raf187/pen/BvgGRQ" target="_blank">Arrow</a> - animation by Rafael Amorim 
+* <a href="https://css-tricks.com/">Css Tricks</a> - to solve styling and element placement issues
+* <a href="https://fontawesome.com/">Font Awesome</a> - for icons
+* <a href="https://fonts.google.com/">Google Fonts</a> - for fonts
+
+# Testing
+
+## This site has been tested manually
+
+Browsers tested: 
+* Chrome
+* Microsoft Edge
+
+Phones tested: 
+* Huawei P20Lite
+* iPhone 6
+* Xaomi Mi 9
+
+
+
+* Site also tested with Chrome's built in 'Inspect Element' preview panes simulating the iPad Pro, iPad, iPhone X, iPhone 6/7/8 plus, iPhone 6/7/8, iPhone 5 SE, Pixel 2 XL, Pixel 2 and Galaxy S5.
+
 
 
 
