@@ -138,23 +138,101 @@ Phones tested:
 
 * Site also tested with Chrome's built in 'Inspect Element' preview panes simulating the iPad Pro, iPad, iPhone X, iPhone 6/7/8 plus, iPhone 6/7/8, iPhone 5 SE, Pixel 2 XL, Pixel 2 and Galaxy S5
 * JS and jQuery code tested on <a href="https://www.repl.it " target="_blank">ReplIt</a>
-* Entire site tested extensively with console log and found to only return an error on Bug #1(See ## Known Bugs)
+* Entire site tested extensively with console log and found to only return an error on major bug #1(See <a href="#bugs">Known Bugs</a>)
+* All inter-site links tested on all pages across devices and found to be working
+* All outward links directed at other sites tested and found to be working and opening in a new tab
+* All links populated on wine suggestion modal found to be correctly targetted and opening in a new tab
+* While watching the console log in real time, no major errors were found across the site apart from major bug #1(See <a href="#bugs">Known Bugs</a>)
 
 
 ## Known Bugs {#bugs}
 
+**Major Bugs**
 * Bug #1: if user select == 'Choose...' : **Bug Description** In the Choose Food section if the option 'Choose...' is chosen, the code will break and return wines #2 and #3 from the previous selection. The user will have to refresh the page in order for the food select/wine pairing function to work correctly again. This bug re-occurred on every device tested.
   * Bug #1 status:  Unresolved
 * Bug #2: form auto-clear : **Bug Description** On the contact page after sending an email the email form does not automatically clear itself.
   * Bug #2 status:  Unresolved
-* Bug #3
+**Minor Bugs**
+* Minor Bug #1: smooth-scroll : **Bug Description** On some devices, notably the Huawei P20 Lite, the smooth-scroll function sometimes does not scroll all the way to the bottom of the landing page. The bug was only encountered occasionally and most noticeably when the phone seemed to be under load having immediately previously executed some other function.
+  * Ways to possibly re-create the bug based on site testing: 
+  * Immediately after the home landing page loads after clicking through from another page on the site clicking on "wine pairing" in the navbar may re-produce this bug.
+  * While using a different app entirely, quickly switching to the browser on the device and immediately after the browser has opened clicking on the "wine pairing" in the navbar may re-produce this bug.
+  * Bug status: Unresolved
+
+# Deployment {#deployment}
+
+* This project and all project files are hosted on GitHub via my GitHub repository at <a href="https://github.com/Jays-T/everyday-gourmet" target="_blank">Everyday Gourmet Repository</a>
+* I coded the project using GitPod as my development environment. 
+* To deploy the project 
+   1. I began by adding the files using the command 'git add filename' in the command prompt.
+   2. I then used commits regularly while coding using the command 'git commit -m "commit message here". 
+   3. I then pushed the committed files from the GitPod IDE to the master branch of the main repository on GitHub.
+   4. After pushing the files I went to my repository.
+   5. I clicked on the 'Settings' tab near the top of the page and scrolled down to the 'GitHub Pages' section.
+   6. I selected the Source as the 'Master Branch' as all the site content and files are stored in and built from the 'Master Branch'.
+   7. GitHub provided me with a direct link to the deployed site.
+   8. You can view the deployed site here: <a href="https://jays-t.github.io/everyday-gourmet/" target="_blank">Everyday Gourmet</a>
+
+## There are no differences between the currently deployed site and the development version at this time.
+
+## To run the project locally
+
+To clone this project from GitHub:
+
+* Under the repository name, click "Clone or download".
+  1. In the Clone with HTTPs section, copy the clone URL for the repository ( For this repository: https://github.com/Jays-T/everyday-gourmet.git ).
+  2. In your local IDE open Git Bash.
+  3. Change the current working directory to the location where you want the cloned directory to be made.
+  4. Type git clone, and then paste the URL you copied in Step 3.
+  5. The command should look like this:  git clone https://github.com/Jays-T/everyday-gourmet.git
+  6. Press enter and your local clone will be created and the response should be something like this:
+> * $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> * Cloning into `Spoon-Knife`...
+> * remote: Counting objects: 10, done.
+> * remote: Compressing objects: 100% (8/8), done.
+> * remove: Total 10 (delta 1), reused 10 (delta 1)
+> * Unpacking objects: 100% (10/10), done.
+* For further reading and troubleshooting on cloning a repository from GitHub you can go <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository" target="_blank">here</a>.
+
+# To preview in your browser
+
+If you are using gitpod as your IDE:
+The project runs only from the Master branch the main directory of which is:  /workspace/everyday-gourmet
+When in the main directory enter the following into the command prompt
+1. python3 -m http.server
+2. This will run the contents of the directory on a local web server, on port 8000.
+3. If you are working in Gitpod this will give you an option to 'open browser' which will open the default 'index.html'
+4. If you want to stop the local server from running simply press crtl + C
 
 
+# **Credits** {#credits}
 
-# images
+**Code**
+
+* Background Image Overlay Solution applied to main landing page image created by Dan Wilson and sourced from <a href="https://codepen.io/danwilson/pen/dqZvmx" target="_blank">Effect Codepen</a> 
+through <a href="https://css-tricks.com/apply-a-filter-to-a-background-image/" target="_blank">css tricks</a>
+* Initial 'smoothscroll' function structure coding sourced from <a href="https://www.w3schools.com">w3schools</a>
+* Animate On Scroll used for the fade-in effect on the landing page headlines and sourced from <a href="https://michalsnik.github.io/aos/" target="_blank">AOS</a>
+* Arrow animation by Rafael Amorim sourced from <a href="https://codepen.io/raf187/pen/BvgGRQ" target="_blank">Arrow</a>
+
+## Content
+
+* Text on the site was written by myself excluding the Wine Suggestions and the accompanying description text which was sourced from the <a href="https://rapidapi.com/spoonacular/api/" target="_blank">Spoonacular</a> API
+
+## Media
 
 * All images sourced from <a href="https://www.pexels.com/" target="_blank">Pexels</a> -  a stock image library
 
-<a href="" target="_blank"></a>
-<a href=""></a>
-{#}
+## Acknowledgements
+
+## Thank you SO SO MUCH to my mentor **@rheyannmagcalas_mentor** for all the help and great tips she gave me while I was developing and then working on this project and for helping me to finally solve the issue with my API GET script... I agonized for 5 days unable to get it to work and in the end it was such a simple fix and I was overcomplicating my code.
+## Thank you to h4xnoodle for your advice and consistently reminding me not to overcomplicate things. 
+
+# FAIR-USE COPYRIGHT DISCLAIMER
+
+* Copyright Disclaimer Under Section 107 of the Copyright Act 1976, 
+ * allowance is made for "fair use" for purposes such as criticism, commenting, news reporting, teaching, scholarship, and research. 
+ * Fair use is a use permitted by copyright statute that might otherwise be infringing. 
+ * Non-profit, educational or personal use tips the balance in favour of fair use.
+
+* This is for educational use.
