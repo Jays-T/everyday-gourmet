@@ -7,7 +7,6 @@
 ## Demo
 * A live demo of the site can be found <a href="https://jays-t.github.io/everyday-gourmet/index.html" target="_blank>here</a>.
 
-// INSERT LINK TO SCREENSHOT
 # CONTENTS
 * UX
   * <a href="#-markdown-header-owner-goals">Owner Goals</a>
@@ -29,7 +28,7 @@
 
 # **UX**
 
-## Owner Goals
+# Owner Goals
 
 #### For the owner the goals are:
 
@@ -43,7 +42,7 @@
   * Encourage the user to click through on the 'Shop' links
   * Drive profits through click through referral sales commissions 
 
-## User Goals
+# User Goals
 
 #### For the user the goals are:
 
@@ -56,7 +55,7 @@
 * To find out what 'Everyday Gourmet' means
 
 
-## User Stories
+# User Stories
 
 1. "As an **event planner** I'm planning the menu for a wedding and I need to quickly find a good wine pairing for the second course."
 1. "As a **wine afficionado** I love trying new wines and pretending to be able to discern the ingredients by swirling the wine around my glass and then tasting the wines bouquet."
@@ -64,16 +63,13 @@
 1. "As a **domestic partner** I want to make absolutely sure I pair tomorrow evenings dinner with a great tasting wine!"
 1. "As a **frequent lunch and/or dinner party host** I need to pair the right wine with this weekends lunch, after last times disaster I think I'll do a search online for some suggestions."
 
-
-## My Strategy
+# My Strategy
 
 * My goal was to ensure the information was easy to access while striving for a responsive and elegant design.
 
-## Structure
+# Structure
 
 * I wanted the landing page to be fairly minimalistic and elegant but also make it easy for the user to quickly get straight to the main purpose and service of the site.
-
-// Insert Link to Screenshot
 
 * From the landing page the user can scroll manually down to reveal the wine pairing service, or they can click on the "wine pairing" link in the Navbar
 * Links to the Contact and Shop Local are also in the Navbar and from each of those two pages the user can easy navigate back to the home/landing page area and the pairing wines service area and either the contact or shop local page, depending on which page the user is on.
@@ -150,7 +146,7 @@ Phones tested:
 * While watching the console log in real time, no major errors were found across the site apart from major bug #1(See <a href="#bugs">Known Bugs</a>)
 
 
-## Bugs
+# Bugs
 
 **Major Bugs**
 * Bug #1: if user select == 'Choose...' : **Bug Description** In the Choose Food section if the option 'Choose...' is chosen, the code will break and return wines #2 and #3 from the previous selection. The user will have to refresh the page in order for the food select/wine pairing function to work correctly again. This bug re-occurred on every device tested.
@@ -210,7 +206,7 @@ When in the main directory enter the following into the command prompt
 4. If you want to stop the local server from running simply press crtl + C
 
 
-# **Credits**
+# Credits
 
 **Code**
 
