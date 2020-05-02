@@ -63,6 +63,10 @@ html h1 {
     font-weight: 100;
 }
 
+.margin-thin {
+    margin: .32vh;
+}
+
 .border-thin {
     border-top: solid .5px rgba(236, 64, 73, 0.4);
     border-bottom: solid .5px rgba(236, 64, 73, 0.4);
