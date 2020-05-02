@@ -9,20 +9,20 @@
 
 # CONTENTS
 * UX
-  * <a href="#-markdown-header-owner-goals">Owner Goals</a>
-  * <a href="#-markdown-header-user-goals">User Goals</a>
-  * <a href="#-markdown-header-user-stories">User Stories</a>
-  * <a href="#-markdown-header-my-strategy">Strategy</a>
-  * <a href="#-markdown-header-structure">structure</a>
-* <a href="#-markdown-header-user-interface">UI</a>
-* <a href="#-markdown-header-features">Features</a>
-* <a href="#-markdown-header-scope">Scope</a>
-* <a href="#-markdown-header-technologies">Technologies Used</a>
-* <a href="#-markdown-header-sources">Sites Sourced from</a>
-* <a href="#-markdown-header-testing">Testing</a>
-* <a href="#-markdown-header-bugs">Bugs</a>
-* <a href="#-markdown-header-deployment">Deployment</a>
-* <a href="#-markdown-header-credits">Credits</a>
+  * <a href="/#-markdown-header-owner-goals">Owner Goals</a>
+  * <a href="/#-markdown-header-user-goals">User Goals</a>
+  * <a href="/#-markdown-header-user-stories">User Stories</a>
+  * <a href="/#-markdown-header-my-strategy">Strategy</a>
+  * <a href="/#-markdown-header-structure">structure</a>
+* <a href="/#-markdown-header-user-interface">UI</a>
+* <a href="/#-markdown-header-features">Features</a>
+* <a href="/#-markdown-header-scope">Scope</a>
+* <a href="/#-markdown-header-technologies">Technologies Used</a>
+* <a href="/#-markdown-header-sources">Sites Sourced from</a>
+* <a href="/#-markdown-header-testing">Testing</a>
+* <a href="/#-markdown-header-bugs">Bugs</a>
+* <a href="/#-markdown-header-deployment">Deployment</a>
+* <a href="/#-markdown-header-credits">Credits</a>
 
 <a href=""></a>
 
