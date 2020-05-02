@@ -162,7 +162,8 @@
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
+            //  Custom on open maps message set here
+            infoWindow.setContent(`Found you! :)<br/><br/>Thanks for using EveryDay Gourmet.<br/><br/>Try searching: wine shops near me :using the search box below`);
             infoWindow.open(map);
             map.setCenter(pos);
           }, function() {

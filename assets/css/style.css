@@ -29,6 +29,11 @@ body {
     transition: all .3s ease-in-out; 
 }
 
+.btn-blur:hover {
+    color: rgba(73, 67, 67, 0.7);
+    transition: all .3s ease-in-out;
+}
+
 .center-text {
     text-align: center;
 }
@@ -155,7 +160,8 @@ body a:hover {
 
 /* ------------------------------ Main content Styling */
 
-/* Background Image Overlay Solution created by Dan Wilson and sourced from https://codepen.io/danwilson/pen/dqZvmx */
+/* Background Image Overlay Solution created by Dan Wilson and sourced from https://codepen.io/danwilson/pen/dqZvmx
+through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
 .main-bg {
     z-index: 2;
   background: 
@@ -282,14 +288,22 @@ body a:hover {
     
 }
 
+/* ------------------------------ Background Image urls for main page Footer / Maps page (searchlocal) / Contact page */
+
+.bg-img-index, .bg-img-shop-local, .bg-img-contact {
+    background-image: url("../images/red-and-white-wine-with-peaches-grapes-and-cheese-2740x1320.jpg");
+    
+}
+
 /* ------------------------------ Footer and Wine Pairing submit form */
 
 .footer-sticky {
     background-color: rgba(73, 67, 67, 0.3);
-    background-image: url("../images/red-wine-pouring-into-glass-1000x1320.png");
-    background-size: contain;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-size: cover;
     display: flex;
     flex-direction: column;
 }
@@ -392,6 +406,17 @@ body a:hover {
     padding-left: 14vw;
     padding-right: 14vw;
 }
+    .bg-img-index {
+    background-image: url("../images/close-up-of-wine-and-fruits-1000x1320.jpg");
+}
+
+.bg-img-shop-local {
+    background-image: url("../images/white-and-black-bottle-near-grapes-1000x1320.jpg"); 
+}
+
+.bg-img-contact {
+    background-image: url("../images/food-and-wine-bottles-on-table-by-lake-1000x1320.jpg");
+}
     
 
 }
@@ -414,6 +439,16 @@ body a:hover {
 .input-text-areas-width {
     padding-left: 2.8vw;
     padding-right: 2.8vw;
+}
+.bg-img-index {
+    background-image: url("../images/close-up-of-wine-and-fruits-578x900.jpg");
+}
+.bg-img-shop-local {
+    background-image: url("../images/white-and-black-bottle-near-grapes-578x900.jpg"); 
+}
+
+.bg-img-contact {
+    background-image: url("../images/food-and-wine-bottles-on-table-by-lake-578x900.jpg");
 }
 }
 

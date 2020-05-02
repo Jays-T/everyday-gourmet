@@ -3,9 +3,7 @@
     width: 80vw;
 }
 
-.map-wrapper {
-    min-height: 100vh;
-}
+
 
 .map-column {
     display: flex;
