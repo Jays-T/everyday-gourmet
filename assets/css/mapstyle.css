@@ -5,6 +5,9 @@
 }
 
 
+#map-text {
+    padding-top: 1em;
+}
 
 .map-column {
     display: flex;

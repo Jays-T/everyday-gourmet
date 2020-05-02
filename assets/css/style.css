@@ -3,6 +3,11 @@ body {
     position: relative;
 }
 
+.col-sm-10 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
 .blur {
     filter: blur(4px);
 }
@@ -54,6 +59,11 @@ html h1 {
 
 .text-spacing {
     letter-spacing: 0.12em;
+}
+
+.text-padding {
+    padding-left: 39.5%;
+    padding-right: 39.5%;
 }
 
 .fancy-text {
@@ -451,6 +461,13 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
     
 }
 
+@media screen and (max-width: 768px) {
+    .text-padding {
+    padding-left: 30.5%;
+    padding-right: 30.5%;
+}
+}
+
 @media screen and (max-width: 576px) {
 
 .fade-in-headlines {
@@ -490,5 +507,10 @@ through https://css-tricks.com/apply-a-filter-to-a-background-image/ */
     padding-top: .3125rem;
     padding-bottom: .3125rem;
     font-size: 0.6rem;
+}
+.text-padding {
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+}
 }
 
