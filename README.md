@@ -26,6 +26,8 @@
 
 # **UX**
 
+<a href="https://github.com/Jays-T/everyday-gourmet/blob/master/assets/wireframes/Everyday%20Gourmet%20wireframes.pdf">wireframes pdf</a>
+
 # Owner Goals
 
 #### For the owner the goals are:
