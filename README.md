@@ -8,10 +8,28 @@
 * A live demo of the site can be found <a href="https://jays-t.github.io/everyday-gourmet/index.html" target="_blank>here</a>.
 
 // INSERT LINK TO SCREENSHOT
+# CONTENTS
+* UX
+  * <a href="#ownergoals">Owner Goals</a>
+  * <a href="#usergoals">User Goals</a>
+  * <a href="#userstories">User Stories</a>
+  * <a href="#strategy">Strategy</a>
+  * <a href="#structure">structure</a>
+* <a href="#userinterface">UI</a>
+* <a href="#features">Features</a>
+* <a href="#scope">Scope</a>
+* <a href="#technologies">Technologies Used</a>
+* <a href="#sources">Sites Sourced from</a>
+* <a href="#testing">Testing</a>
+* <a href="#bugs">Bugs</a>
+* <a href="deployment">Deployment</a>
+* <a href="#credits">Credits</a>
+
+<a href=""></a>
 
 # **UX**
 
-## Owner Goals
+## Owner Goals {#ownergoals}
 
 #### For the owner the goals are:
 
@@ -25,7 +43,7 @@
   * Encourage the user to click through on the 'Shop' links
   * Drive profits through click through referral sales commissions 
 
-## User Goals
+## User Goals {#usergoals}
 
 #### For the user the goals are:
 
@@ -38,7 +56,7 @@
 * To find out what 'Everyday Gourmet' means
 
 
-## User Stories
+## User Stories {#userstories}
 
 1. "As an **event planner** I'm planning the menu for a wedding and I need to quickly find a good wine pairing for the second course."
 1. "As a **wine afficionado** I love trying new wines and pretending to be able to discern the ingredients by swirling the wine around my glass and then tasting the wines bouquet."
@@ -47,11 +65,11 @@
 1. "As a **frequent lunch and/or dinner party host** I need to pair the right wine with this weekends lunch, after last times disaster I think I'll do a search online for some suggestions."
 
 
-## My Strategy
+## My Strategy {#strategy}
 
 * My goal was to ensure the information was easy to access while striving for a responsive and elegant design.
 
-## Structure
+## Structure {#structure}
 
 * I wanted the landing page to be fairly minimalistic and elegant but also make it easy for the user to quickly get straight to the main purpose and service of the site.
 
@@ -60,7 +78,7 @@
 * From the landing page the user can scroll manually down to reveal the wine pairing service, or they can click on the "wine pairing" link in the Navbar
 * Links to the Contact and Shop Local are also in the Navbar and from each of those two pages the user can easy navigate back to the home/landing page area and the pairing wines service area and either the contact or shop local page, depending on which page the user is on.
 
-## UI 
+# UI {#userinterface}
 * My design choices were based on the owner goals of communicating a feeling of elegance and simplicity and the user goals of wanting to quickly access and make use of the sites main services.
 * I went with a pallette of slightly offwhite text juxtaposed against a dark background with thin offred borders.
 * For the main sections I went with the same color combinations playing light against dark with semi-transparent backgrounds over vibrantly colored images of various fruits, cheeses and wine.
@@ -71,17 +89,17 @@
   * <a href="https://fonts.google.com/specimen/Yellowtail/" target="_blank">Yellowtail</a> used for the word 'Gourmet' and the 'C' in the 'close' button at the bottom of the wine suggestion modal.
   * <a href="https://fonts.google.com/specimen/Lora" target="_blank">Lora</a> used only to style the names of the wine suggestions returned from the wine pairing service.
 
-## Features
+# Features {#features}
 
 * Automated wine pairing service: allows the User to select a food type and get a suggestion for three types of wines to pair with their selection, the information returned includes buttons with the text 'Shop' which include links to the types of wines suggested which will open in a new tab and take the user to wine.com with a search having already been performed for the specific type of wine they clicked "shop" on.
 * Email service: allows the User to contact the site owner.
 * Shop locally service: allows the User to do a search for 'wines near me' or in reality anything the User might wish to search for in relation to google.maps allowed searches.
 
-## Scope
+# Scope {#scope}
 
 * The current scope of the project is limited, users have a limited number of food selection options. The reason for this is simply due to the nature of the project, the level of my current coding skills, and the limited time to complete the project. I didn't want to overcommit myself and so I kept the scope of the project within what I felt was currenty achievable.
 
-# Technologies Used
+# Technologies Used {#technologies}
 
 * <a href="https://html.com/" target="_blank">HTML</a> - for overall structure
 * <a href="https://css-tricks.com/" target="_blank">Css</a> - to style the site
@@ -95,7 +113,7 @@
 * <a href="https://www.gitpod.io/" target="_blank">Gitpod</a> - as my development environment
 * <a href="https://github.com/" target="_blank">GitHub</a> - for version control and site Deployment
 
-# Sites sourced from
+# Sites sourced from {#sources}
 
 * <a href="https://www.w3schools.com">w3schools</a> - used for the initial 'smoothscroll' function structure coding
 * <a href="https://michalsnik.github.io/aos/" target="_blank">AOS</a> - Animate On Scroll used for the fade-in effect on the landing page headlines
@@ -105,7 +123,7 @@
 * <a href="https://fontawesome.com/">Font Awesome</a> - for icons
 * <a href="https://fonts.google.com/">Google Fonts</a> - for fonts
 
-# Testing
+# Testing {#testing}
 
 ## This site has been tested manually
 
@@ -118,11 +136,18 @@ Phones tested:
 * iPhone 6
 * Xaomi Mi 9
 
+* Site also tested with Chrome's built in 'Inspect Element' preview panes simulating the iPad Pro, iPad, iPhone X, iPhone 6/7/8 plus, iPhone 6/7/8, iPhone 5 SE, Pixel 2 XL, Pixel 2 and Galaxy S5
+* JS and jQuery code tested on <a href="https://www.repl.it " target="_blank">ReplIt</a>
+* Entire site tested extensively with console log and found to only return an error on Bug #1(See ## Known Bugs)
 
 
-* Site also tested with Chrome's built in 'Inspect Element' preview panes simulating the iPad Pro, iPad, iPhone X, iPhone 6/7/8 plus, iPhone 6/7/8, iPhone 5 SE, Pixel 2 XL, Pixel 2 and Galaxy S5.
+## Known Bugs {#bugs}
 
-
+* Bug #1: if user select == 'Choose...' : **Bug Description** In the Choose Food section if the option 'Choose...' is chosen, the code will break and return wines #2 and #3 from the previous selection. The user will have to refresh the page in order for the food select/wine pairing function to work correctly again. This bug re-occurred on every device tested.
+  * Bug #1 status:  Unresolved
+* Bug #2: form auto-clear : **Bug Description** On the contact page after sending an email the email form does not automatically clear itself.
+  * Bug #2 status:  Unresolved
+* Bug #3
 
 
 
@@ -131,3 +156,5 @@ Phones tested:
 * All images sourced from <a href="https://www.pexels.com/" target="_blank">Pexels</a> -  a stock image library
 
 <a href="" target="_blank"></a>
+<a href=""></a>
+{#}
