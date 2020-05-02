@@ -125,6 +125,11 @@
 
 # Testing {#testing}
 
+* All HTML validated with <a href="https://validator.w3.org/">w3 validator</a>
+* All CSS validated with <a href="https://jigsaw.w3.org/css-validator/">w3 css validator</a>
+
+* Some parsing errors were found by the css validator within the <a href="https://css-tricks.com/apply-a-filter-to-a-background-image/" target="_blank">Image Overlay</a> - solution by Dan Wilson that I used. I will address those issues in future iterations of this project, none of the css issues caused any major errors on the site
+
 ## This site has been tested manually
 
 Browsers tested: 
